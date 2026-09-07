@@ -2,11 +2,45 @@ import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 
 const config = JSON.parse(await fs.readFile(new URL('../config/sources.json', import.meta.url), 'utf8'));
+const companyUniverse = JSON.parse(await fs.readFile(new URL('../config/company-universe.json', import.meta.url), 'utf8'));
+
+function normalizeCompanyName(value='') {
+  return String(value).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+const COMPANY_META = new Map(companyUniverse.companies.map(c => [normalizeCompanyName(c.company), c]));
+const COMPANY_ALIASES = new Map([
+  ['salesforce com', 'salesforce'],
+  ['databricks', 'databricks'],
+  ['appian', 'appian'],
+  ['tiktok', 'tiktok'],
+  ['byte dance', 'bytedance'],
+  ['american express', 'american express'],
+  ['amex', 'american express'],
+  ['ibm', 'ibm'],
+  ['microsoft', 'microsoft'],
+  ['google', 'google'],
+  ['meta', 'meta'],
+  ['facebook', 'meta'],
+  ['apple', 'apple'],
+  ['amazon', 'amazon'],
+  ['goldman sachs', 'goldman sachs'],
+  ['jpmorgan chase', 'jpmorgan chase'],
+  ['jp morgan', 'jpmorgan chase'],
+  ['fidelity', 'fidelity investments'],
+  ['fidelity international', 'fidelity investments']
+]);
+
+function companyMeta(company='') {
+  const normalized = normalizeCompanyName(company);
+  const canonical = COMPANY_ALIASES.get(normalized) || normalized;
+  return COMPANY_META.get(canonical) || COMPANY_META.get(normalized) || { tier: 'C', industry: 'Other' };
+}
 
 const TARGET = {
   categories: {
     'Product Management': [
-      'associate product manager','product manager','product analyst','product strategy','product operations','product development','product innovation','digital product','ai product','growth product','product experience','product specialist','product owner'
+      'associate product manager','assistant product manager','junior product manager','entry level product manager','entry-level product manager','graduate product manager','product manager graduate','product manager intern','product management intern','product management internship','product manager','product management','product analyst','product strategy','product operations','product development','product innovation','digital product','ai product','growth product','technical product manager','platform product manager','product experience','product solutions','product project','product program','product coordinator','product specialist','product associate','product owner','apm program','associate pm','product rotational'
     ],
     'Strategy & Operations': [
       'strategy & operations','strategy and operations','strategic operations','business operations','corporate strategy','strategic initiatives','strategy analyst','business strategy','growth strategy','commercial strategy','digital strategy','technology strategy','business transformation','digital transformation','strategic projects','chief of staff','business planning','strategic planning','operations analyst','commercial excellence'
@@ -37,7 +71,7 @@ const TARGET = {
     ]
   },
   explicitEarlyCareer: [
-    'new grad','new graduate','university graduate','entry level','entry-level','early career','campus','graduate program','graduate analyst','rotational program','rotation program','leadership development program','development program','2027 analyst','2027 graduate','class of 2027','university program','trainee program','student program'
+    'new grad','new graduate','new college grad','university graduate','entry level','entry-level','early career','campus','graduate program','graduate analyst','graduate product','rotational program','rotation program','leadership development program','development program','2027 analyst','2027 graduate','2027 start','class of 2027','university program','university talent','college graduate','recent graduate','trainee program','student program'
   ],
   preferredSkills: [
     'product','strategy','operations','user research','customer','stakeholder','ai','artificial intelligence','prototype','prototyping','usability','innovation','go-to-market','gtm','cross-functional','program','digital transformation','insights','marketplace','testing','research','launch','customer experience','consumer','dashboard','process improvement'
@@ -46,7 +80,7 @@ const TARGET = {
     'user research','usability testing','prototype','prototyping','figma','stakeholder','cross-functional','ai','artificial intelligence','product strategy','product operations','digital transformation','go-to-market','gtm','customer experience','consumer insights','market research','testing','quality assurance','program management','project management','process improvement','dashboard','launch','innovation','emerging technology'
   ],
   excludeTitleTerms: [
-    'senior ','sr. ','staff ','principal ','director','vice president','vp ','head of ','chief ','lead software','lead engineer','software engineer','data scientist','machine learning engineer','account executive','store associate','retail associate','warehouse associate','pharmacist','nurse','physician','technician','mechanic'
+    'senior ','sr. ','staff ','principal ','director','vice president','vp ','head of ','chief ','lead software','lead engineer','software engineer','data scientist','machine learning engineer','account executive','store associate','retail associate','warehouse associate','product demonstrator','product guide','merchandise product','pharmacist','nurse','physician','technician','mechanic'
   ]
 };
 
@@ -89,7 +123,7 @@ function explicitEarlyCareer(text='') {
 function juniorTitle(title='') {
   const t = title.toLowerCase();
   if (/senior|sr\.|principal|director|vice president|\bvp\b|head of|chief/.test(t)) return false;
-  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bintern\b|\binternship\b|\bgraduate\b|entry[- ]level|\btrainee\b/.test(t);
+  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bintern\b|\binternship\b|\bco-?op\b|\bgraduate\b|entry[- ]level|\bjunior\b|\btrainee\b|\bapm\b|\b2027\b/.test(t);
 }
 
 function requiredYears(text='') {
@@ -209,6 +243,135 @@ async function fetchJson(url, options={}) {
     }
   }
   throw lastError;
+}
+
+async function fetchText(url, options={}) {
+  const headers = {
+    'user-agent': 'Mozilla/5.0 (compatible; JaeRecruitingRadar/3.0; +https://github.com/friedporkdumplings/2026_recuriting_dashboard)',
+    'accept': 'text/plain,text/markdown,*/*',
+    ...(options.headers || {})
+  };
+  let lastError;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const res = await fetch(url, { ...options, headers });
+      if (!res.ok) throw new Error(`${res.status} ${res.statusText}: ${url}`);
+      return await res.text();
+    } catch (err) {
+      lastError = err;
+      if (attempt < 2) await new Promise(r => setTimeout(r, 700 * (attempt + 1)));
+    }
+  }
+  throw lastError;
+}
+
+function stripMarkdown(value='') {
+  return String(value)
+    .replace(/\*\*/g, '')
+    .replace(/`/g, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+    .trim();
+}
+
+function markdownLink(value='') {
+  const matches = [...String(value).matchAll(/\[[^\]]+\]\((https?:\/\/[^\)]+)\)/g)];
+  if (matches.length) return matches[matches.length - 1][1];
+  const raw = String(value).match(/https?:\/\/\S+/);
+  return raw ? raw[0].replace(/[|)>]+$/g, '') : '';
+}
+
+function parseShortDate(value='') {
+  const s = stripMarkdown(value).trim();
+  if (!s) return null;
+  const now = new Date();
+  const withYear = new Date(`${s} ${now.getUTCFullYear()} UTC`);
+  if (!Number.isNaN(withYear.getTime())) {
+    // Avoid accidentally dating a December row into the future when the feed spans year-end.
+    if (withYear.getTime() > now.getTime() + 14 * 86400000) withYear.setUTCFullYear(now.getUTCFullYear() - 1);
+    return withYear.toISOString();
+  }
+  const parsed = new Date(s);
+  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
+function communityMeta(company='') {
+  const meta = companyMeta(company);
+  return { companyTier: meta.tier || 'C', industry: meta.industry || 'Other' };
+}
+
+async function applyGuy(source) {
+  const data = await fetchJson(source.url);
+  return (data.jobs || [])
+    .filter(j => !source.category || String(j.category || '').toLowerCase() === source.category.toLowerCase())
+    .map(j => ({
+      company: j.company,
+      title: j.title,
+      location: j.location || 'Location not listed',
+      postedAt: j.posted ? new Date(`${j.posted}T12:00:00Z`).toISOString() : null,
+      url: j.listingUrl || j.url,
+      source: 'ApplyGuy',
+      employmentType: 'Internship',
+      description: `2027 product management internship feed. ${j.season || ''}`,
+      ...communityMeta(j.company)
+    }));
+}
+
+async function pmHub(source) {
+  const md = await fetchText(source.url);
+  const rows = [];
+  for (const line of md.split(/\r?\n/)) {
+    if (!line.trim().startsWith('|')) continue;
+    const cells = line.split('|').slice(1, -1).map(x => x.trim());
+    if (cells.length < 6 || /^company$/i.test(cells[0]) || /^---/.test(cells[0])) continue;
+    const [companyCell, roleCell, locationCell, startTermCell, statusCell, linkCell] = cells;
+    if (/closed/i.test(statusCell)) continue;
+    const company = stripMarkdown(companyCell);
+    const title = stripMarkdown(roleCell);
+    const url = markdownLink(linkCell) || markdownLink(roleCell);
+    if (!company || !title || !url) continue;
+    rows.push({
+      company,
+      title,
+      location: stripMarkdown(locationCell) || 'Location not listed',
+      postedAt: null,
+      url,
+      source: 'PM Recruiting Hub',
+      employmentType: stripMarkdown(startTermCell),
+      description: `${source.careerHint || 'Early Career'} community-curated product opportunity. Status: ${stripMarkdown(statusCell)}`,
+      ...communityMeta(company)
+    });
+  }
+  return rows;
+}
+
+async function jobrightMarkdown(source) {
+  const md = await fetchText(source.url);
+  const rows = [];
+  let lastCompany = '';
+  for (const line of md.split(/\r?\n/)) {
+    if (!line.trim().startsWith('|')) continue;
+    const cells = line.split('|').slice(1, -1).map(x => x.trim());
+    if (cells.length < 5 || /company/i.test(cells[0]) && /job title/i.test(cells[1]) || /^---/.test(cells[0])) continue;
+    let company = stripMarkdown(cells[0]);
+    if (company === '↳') company = lastCompany;
+    else if (company) lastCompany = company;
+    const title = stripMarkdown(cells[1]);
+    const url = markdownLink(cells[1]);
+    if (!company || !title || !url) continue;
+    rows.push({
+      company,
+      title,
+      location: stripMarkdown(cells[2]) || 'Location not listed',
+      postedAt: parseShortDate(cells[4]),
+      url,
+      source: source.careerHint === 'New Grad' ? 'Jobright New Grad' : 'Jobright Internships',
+      employmentType: source.careerHint || '',
+      description: `${source.careerHint || 'Early Career'} product management feed. Work model: ${stripMarkdown(cells[3])}`,
+      ...communityMeta(company)
+    });
+  }
+  return rows;
 }
 
 function addSourceMeta(job, source) {
@@ -358,7 +521,12 @@ const sourceTasks = [
   ...(config.greenhouse || []).map(s => ({ source: s, type: 'Greenhouse', run: () => greenhouse(s) })),
   ...(config.lever || []).map(s => ({ source: s, type: 'Lever', run: () => lever(s) })),
   ...(config.ashby || []).map(s => ({ source: s, type: 'Ashby', run: () => ashby(s) })),
-  ...(config.workday || []).map(s => ({ source: s, type: 'Workday', run: () => workday(s) }))
+  ...(config.workday || []).map(s => ({ source: s, type: 'Workday', run: () => workday(s) })),
+  ...(config.community || []).map(s => ({
+    source: { company: s.name },
+    type: s.type === 'applyguy-json' ? 'Community JSON' : 'Community Feed',
+    run: () => s.type === 'applyguy-json' ? applyGuy(s) : s.type === 'pmhub-markdown' ? pmHub(s) : jobrightMarkdown(s)
+  }))
 ];
 
 const sourceHealth = [];
@@ -405,7 +573,18 @@ const jobs = raw.filter(isTarget).map(j => {
   };
 });
 
-const deduped = [...new Map(jobs.map(j => [j.id, j])).values()]
+const SOURCE_PRIORITY = { Workday: 6, Greenhouse: 6, Lever: 6, Ashby: 6, 'PM Recruiting Hub': 5, ApplyGuy: 4, 'Jobright New Grad': 3, 'Jobright Internships': 3 };
+function dedupeKey(job) {
+  const n = x => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  return `${n(job.company)}|${n(job.title)}|${n(job.location)}`;
+}
+const dedupeMap = new Map();
+for (const job of jobs) {
+  const key = dedupeKey(job);
+  const existing = dedupeMap.get(key);
+  if (!existing || (SOURCE_PRIORITY[job.source] || 0) > (SOURCE_PRIORITY[existing.source] || 0)) dedupeMap.set(key, job);
+}
+const deduped = [...dedupeMap.values()]
   .sort((a,b) => new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
 
 const successfulSources = sourceHealth.filter(x => x.status === 'ok').length;
@@ -419,6 +598,8 @@ await fs.writeFile(
     count: deduped.length,
     rawCount: raw.length,
     sourceCount: sourceTasks.length,
+    directSourceCount: (config.greenhouse || []).length + (config.lever || []).length + (config.ashby || []).length + (config.workday || []).length,
+    communityFeedCount: (config.community || []).length,
     successfulSources,
     failedSources,
     sourceHealth: sourceHealth.sort((a,b) => a.company.localeCompare(b.company)),
