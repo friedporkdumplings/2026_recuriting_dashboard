@@ -35,7 +35,7 @@ const categories = [
   'Partnerships & BD', 'Marketplace & Growth'
 ];
 
-const quickFilters = ['All', '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Internship', 'Entry Level', 'Remote', 'NYC', 'California'];
+const quickFilters = ['All', '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Entry Level', 'Associate', 'Analyst', 'Internship', 'Remote', 'NYC', 'California'];
 
 function saveState() {
   localStorage.setItem('savedJobs', JSON.stringify([...state.saved]));
@@ -234,8 +234,10 @@ function renderCoverage() {
   const automated = state.universe?.automatedCount || state.payload.sourceCount || 0;
   const failures = state.payload.failedSources || 0;
   const parts = [];
-  if (automated) parts.push(`${automated} automated companies`);
-  if (universeCount) parts.push(`${universeCount} target companies`);
+  const community = state.payload.communityFeedCount || 0;
+  if (automated) parts.push(`${automated} direct ATS companies`);
+  if (community) parts.push(`${community} broad early-career feeds`);
+  if (universeCount) parts.push(`${universeCount} priority companies tracked`);
   if (failures) parts.push(`${failures} source failures this run`);
   els.coverageStamp.textContent = parts.join(' · ');
 }
