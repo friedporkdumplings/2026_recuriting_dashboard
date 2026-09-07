@@ -1,6 +1,6 @@
-# Jae's Recruiting Radar
+# Recruiting Radar
 
-A GitHub Pages recruiting dashboard for May 2027 new-grad recruiting. It refreshes public ATS job feeds every six hours with GitHub Actions, classifies relevant early-career roles, and ranks them against Jae's target career lanes and experience profile.
+A GitHub Pages recruiting dashboard for May 2027 new-grad recruiting. It refreshes public ATS job feeds every six hours with GitHub Actions, classifies relevant early-career roles, and ranks them against target career lanes and experience profile.
 
 ## What changed in this version
 
@@ -11,7 +11,7 @@ A GitHub Pages recruiting dashboard for May 2027 new-grad recruiting. It refresh
 - Added filters for **industry** and **company priority**.
 - Added quick filters for **🔥 Apply ASAP** and **Priority A**.
 - Added source-health tracking so one broken company feed does not kill the entire refresh.
-- Added a weighted fit score customized to Jae's resume and career targets.
+- Added a weighted fit score customized to resume and career targets.
 
 ## Fit score
 
