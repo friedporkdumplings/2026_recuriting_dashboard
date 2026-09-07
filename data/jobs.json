@@ -1,111 +1,3388 @@
 {
-  "generatedAt": "2026-09-07T08:00:00.000Z",
-  "count": 4,
-  "rawCount": 4,
+  "generatedAt": "2026-09-07T08:57:32.008Z",
+  "count": 129,
+  "rawCount": 3334,
   "sourceCount": 37,
   "successfulSources": 37,
   "failedSources": 0,
-  "sourceHealth": [],
-  "jobs": [
+  "sourceHealth": [
     {
-      "id": "demo-1",
-      "company": "Disney",
-      "companyTier": "A",
-      "industry": "Media / Entertainment",
-      "title": "Associate, Product Strategy — New Grad",
-      "location": "New York, NY",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-07T06:30:00.000Z",
-      "url": "https://www.disneycareers.com/",
-      "source": "Demo",
-      "category": "Product Management",
-      "tags": [
-        "New Grad",
-        "Entry Level",
-        "Priority A"
-      ],
-      "matchScore": 95,
-      "scoreBreakdown": {
-        "roleFit": 98,
-        "experienceFit": 92,
-        "companyFit": 95,
-        "careerFit": 100,
-        "freshness": 100
-      }
+      "company": "Affirm",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 204,
+      "ms": 347
     },
     {
-      "id": "demo-2",
+      "company": "Airtable",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 16,
+      "ms": 76
+    },
+    {
+      "company": "BlackRock",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 49,
+      "ms": 22335
+    },
+    {
+      "company": "Bristol Myers Squibb",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 25440
+    },
+    {
       "company": "Capital One",
-      "companyTier": "A",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 10,
+      "ms": 2959
+    },
+    {
+      "company": "Citi",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 73,
+      "ms": 34324
+    },
+    {
+      "company": "Comcast",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 12,
+      "ms": 4424
+    },
+    {
+      "company": "CVS Health",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 59,
+      "ms": 10334
+    },
+    {
+      "company": "Databricks",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 869,
+      "ms": 769
+    },
+    {
+      "company": "Datadog",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 444,
+      "ms": 1488
+    },
+    {
+      "company": "Disney",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 38,
+      "ms": 8867
+    },
+    {
+      "company": "Fidelity International",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 20,
+      "ms": 12624
+    },
+    {
+      "company": "Figma",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 157,
+      "ms": 245
+    },
+    {
+      "company": "Johnson & Johnson",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 32,
+      "ms": 16540
+    },
+    {
+      "company": "Mastercard",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 19,
+      "ms": 12519
+    },
+    {
+      "company": "Medtronic",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 75,
+      "ms": 25959
+    },
+    {
+      "company": "Morgan Stanley",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 49,
+      "ms": 16958
+    },
+    {
+      "company": "Nike",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 25,
+      "ms": 6138
+    },
+    {
+      "company": "Notion",
+      "ats": "Ashby",
+      "status": "ok",
+      "fetched": 132,
+      "ms": 226
+    },
+    {
+      "company": "PepsiCo",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 25626
+    },
+    {
+      "company": "Postman",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 63,
+      "ms": 189
+    },
+    {
+      "company": "Procter & Gamble",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 25509
+    },
+    {
+      "company": "Ramp",
+      "ats": "Ashby",
+      "status": "ok",
+      "fetched": 142,
+      "ms": 219
+    },
+    {
+      "company": "Robinhood",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 128,
+      "ms": 298
+    },
+    {
+      "company": "S&P Global",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 60,
+      "ms": 26867
+    },
+    {
+      "company": "Sierra",
+      "ats": "Ashby",
+      "status": "ok",
+      "fetched": 212,
+      "ms": 311
+    },
+    {
+      "company": "Starbucks",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 24608
+    },
+    {
+      "company": "Target",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 26,
+      "ms": 15320
+    },
+    {
+      "company": "Thomson Reuters",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 27,
+      "ms": 22540
+    },
+    {
+      "company": "Unilever",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 29,
+      "ms": 16569
+    },
+    {
+      "company": "UnitedHealth Group / Optum",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 24683
+    },
+    {
+      "company": "Vanguard",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 71,
+      "ms": 19126
+    },
+    {
+      "company": "Walmart",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 24262
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "ats": "Workday",
+      "status": "ok",
+      "fetched": 53,
+      "ms": 13214
+    },
+    {
+      "company": "West Monroe",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 0,
+      "ms": 63
+    },
+    {
+      "company": "West Monroe",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 118,
+      "ms": 241
+    },
+    {
+      "company": "Zip",
+      "ats": "Ashby",
+      "status": "ok",
+      "fetched": 122,
+      "ms": 185
+    }
+  ],
+  "jobs": [
+    {
+      "id": "e177b87a95a738c37d",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
       "industry": "Financial Services / Fintech",
-      "title": "Strategy & Operations Analyst",
-      "location": "McLean, VA",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-06T23:00:00.000Z",
-      "url": "https://www.capitalonecareers.com/",
-      "source": "Demo",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Entry Level",
-        "Priority A"
-      ],
-      "matchScore": 92,
+      "title": "Digital Marketing Operations (Data), Client Segments, Associate, Wealth Management",
+      "location": "Mumbai, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-07T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Mumbai-India/Digital-Marketing-Operations--Data---Client-Segments--Associate--Wealth-Management_PT-JR042294",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [],
+      "matchScore": 81,
       "scoreBreakdown": {
-        "roleFit": 96,
-        "experienceFit": 88,
-        "companyFit": 95,
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 82,
         "careerFit": 88,
         "freshness": 100
       }
     },
     {
-      "id": "demo-3",
-      "company": "West Monroe",
+      "id": "09460420c209275244",
+      "company": "Johnson & Johnson",
       "companyTier": "A",
-      "industry": "Consulting",
-      "title": "Technology Consulting Analyst",
-      "location": "Chicago, IL",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-05T16:00:00.000Z",
-      "url": "https://www.westmonroe.com/careers",
-      "source": "Demo",
-      "category": "Consulting",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Specialist",
+      "location": "Kibbutz Shefayim, Center District, Israel",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-06T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Kibbutz-Shefayim-Center-District-Israel/Product-Specialist_R-076896",
+      "source": "Workday",
+      "category": "Product Management",
       "tags": [
-        "Entry Level",
+        "Remote",
         "Priority A"
       ],
-      "matchScore": 90,
+      "matchScore": 88,
       "scoreBreakdown": {
-        "roleFit": 96,
-        "experienceFit": 86,
+        "roleFit": 95,
+        "experienceFit": 70,
         "companyFit": 95,
         "careerFit": 88,
         "freshness": 90
       }
     },
     {
-      "id": "demo-4",
+      "id": "474fbe5981eb6e0835",
       "company": "Unilever",
       "companyTier": "A",
       "industry": "Consumer / Retail",
-      "title": "Digital Marketing & Innovation Associate",
-      "location": "New York, NY",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-04T11:00:00.000Z",
-      "url": "https://careers.unilever.com/",
-      "source": "Demo",
+      "title": "Customer Experience Specialist - Bahrain",
+      "location": "Manama, Bahrain",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-06T00:00:00.000Z",
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Manama-Bahrain/Customer-Experience-Specialist---Bahrain_R-1187799",
+      "source": "Workday",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "4b1887f1537767e1b7",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "GTM Business Systems Analyst – Post Sales",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-09-04T20:35:59.739+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/196e4e25-c452-430d-8b2f-36a40f88a2ae",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 79,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "f2ce70b75ceb6904ed",
+      "company": "Databricks",
+      "companyTier": "A",
+      "industry": "Tech / AI",
+      "title": "Recruiter, GTM & Field Engineering",
+      "location": "London, United Kingdom",
+      "employmentType": "",
+      "postedAt": "2026-09-04T12:50:44-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8771700002",
+      "source": "Greenhouse",
       "category": "Marketing & GTM",
       "tags": [
         "Entry Level",
         "Priority A"
       ],
-      "matchScore": 87,
+      "matchScore": 84,
       "scoreBreakdown": {
-        "roleFit": 86,
-        "experienceFit": 90,
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "27f7c38f6d5b0dfa3d",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Marketing Strategy Intern, Latin America Consumer Direct, Spring 2027",
+      "location": "Celebration, FL, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Celebration-FL-USA/Marketing-Strategy-Intern--Latin-America-Consumer-Direct--Spring-2027_10156539",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 72,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "19f09c27d434507dfb",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Sales & Marketing Strategy Intern, Latin America Trade Market, Spring 2027",
+      "location": "Celebration, FL, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Celebration-FL-USA/Sales---Marketing-Strategy-Intern--Latin-America-Trade-Market--Spring-2027_10155823-1",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 72,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "afb14d77bb9fb613c8",
+      "company": "Mastercard",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Sales Analyst Intern, Summer 2027 - New York, US",
+      "location": "New York City, New York; Purchase, New York",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/New-York-City-New-York/Sales-Analyst-Intern--Summer-2027---New-York--US_R-287605-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "New Grad",
+        "Entry Level",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 90,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "f2bcab6d44e7f516b1",
+      "company": "Mastercard",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Specialist, Product Management, Global Consumer Credit Commercialization",
+      "location": "Purchase, New York",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Purchase-New-York/Product-Specialist--Product-Management--Global-Consumer-Credit-Commercialization_R-289911",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
         "companyFit": 95,
         "careerFit": 88,
         "freshness": 78
+      }
+    },
+    {
+      "id": "bfcbedef68835be8a7",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Veteran Transition Program-Aladdin Client Business Development Associate",
+      "location": "New York, NY",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/New-York-NY/Veteran-Transition-Program-Aladdin-Client-Business-Development-Associate_R265458",
+      "source": "Workday",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "07eafed6a112b291d0",
+      "company": "Warner Bros. Discovery",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Postgraduate Intern, Growth Strategy (Winter 2026)",
+      "location": "Singapore, 1 Fusionopolis Walk",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://warnerbros.wd5.myworkdayjobs.com/global/job/Singapore-1-Fusionopolis-Walk/Postgraduate-Intern--Growth-Strategy--Winter-2026-_R000107880",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 80,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "165f7e4579f27b12cc",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "IT Lead, Product Analyst, Third Party Management (TPM)",
+      "location": "New Brunswick, New Jersey, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/New-Brunswick-New-Jersey-United-States-of-America/IT-Lead--Product-Analyst--Third-Party-Management--TPM-_R-091793-2",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 89,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "f13c19ce542c554fe9",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Transcend Deploy MAKE POM Analyst",
+      "location": "Ringaskiddy, Cork, Ireland; Latina, Italy; Leiden, South Holland, Netherlands",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Ringaskiddy-Cork-Ireland/Transcend-Deploy-MAKE-POM-Analyst_R-097758",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 90,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "791dacb238e267df31",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "2027 MedTech Marketing Leadership Development Program (MLDP)- Full-Time",
+      "location": "Raritan, New Jersey, United States of America; Jacksonville, Florida, United States of America; Santa Clara, California, United States of America; Cincinnati, Ohio, United States of America; Irvine, California, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Raritan-New-Jersey-United-States-of-America/XMLNAME-2027-MedTech-Marketing-Leadership-Development-Program--MLDP---Full-Time_R-097888",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "9a64e0d9e2219ba991",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Operations Analyst - Parametric",
+      "location": "Mumbai, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Mumbai-India/Operations-Analyst---Parametric_PT-JR040862",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "d6429426e363b6ea2c",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Operations Analyst - Parametric",
+      "location": "Mumbai, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Mumbai-India/Operations-Analyst---Parametric_PT-JR040863",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "2988988180153e1ced",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Partnerships Specialist, Business Unit Strategy",
+      "location": "London, United Kingdom",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/London-United-Kingdom/Business-Unit-Strategy-Analyst--Specialist_178930-2",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "c0ef233ac3800d915a",
+      "company": "Nike",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "NIKE, Inc. Strategic Planning Graduate Internship",
+      "location": "Beaverton, Oregon",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://nike.wd1.myworkdayjobs.com/nke/job/Beaverton-Oregon/NIKE--Inc-Strategic-Planning-Graduate-Internship_R-91142",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "26b2507eee89a3e4ae",
+      "company": "CVS Health",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Journey Activation and Optimization Analyst",
+      "location": "RI - Woonsocket; IL - Chicago",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/RI---Woonsocket/Journey-Activation-and-Optimization-Analyst_R0976924",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 90,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "dad6c6740df43930ed",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Sr Product Specialist in Robótica",
+      "location": "Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Buenos-Aires-Ciudad-Autnoma-de-Buenos-Aires-Argentina/Sr-Product-Specialist---Robtica_R67597-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "c400684065de113836",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Development Program Manager (CTOR) CardioVascular Surgery",
+      "location": "Galway, County Galway, Ireland",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Galway-County-Galway-Ireland/Product-Development-Program-Manager--CTOR--CardioVascular-Surgery_R76496-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Remote"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 62,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "0f0f2730fa2a590728",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Training and Education Program Manager, Robotic Surgical Technologies - HUGO",
+      "location": "Lafayette, Colorado, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Lafayette-Colorado-United-States-of-America/Training-and-Education-Program-Manager--Robotic-Surgical-Technologies---HUGO_R75285-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 62,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "4694c941afd6754c68",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Business Product Operations Specialist",
+      "location": "Bogotá, Bogota, Colombia",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Bogot-Bogota-Colombia/Bus-Proc-Impvmt-Analyst_R64937-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "6997f9aa6a110c3918",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Marketing Strategy Associate – Global Softlines (PH/IA)",
+      "location": "Glendale, CA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Marketing-Strategy-Associate---Global-Softlines--PH-IA-_10159276",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "11843534eacf80b417",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Associate Americas Brand Commercialization",
+      "location": "Glendale, CA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Associate-Americas-Brand-Commercialization_10158804",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Entry Level",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "b6234ac21d76aec16c",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Associate NAM Hardlines (PH)",
+      "location": "Glendale, CA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Associate-NAM-Hardlines--PH-_10158785",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "42a1800c300900661c",
+      "company": "Mastercard",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Specialist, Product and Sales Analyst – Digital Product",
+      "location": "St. Leonards, Australia",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/St-Leonards-Australia/Specialist--Product-and-Sales-Analyst---Digital-Product_R-289210",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "92fc8d9da07c494e77",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate, Client Platform, Analytics & Reporting - Atlanta",
+      "location": "Atlanta, GA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/Atlanta-GA/Associate--Client-Platform--Analytics---Reporting---Atlanta_R266338",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "ea4c323a9032fb8813",
+      "company": "Unilever",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "CMI Analyst France & Strategic Projects",
+      "location": "Rueil Malmaison",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Rueil-Malmaison/CMI-Analyst-France---Strategic-Projects_R-1187071",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 89,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "5de3f130c48ae6ca27",
+      "company": "Unilever",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Intern - Digital Marketing",
+      "location": "Colombo 14 - Head Office",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Colombo-14---Head-Office/Intern---Marketing_R-1187193",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 60,
+        "companyFit": 95,
+        "careerFit": 80,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "2584366cd978fb1405",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Development Associate",
+      "location": "Palo Alto, California, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Palo-Alto-California-United-States-of-America/Business-Development-Associate_JR039830",
+      "source": "Workday",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 77,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "23e2678321fbd292db",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Procurement & Sourcing Operations Analyst, IT Sourcing Specialist",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Procurement---Sourcing-Operations-Analyst--Specialist_180960-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "e94976d03cafa3f2ba",
+      "company": "Thomson Reuters",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Associate Solutions Architect (GTM)",
+      "location": "India, Bengaluru, Karnataka",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site/job/India-Bengaluru-Karnataka/Associate-Solutions-Architect--GTM-_JREQ202803",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Remote",
+        "Priority A"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "6fc758b6d69f2b854a",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Citi Commercial Bank | Business Development Specialist, SVP",
+      "location": "San Francisco California United States",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/San-Francisco-California-United-States/Citi-Commercial-Bank---Cash-Management-Sales-Officer--Senior-Vice-President_26987936",
+      "source": "Workday",
+      "category": "Partnerships & BD",
+      "tags": [],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "ebf9da68d931d475cb",
+      "company": "CVS Health",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Medicare Product Operations Analyst",
+      "location": "CT - Hartford; Scottsdale-9501 East Shea Blvd",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/CT---Hartford/Medicare-Product-Operations-Analyst_R0971728",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "b06632b4bd19878769",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Specialist-2.",
+      "location": "Bogotá, Bogota, Colombia",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-03T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Bogot-Bogota-Colombia/Product-Specialist-2_R72848-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "f40973b8902ef70fb5",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Operations Specialist | Juno",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-09-02T19:10:13.723+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/dba53e68-4c96-449d-af4d-27dc475b814c",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 90,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 90,
+        "companyFit": 95,
+        "careerFit": 79,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "55b08706e4ad17dc91",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Marketing Manager, Global Growth Marketing, Trauma",
+      "location": "West Chester, Pennsylvania, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-02T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/West-Chester-Pennsylvania-United-States-of-America/Marketing-Manager--Global-Growth-Marketing--Trauma_R-095100-1",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 62,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "b3309d24c3c3758716",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Research Division - Fixed Term Direct, Equity Research Analyst (Seoul)",
+      "location": "Seoul, Korea, Republic of",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-02T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Seoul-Korea-Republic-of/Research-Division---Fixed-Term-Direct--Equity-Research-Analyst--Seoul-_JR043127",
+      "source": "Workday",
+      "category": "Research & Insights",
+      "tags": [],
+      "matchScore": 77,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "8d25962eceee09dabf",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Data Research Analyst",
+      "location": "Sofia, BG",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-02T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Sofia-BG/Data-Research-Analyst_329889-2",
+      "source": "Workday",
+      "category": "Research & Insights",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "37e4c1c49f60870834",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "GTM Strategy/Operations Associate",
+      "location": "New York, New York, USA",
+      "employmentType": "",
+      "postedAt": "2026-09-01T14:20:38-04:00",
+      "url": "https://careers.datadoghq.com/detail/8171303/?gh_jid=8171303",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "18ebdfc002bf8aa912",
+      "company": "Robinhood",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Customer Experience Associate, Core Services Resolutions Desk",
+      "location": "Denver, CO; Westlake, TX",
+      "employmentType": "",
+      "postedAt": "2026-09-01T13:35:38-04:00",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8130471?t=gh_src=&gh_jid=8130471",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "66698ff47c222ca41e",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Sr Analyst, DTC Insights",
+      "location": "Santa Monica, CA, USA; Burbank, CA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-01T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Santa-Monica-CA-USA/Sr-Analyst--DTC-Insights_10159460",
+      "source": "Workday",
+      "category": "Research & Insights",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "200127ca8600d32d1e",
+      "company": "Target",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Analyst Marketplace Partner Performance",
+      "location": "Bangalore,India",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-01T00:00:00.000Z",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Marketplace-Partner-Performance_R0000441183-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "2fee5d169af2a79249",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Taipei Taipei City Taiwan",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-01T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taipei-Taipei-City-Taiwan/KYC-Operations-Analyst_26971492",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "cc7f6e3e105d899191",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Analyst, Domestic Subscriber Planning",
+      "location": "Santa Monica, CA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-31T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Santa-Monica-CA-USA/Analyst--Domestic-Subscriber-Planning_10156358",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "76c72fdbb85f354f52",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Fund & Investment Operations Analyst",
+      "location": "Scottsdale, AZ; Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-31T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Scottsdale-AZ/Fund---Investment-Operations-Analyst_181886-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "392c744ac6833fa250",
+      "company": "Target",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Lead Specialist Marketplace Inventory Management",
+      "location": "Bangalore,India",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-31T00:00:00.000Z",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Specialist-Marketplace-Inventory-Management_R0000449360-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "cf1c2646ffdef1254a",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Engineering Program Manager",
+      "location": "Nanakramguda, Hyderabad, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-31T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Nanakramguda-Hyderabad-India/Engineering-Program-Manager_R59331-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [
+        "Entry Level"
+      ],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "5d5d03b05a982dc4d5",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Strategic Sourcing Program Manager - Jacksonville",
+      "location": "Jacksonville, Florida, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-31T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Jacksonville-Florida-United-States-of-America/Strategic-Sourcing-Program-Manager---Jacksonville_R75732-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 62,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "195bc4447b1fa64f1f",
+      "company": "Disney",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Sr Planning & Delivery Analyst (Airtable)",
+      "location": "Glendale, CA, USA; Seattle, WA, USA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-28T00:00:00.000Z",
+      "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Sr-Product-Solutions-Mgr-I_10156465",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "f02b282783d9a69fbb",
+      "company": "Unilever",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Associate CO Data & Analytics Product Manager",
+      "location": "Hoboken US HQ; Trumbull, CT",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-28T00:00:00.000Z",
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Hoboken-US-HQ/Associate-CO-Data---Analytics-Product-Manager_R-1184388-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 90,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 90,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "cdf5adc3093a05a32f",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Marketing Strategy Lead Data Analyst",
+      "location": "Charlotte, NC; Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-28T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Charlotte-NC/Marketing-Strategy-Lead-Data-Analyst_181319",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "5eb3eedeb015293ce5",
+      "company": "Robinhood",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Customer Experience Associate (New Grad)",
+      "location": "Denver, CO; Westlake, TX",
+      "employmentType": "",
+      "postedAt": "2026-08-27T19:28:09-04:00",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8163432?t=gh_src=&gh_jid=8163432",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "New Grad",
+        "Priority A"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "00be7704f0df8de437",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Operations Specialist | Generalist",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-27T20:34:35.116+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/081dbe29-8a06-4cb2-bda5-4b0bfb35c2e8",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "5fa42c751a76c9fb93",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Operations Specialist | Bill Pay",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-27T16:09:14.442+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/9226150c-47df-42f4-8626-7a0aea6b9991",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "f5ea25dcc450f756f7",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Technical Product Manager, Specialist",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-27T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Technical-Product-Manager--Specialist_178897",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "aaf6c5085f97654b2b",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Financial Crime Operations Analyst",
+      "location": "Manchester, United Kingdom; London, United Kingdom",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-27T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Manchester-United-Kingdom/Financial-Crime-Operations-Analyst_181010-3",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "6c23a3f706ead905fa",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Transformation and Change Management Lead, Specialist",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-27T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Business-Transformation-and-Change-Management-Lead--Specialist_181845",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "bc45816697f23d2dbc",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Customer Experience Associate",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-26T21:23:31.708+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/d64609dd-c391-45a2-bfdb-c1bb34e8f93c",
+      "source": "Ashby",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "eba346444b7f589387",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "QA Engineer, Associate",
+      "location": "Belgrade, Serbia",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-26T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/Belgrade-Serbia/QA-Engineer--Associate_R266030",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 89,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "c9c3eee114b5ba81aa",
+      "company": "Fidelity International",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Equity Research Analyst- Financials",
+      "location": "Cannon Street Office",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-26T00:00:00.000Z",
+      "url": "https://fil.wd3.myworkdayjobs.com/001/job/Cannon-Street-Office/Equity-Research-Analyst--Financials_J70347-1",
+      "source": "Workday",
+      "category": "Research & Insights",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "5ee6999829ec258a23",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "Customer Success Associate - Tel Aviv",
+      "location": "Tel Aviv, Israel",
+      "employmentType": "",
+      "postedAt": "2026-08-25T09:40:48-04:00",
+      "url": "https://careers.datadoghq.com/detail/8146994/?gh_jid=8146994",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 77,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "fe196dac1257da428c",
+      "company": "Unilever",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Finance Analyst – Home Care",
+      "location": "100VE",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-25T00:00:00.000Z",
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/100VE/Finance-Analyst---Home-Care_R-1186713",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "bbbe16232d4efac5dd",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Digital Product Analyst",
+      "location": "1/124, SHIVAJI GARDENS, MOONLI",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-25T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/1124-SHIVAJI-GARDENS-MOONLI/Digital-Product-Analyst_26987748",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
+      }
+    },
+    {
+      "id": "f5bd171f220af1e2ba",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Product Consultant, Channels CX",
+      "location": "Makati City, PH",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-24T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Makati-City-PH/Product-Consultant--Channels-Solutions_326554-1",
+      "source": "Workday",
+      "category": "Consulting",
+      "tags": [
+        "Entry Level",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 92,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "430af005dc681021c5",
+      "company": "Affirm",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Legal Operations Analyst II",
+      "location": "Remote US",
+      "employmentType": "",
+      "postedAt": "2026-08-21T17:38:49-04:00",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7808202003",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Remote",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "3204474319a19c77db",
+      "company": "Robinhood",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Analyst (New Grad) ",
+      "location": "Washington, DC",
+      "employmentType": "",
+      "postedAt": "2026-08-21T15:30:30-04:00",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8123231?t=gh_src=&gh_jid=8123231",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "New Grad",
+        "Priority A"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "44a79bf2b514601ef2",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Due Diligence Analyst (IT Risk)",
+      "location": "Gurugram, Haryana; Hyderabad, Telangana",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-20T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Gurugram-Haryana/Due-Diligence-Analyst_326683-2",
+      "source": "Workday",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "098d5a4222c912e8d6",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Marketing - Aladdin Trading, Associate",
+      "location": "New York, NY; London, Greater London",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-19T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/New-York-NY/Product-Marketing---Aladdin-Trading--Associate_R263197",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "0b2e424fef5d2eab17",
+      "company": "Warner Bros. Discovery",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "CRM Operations Specialist - 1 year FTC",
+      "location": "Budapest Szabadsag Ter 7",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-19T00:00:00.000Z",
+      "url": "https://warnerbros.wd5.myworkdayjobs.com/global/job/Budapest-Szabadsag-Ter-7/CRM-Operations-Specialist_R000107432",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "541e29b64b48ab8a63",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Manager, Specialist",
+      "location": "Malvern, PA; Charlotte, NC; Dallas/Ft. Worth, TX",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-19T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Product-Manager--Specialist_180749",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "986c3adfa6379efcf6",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Sr Product Specialist",
+      "location": "Tokyo, Tokyo, Japan",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-19T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Tokyo-Tokyo-Japan/Senior-Product-Specialist--Surgical---Tokyo-_R74230-3",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "c7d86c3dd752c9682a",
+      "company": "Affirm",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Revenue Operations Analyst II",
+      "location": "Remote Canada",
+      "employmentType": "",
+      "postedAt": "2026-08-18T14:18:22-04:00",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7871462003",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Remote",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "0414809ce340f802ee",
+      "company": "Affirm",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Revenue Operations Analyst II",
+      "location": "Remote US",
+      "employmentType": "",
+      "postedAt": "2026-08-18T14:18:21-04:00",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7871460003",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Remote",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "72b65c7a84d93d02ea",
+      "company": "Robinhood",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Customer Experience Associate, Pathways - New Graduates",
+      "location": "Denver, CO; Westlake, TX",
+      "employmentType": "",
+      "postedAt": "2026-08-18T12:27:30-04:00",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8128738?t=gh_src=&gh_jid=8128738",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "New Grad",
+        "Priority A"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "0cd3064907fdeb2642",
+      "company": "Fidelity International",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Portfolio Construction & Risk Analyst",
+      "location": "Hong Kong Office New",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-18T00:00:00.000Z",
+      "url": "https://fil.wd3.myworkdayjobs.com/001/job/Hong-Kong-Office-New/Portfolio-Construction---Risk-Analyst_J68754-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "3f63224e9f024a6241",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Associate Product Specialist (Contract)",
+      "location": "Macquarie Park, New South Wales, Australia",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-18T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Macquarie-Park-New-South-Wales-Australia/Associate-Product-Specialist--Contract-_R74108-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "d4991c8be2410a7d94",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "Product Management Intern",
+      "location": "New York, New York, USA",
+      "employmentType": "",
+      "postedAt": "2026-08-17T10:31:17-04:00",
+      "url": "https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Internship"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "b38c7f0fc3936e32d2",
+      "company": "Warner Bros. Discovery",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Specialist, Business Development (Paid Partnerships)",
+      "location": "NY New York 30 Hudson Yards",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-17T00:00:00.000Z",
+      "url": "https://warnerbros.wd5.myworkdayjobs.com/global/job/NY-New-York-30-Hudson-Yards/Specialist--Business-Development--Paid-Partnerships-_R000107564",
+      "source": "Workday",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 77,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 79,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "71d2d62bf7fefea74f",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Corporate Strategy Consultant, Specialist",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-17T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Corporate-Strategy-Consultant--Specialist_181232-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "a98fb90f98f1b58c8f",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Associate Data Product Owner",
+      "location": "Mexico City, MX",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-16T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Mexico-City-MX/Associate-Data-Product-Owner_330713-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "f5bd1c5492625b0c36",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Officer, Syndicated Loan Operations Analyst, Operations",
+      "location": "Chiyoda-ku Tokyo Japan",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-14T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Chiyoda-ku-Tokyo-Japan/Officer--Syndicated-Loan-Operations-Analyst--Operations_26985102-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "83d1fc14f0442d4172",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Digital Marketing Specialist",
+      "location": "Sydney, New South Wales, Australia",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-14T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Sydney-New-South-Wales-Australia/Digital-Marketing-Specialist_R71998",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "49dacb045fbc5c4195",
+      "company": "Warner Bros. Discovery",
+      "companyTier": "A",
+      "industry": "Media / Entertainment",
+      "title": "Performance Marketing Analyst – Creatives (Mobile)",
+      "location": "CA Burbank Bldg. 750, Second Century, Tower 2; CA San Francisco 153 Kearny Street; MA Needham 117 Kendrick St",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-11T00:00:00.000Z",
+      "url": "https://warnerbros.wd5.myworkdayjobs.com/global/job/CA-Burbank-Bldg-750-Second-Century-Tower-2/Marketing-Analyst_R000107465-1",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "7510aa76b16b79b7be",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate Product Manager, Specialist",
+      "location": "Hyderabad, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-11T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Hyderabad-India/Associate-Product-Manager--Specialist--Core---Tax-Form-and-Delivery_179823",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 79,
+        "freshness": 48
+      }
+    },
+    {
+      "id": "28ca3cb8f9161f1dee",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate, Capital Markets",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-07T01:12:02.946+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/59ae3776-2d0a-41b0-a5b2-ffd1262b92d2",
+      "source": "Ashby",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 79,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "35f2ee9ea494746444",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Business Center Associate",
+      "location": "Warsaw, Mazowieckie, Poland",
+      "employmentType": "",
+      "postedAt": "2026-08-07T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Warsaw-Mazowieckie-Poland/Business-Center-Associate_R74291-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "9806be941f2a1aca88",
+      "company": "Ramp",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Operations Specialist | Customer Setup",
+      "location": "New York, NY (HQ)",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-06T00:16:58.038+00:00",
+      "url": "https://jobs.ashbyhq.com/ramp/4d3197eb-49dc-4827-a1e6-26cf0ff24b55",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 90,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "07b4eb8d13b1d5cc86",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "AI Product Specialist",
+      "location": "Cambridge, MA; New York, NY",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-06T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Cambridge-MA/AI-Product-Specialist_327223-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 90,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "6bc4ff8b6cb1f8ee2e",
+      "company": "S&P Global",
+      "companyTier": "A",
+      "industry": "Information / Data",
+      "title": "Credit Product Specialist",
+      "location": "Toronto, CAN",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-05T00:00:00.000Z",
+      "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Toronto-CAN/Credit-Product-Specialist_330792",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "83f764b6026f6f72af",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Pricing Strategy Analyst",
+      "location": "Cairo, Cairo, Egypt",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-05T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Cairo-Cairo-Egypt/Pricing-Strategy-Analyst_R73141-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "e107f6a621edd859a7",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Marketing Specialist",
+      "location": "Eindhoven, Noord-Brabant, Netherlands",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-05T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Eindhoven-Noord-Brabant-Netherlands/Marketing-Specialist_R69382-1",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "bd1971394714f9d8ef",
+      "company": "Notion",
+      "companyTier": "A",
+      "industry": "Tech / SaaS",
+      "title": "Notino Experience Program Manager - EMEA & APAC, Early Career",
+      "location": "Dublin, Ireland",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-04T15:16:59.087+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/9c2e6e72-6dc0-496c-a705-32d441fa04c7",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Entry Level",
+        "Priority A"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "49ac2f27bc4d18db96",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate, Implementation Consultant",
+      "location": "Singapore, Singapore; SU1 - 33 Jong-ro, Floor 20, Seoul, Jongno District, South Korea, 03159; Sydney, Australia",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-04T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/Singapore-Singapore/Associate--Implementation-Consultant--NE-_R261645",
+      "source": "Workday",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "457e947db864fd2d49",
+      "company": "Fidelity International",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Research Analyst",
+      "location": "Tokyo Office",
+      "employmentType": "Full time",
+      "postedAt": "2026-08-03T00:00:00.000Z",
+      "url": "https://fil.wd3.myworkdayjobs.com/001/job/Tokyo-Office/Research-Analyst_J65282",
+      "source": "Workday",
+      "category": "Research & Insights",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 73,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "e566a0095f2c410ece",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Unit Strategy Analyst, Specialist",
+      "location": "Charlotte, NC; Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-31T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Charlotte-NC/Business-Unit-Strategy-Analyst--Specialist_180940",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 77,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "8aa9821af610545496",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Manager, Specialist",
+      "location": "Malvern, PA; Charlotte, NC; Dallas/Ft. Worth, TX",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-30T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Product-Manager--Specialist_180974",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "d5521321402724047a",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Investment Access Operations Analyst",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-30T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Investment-Access-Senior-Analyst_180177",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "1a249b72c4ee66b9ee",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Specialist",
+      "location": "New York New York United States",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-28T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/New-York-New-York-United-States/Product-Specialist_26977998",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "308a98c1da05968cf2",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Astana  Kazakhstan; Almaty  Kazakhstan",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-23T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Astana--Kazakhstan/KYC-Operations-Analyst_26978365",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Entry Level",
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "80bab9aae2413d7eaa",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Customer Marketing Specialist",
+      "location": "Watford, Hertfordshire, United Kingdom",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-23T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Watford-Hertfordshire-United-Kingdom/Customer-Marketing-Specialist_R69469-1",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "d2805306a5edc30508",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Technical Product Manager, Specialist",
+      "location": "Hyderabad, India",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-20T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Hyderabad-India/Technical-Product-Manager--Specialist_179449",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 90,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "75814d562fef9861a2",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate, Product Manager",
+      "location": "Shanghai, China",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-16T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/Shanghai-China/Associate--Product-Manager_R265341",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 86,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "53fb52b18570886e9d",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "GTM Operations Associate",
+      "location": "New York, New York, USA",
+      "employmentType": "",
+      "postedAt": "2026-07-10T09:48:32-04:00",
+      "url": "https://careers.datadoghq.com/detail/8049521/?gh_jid=8049521",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 80,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "aded15aac4d71dd7b4",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Field Development Associate",
+      "location": "Heerlen, Limburg, Netherlands; Brussels, Brussels, Belgium; Eindhoven, Noord-Brabant, Netherlands; Paris, Île de France, France",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-08T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Heerlen-Limburg-Netherlands/Field-Development-Associate_R70169-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "52ec931ae04c512a02",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Technical Product Manager, Specialist",
+      "location": "London, United Kingdom",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-06T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/London-United-Kingdom/Technical-Product-Manager--Specialist_179907",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "cb950b5bd6c1bcb139",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Data Analyst, Specialist",
+      "location": "Malvern, PA",
+      "employmentType": "Full time",
+      "postedAt": "2026-06-18T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Data-Analyst--Specialist_175423-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "c5ec201b1ab3c9133d",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Pune Maharashtra India",
+      "employmentType": "",
+      "postedAt": "2026-06-02T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Pune-Maharashtra-India/KYC-Operations-Analyst_26947874",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "677b83e07467d78fbe",
+      "company": "Databricks",
+      "companyTier": "A",
+      "industry": "Tech / AI",
+      "title": "Business Operations Associate",
+      "location": "Bengaluru, India; Mumbai, India",
+      "employmentType": "",
+      "postedAt": "2026-05-22T03:30:56-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482370002",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 87,
+      "scoreBreakdown": {
+        "roleFit": 98,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "f48bc72df9404f8e5e",
+      "company": "Affirm",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Development Associate",
+      "location": "Remote US",
+      "employmentType": "",
+      "postedAt": "2026-05-18T10:22:09-04:00",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7712707003",
+      "source": "Greenhouse",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship",
+        "Remote",
+        "Priority A"
+      ],
+      "matchScore": 75,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "98a64bd46de5fe7910",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "GTM Strategy and Operations Associate",
+      "location": "New York, New York, USA",
+      "employmentType": "",
+      "postedAt": "2026-04-27T15:36:43-04:00",
+      "url": "https://careers.datadoghq.com/detail/7843331/?gh_jid=7843331",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 98,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 70,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "802e2ab3919e3b9b03",
+      "company": "Medtronic",
+      "companyTier": "B",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Specialist",
+      "location": "Tokyo, Tokyo, Japan",
+      "employmentType": "Full time",
+      "postedAt": "2026-04-07T00:00:00.000Z",
+      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Tokyo-Tokyo-Japan/Product-Specialist--PV---Tokyo-_R63413-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "157ccc5379f472f65e",
+      "company": "Notion",
+      "companyTier": "A",
+      "industry": "Tech / SaaS",
+      "title": "Business Development Representative, New York",
+      "location": "New York, New York",
+      "employmentType": "FullTime",
+      "postedAt": "2026-04-02T21:00:55.755+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/05e14247-17c4-4e98-9a13-53828a4e2f13",
+      "source": "Ashby",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Entry Level",
+        "Priority A"
+      ],
+      "matchScore": 76,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "af60865f87c09e30e0",
+      "company": "West Monroe",
+      "companyTier": "A",
+      "industry": "Consulting",
+      "title": "Manager, Transaction Services, C&IP M&A Value Creation Team",
+      "location": "Chicago; Dallas; Minneapolis; New York",
+      "employmentType": "",
+      "postedAt": "2026-04-01T16:48:50-04:00",
+      "url": "https://westmonroe.com/careers/job-details-experienced-professionals?gh_jid=5800562004",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 90,
+        "companyFit": 95,
+        "careerFit": 62,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "dab03556f6d16c642a",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "DLF CYBERCITY 12B",
+      "employmentType": "Full time",
+      "postedAt": "2026-03-19T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/DLF-CYBERCITY-12B/KYC-Operations-Analyst_25915007",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Entry Level",
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "28b41ef9f7aab99889",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "1/124, SHIVAJI GARDENS, MOONLI",
+      "employmentType": "Full time",
+      "postedAt": "2026-03-18T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/1124-SHIVAJI-GARDENS-MOONLI/KYC-Operations-Analyst_26947724",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Entry Level",
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "54476df09478a269ff",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Analyst - AVP",
+      "location": "DLF CYBERCITY 12B",
+      "employmentType": "Full time",
+      "postedAt": "2026-02-16T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/DLF-CYBERCITY-12B/Product-Analyst---AVP_26930808",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 98,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "966516767045226087",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Business Development Intermediate Analyst - C09",
+      "location": "Playa Del Carmen Quintana Roo Mexico",
+      "employmentType": "Full time",
+      "postedAt": "2026-01-28T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Playa-Del-Carmen-Quintana-Roo-Mexico/Business-Development-Intermediate-Analyst---C09_26935119-1",
+      "source": "Workday",
+      "category": "Partnerships & BD",
+      "tags": [],
+      "matchScore": 71,
+      "scoreBreakdown": {
+        "roleFit": 78,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "c5300ebe2c8927035f",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "Customer Success Associate - Commercial Accounts",
+      "location": "Sydney, Australia",
+      "employmentType": "",
+      "postedAt": "2026-01-20T21:53:44-05:00",
+      "url": "https://careers.datadoghq.com/detail/7548129/?gh_jid=7548129",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "0245655cb68f665275",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst - International Personal Banking, Wealth Operations",
+      "location": "Singapore  Singapore",
+      "employmentType": "Full time",
+      "postedAt": "2026-01-09T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Singapore--Singapore/KYC-Operations-Analyst-2---International-Personal-Banking--Wealth-Operations_26930576",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "672e049e12ccaa7772",
+      "company": "Databricks",
+      "companyTier": "A",
+      "industry": "Tech / AI",
+      "title": "Program Analyst, Legal Ops",
+      "location": "Bellevue, Washington; Denver, Colorado; Seattle, Washington; Washington, D.C.",
+      "employmentType": "",
+      "postedAt": "2025-10-24T18:21:38-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8199399002",
+      "source": "Greenhouse",
+      "category": "Program Management",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "0841dc111e342075d3",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Mumbai Maharashtra India",
+      "employmentType": "Full time",
+      "postedAt": "2025-09-17T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Mumbai-Maharashtra-India/KYC-Operations-Analyst-1---Mumbai_25883645-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "511b87c6d57ccb7a01",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Affluent Cards Product Specialist - C14 - SINGAPORE",
+      "location": "Singapore  Singapore",
+      "employmentType": "Full time",
+      "postedAt": "2025-07-25T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Singapore--Singapore/Affluent-Cards-Product-Specialist---C14---SINGAPORE_25889362",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 81,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "0ac31231da8cb33cb2",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - Korean Speaker",
+      "location": "Taguig  Philippines",
+      "employmentType": "Full time",
+      "postedAt": "2025-07-18T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taguig--Philippines/Program-Management-Analyst---Korean-Speaker_25887624",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "d8dd1eb4f4e0ae2f21",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - C10 - DALIAN",
+      "location": "Dalian Shanghai China",
+      "employmentType": "Full time",
+      "postedAt": "2025-02-05T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Dalian-Shanghai-China/Program-Management-Analyst---C10---DALIAN_25823271-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 76,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "e7657df11a21144603",
+      "company": "Databricks",
+      "companyTier": "A",
+      "industry": "Tech / AI",
+      "title": "Associate Product Manager, New Grad (2027 Start)",
+      "location": "Bellevue, Washington; Mountain View, California; San Francisco, California",
+      "employmentType": "",
+      "postedAt": "2024-08-08T18:52:06-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 70,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "3ea3bf1cd612dcaedc",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "Customer Success Associate",
+      "location": "Tokyo, Japan",
+      "employmentType": "",
+      "postedAt": "2024-06-07T12:53:38-04:00",
+      "url": "https://careers.datadoghq.com/detail/6009779/?gh_jid=6009779",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [],
+      "matchScore": 72,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "b58778cf150329eceb",
+      "company": "Datadog",
+      "companyTier": "B",
+      "industry": "Tech / SaaS",
+      "title": "Customer Success Associate",
+      "location": "Tokyo, Japan",
+      "employmentType": "",
+      "postedAt": "2023-12-27T22:26:19-05:00",
+      "url": "https://careers.datadoghq.com/detail/5486716/?gh_jid=5486716",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74,
+      "scoreBreakdown": {
+        "roleFit": 80,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
       }
     }
   ]
