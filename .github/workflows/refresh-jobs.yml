@@ -1,0 +1,32 @@
+name: Refresh job feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch newest jobs
+        run: node scripts/fetch-jobs.mjs
+
+      - name: Commit updated feed
+        run: |
+          git config user.name "recruiting-radar-bot"
+          git config user.email "recruiting-radar-bot@users.noreply.github.com"
+          git add data/jobs.json
+          git diff --cached --quiet || git commit -m "chore: refresh jobs"
+          git push

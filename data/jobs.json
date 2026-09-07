@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-09-07T08:00:00.000Z",
+  "count": 4,
+  "jobs": [
+    {
+      "id": "demo-1",
+      "company": "Example Company",
+      "title": "Associate Product Manager — New Grad",
+      "location": "New York, NY",
+      "employmentType": "Full-time",
+      "postedAt": "2026-09-07T06:30:00.000Z",
+      "url": "https://example.com",
+      "source": "Demo",
+      "category": "Product Management",
+      "tags": ["New Grad", "Entry Level"],
+      "matchScore": 95
+    },
+    {
+      "id": "demo-2",
+      "company": "Example Labs",
+      "title": "Strategy & Operations Analyst",
+      "location": "San Francisco, CA",
+      "employmentType": "Full-time",
+      "postedAt": "2026-09-06T23:00:00.000Z",
+      "url": "https://example.com",
+      "source": "Demo",
+      "category": "Strategy & Operations",
+      "tags": ["Entry Level"],
+      "matchScore": 91
+    },
+    {
+      "id": "demo-3",
+      "company": "Example Advisory",
+      "title": "Technology Consulting Analyst",
+      "location": "Chicago, IL",
+      "employmentType": "Full-time",
+      "postedAt": "2026-09-05T16:00:00.000Z",
+      "url": "https://example.com",
+      "source": "Demo",
+      "category": "Consulting",
+      "tags": ["Entry Level"],
+      "matchScore": 89
+    },
+    {
+      "id": "demo-4",
+      "company": "Example Platform",
+      "title": "Product Marketing Associate",
+      "location": "Remote — US",
+      "employmentType": "Full-time",
+      "postedAt": "2026-09-04T11:00:00.000Z",
+      "url": "https://example.com",
+      "source": "Demo",
+      "category": "Marketing & GTM",
+      "tags": ["Entry Level", "Remote"],
+      "matchScore": 86
+    }
+  ]
+}

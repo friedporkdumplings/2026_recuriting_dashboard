@@ -1,0 +1,11 @@
+{
+  "greenhouse": [
+    { "company": "Databricks", "board": "databricks" }
+  ],
+  "lever": [],
+  "ashby": [
+    { "company": "Notion", "board": "notion" },
+    { "company": "Zip", "board": "zip" },
+    { "company": "Sierra", "board": "Sierra" }
+  ]
+}

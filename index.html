@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jae's Recruiting Radar</title>
+  <meta name="description" content="A recruiting dashboard for early-career product, strategy, consulting, marketing, innovation, and operations roles." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div>
+        <div class="brand-row">
+          <div class="logo">JR</div>
+          <div>
+            <h1>Recruiting Radar</h1>
+            <p>May 2027 · New Grad</p>
+          </div>
+        </div>
+
+        <nav class="nav" id="categoryNav"></nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <button class="ghost full" id="exportBtn">Export saved jobs</button>
+        <p id="refreshStamp">Waiting for data…</p>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">GOOD AFTERNOON, JAE</p>
+          <h2>Find the newest roles before everyone else.</h2>
+        </div>
+        <div class="header-actions">
+          <button class="ghost" id="showSavedBtn">Saved</button>
+          <button class="primary" id="showAppliedBtn">Applied</button>
+        </div>
+      </header>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="toolbar card">
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search title, company, location…" />
+        </div>
+        <select id="freshnessFilter" aria-label="Freshness">
+          <option value="all">Any date</option>
+          <option value="1">Past 24 hours</option>
+          <option value="3">Past 3 days</option>
+          <option value="7">Past 7 days</option>
+          <option value="14">Past 14 days</option>
+          <option value="30">Past 30 days</option>
+        </select>
+        <select id="locationFilter" aria-label="Location">
+          <option value="all">All locations</option>
+          <option value="new york">New York</option>
+          <option value="california">California</option>
+          <option value="remote">Remote</option>
+          <option value="chicago">Chicago</option>
+          <option value="boston">Boston</option>
+          <option value="seattle">Seattle</option>
+          <option value="austin">Austin</option>
+          <option value="shanghai">Shanghai</option>
+          <option value="london">London</option>
+          <option value="canada">Canada</option>
+        </select>
+        <select id="sortFilter" aria-label="Sort jobs">
+          <option value="newest">Newest first</option>
+          <option value="match">Best match</option>
+          <option value="company">Company A–Z</option>
+        </select>
+      </section>
+
+      <section class="quick-filters" id="quickFilters"></section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">LIVE FEED</p>
+          <h3 id="feedTitle">All matching jobs</h3>
+        </div>
+        <p id="resultCount"></p>
+      </section>
+
+      <section class="jobs" id="jobs"></section>
+      <div class="empty hidden" id="emptyState">
+        <h3>No matching roles yet.</h3>
+        <p>Try widening the filters, or add more ATS sources in <code>config/sources.json</code>.</p>
+      </div>
+    </main>
+  </div>
+
+  <template id="jobTemplate">
+    <article class="job-card card">
+      <div class="job-main">
+        <div class="company-mark"></div>
+        <div class="job-copy">
+          <div class="job-topline">
+            <span class="company"></span>
+            <span class="badge age"></span>
+            <span class="badge source"></span>
+          </div>
+          <h4 class="title"></h4>
+          <p class="meta"></p>
+          <div class="tags"></div>
+        </div>
+      </div>
+      <div class="job-side">
+        <div class="match-wrap">
+          <span class="match-label">MATCH</span>
+          <strong class="match"></strong>
+        </div>
+        <div class="job-actions">
+          <button class="icon-btn save" title="Save job">☆</button>
+          <button class="icon-btn hide-job" title="Hide job">×</button>
+          <a class="apply-btn" target="_blank" rel="noopener noreferrer">View role ↗</a>
+        </div>
+        <button class="mark-applied">Mark applied</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
