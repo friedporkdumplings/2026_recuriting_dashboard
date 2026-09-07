@@ -1,58 +1,810 @@
 {
-  "generatedAt": "2026-09-07T08:00:00.000Z",
-  "count": 4,
+  "generatedAt": "2026-09-07T08:31:52.907Z",
+  "count": 54,
   "jobs": [
     {
-      "id": "demo-1",
-      "company": "Example Company",
-      "title": "Associate Product Manager — New Grad",
-      "location": "New York, NY",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-07T06:30:00.000Z",
-      "url": "https://example.com",
-      "source": "Demo",
-      "category": "Product Management",
-      "tags": ["New Grad", "Entry Level"],
-      "matchScore": 95
-    },
-    {
-      "id": "demo-2",
-      "company": "Example Labs",
-      "title": "Strategy & Operations Analyst",
-      "location": "San Francisco, CA",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-06T23:00:00.000Z",
-      "url": "https://example.com",
-      "source": "Demo",
-      "category": "Strategy & Operations",
-      "tags": ["Entry Level"],
-      "matchScore": 91
-    },
-    {
-      "id": "demo-3",
-      "company": "Example Advisory",
-      "title": "Technology Consulting Analyst",
-      "location": "Chicago, IL",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-05T16:00:00.000Z",
-      "url": "https://example.com",
-      "source": "Demo",
-      "category": "Consulting",
-      "tags": ["Entry Level"],
-      "matchScore": 89
-    },
-    {
-      "id": "demo-4",
-      "company": "Example Platform",
-      "title": "Product Marketing Associate",
-      "location": "Remote — US",
-      "employmentType": "Full-time",
-      "postedAt": "2026-09-04T11:00:00.000Z",
-      "url": "https://example.com",
-      "source": "Demo",
+      "id": "f2ce70b75ceb6904ed",
+      "company": "Databricks",
+      "title": "Recruiter, GTM & Field Engineering",
+      "location": "London, United Kingdom",
+      "employmentType": "",
+      "postedAt": "2026-09-04T12:50:44-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8771700002",
+      "source": "Greenhouse",
       "category": "Marketing & GTM",
-      "tags": ["Entry Level", "Remote"],
+      "tags": [
+        "Entry Level"
+      ],
+      "matchScore": 78
+    },
+    {
+      "id": "ddb156271a9657bfae",
+      "company": "Databricks",
+      "title": "Delivery Solutions Architect",
+      "location": "Seoul, South Korea",
+      "employmentType": "",
+      "postedAt": "2026-09-04T07:31:21-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482406002",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "287d9918e06b1ff174",
+      "company": "Databricks",
+      "title": "Workplace Services Manager",
+      "location": "San Francisco, California",
+      "employmentType": "",
+      "postedAt": "2026-09-03T21:46:56-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8603390002",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "42b540f0504d61aa63",
+      "company": "Databricks",
+      "title": "Lead GTM Enablement & Scale Architect, Product Enablement",
+      "location": "United States",
+      "employmentType": "",
+      "postedAt": "2026-09-03T21:25:20-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8644006002",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "515e7693ffa3e1e2a4",
+      "company": "Databricks",
+      "title": "Manager, Field Engineering",
+      "location": "Sao Paulo, Brazil",
+      "employmentType": "",
+      "postedAt": "2026-09-03T16:16:26-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8589185002",
+      "source": "Greenhouse",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 58
+    },
+    {
+      "id": "677b83e07467d78fbe",
+      "company": "Databricks",
+      "title": "Business Operations Associate",
+      "location": "Bengaluru, India; Mumbai, India",
+      "employmentType": "",
+      "postedAt": "2026-09-02T22:48:07-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482370002",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
       "matchScore": 86
+    },
+    {
+      "id": "73ad593b6a1bf3d0d3",
+      "company": "Sierra",
+      "title": "GTM Operations, Agent Development (London)",
+      "location": "London",
+      "employmentType": "FullTime",
+      "postedAt": "2026-09-02T21:42:11.259+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/d8baf20a-4c20-496d-9f0c-bc47a25fddb8",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "3060b704eb2c7a6db6",
+      "company": "Databricks",
+      "title": "Leader of GTM Technical & Product Execution Excellence",
+      "location": "USCA",
+      "employmentType": "",
+      "postedAt": "2026-09-02T17:16:24-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8486165002",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "304d235df26d4c08bd",
+      "company": "Databricks",
+      "title": "Technical Program Manager",
+      "location": "Singapore",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:52:14-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8654620002",
+      "source": "Greenhouse",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 56
+    },
+    {
+      "id": "1ba6b2d635de2e3670",
+      "company": "Databricks",
+      "title": "AI Engineer — GTM Analytics",
+      "location": "United States",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:48:35-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638847002",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "b732169e5cb8d37af7",
+      "company": "Databricks",
+      "title": "Field Technical Program Manager",
+      "location": "Seoul, South Korea",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:39:43-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8598531002",
+      "source": "Greenhouse",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 68
+    },
+    {
+      "id": "2efb409d86fc7b8310",
+      "company": "Databricks",
+      "title": "Cyber Security GTM Leader",
+      "location": "Remote - California; Remote - New York",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:36:55-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8582312002",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 64
+    },
+    {
+      "id": "3a8bd3198699f19238",
+      "company": "Databricks",
+      "title": "Lead GTM Enablement & Scale Architect, Product Enablement",
+      "location": "United States",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:27:08-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8548502002",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "cba3d0dd4058f449e0",
+      "company": "Databricks",
+      "title": "Field Technical Program Manager",
+      "location": "Munich, Germany",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:26:36-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8540665002",
+      "source": "Greenhouse",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 68
+    },
+    {
+      "id": "f2c2aa0ab0776a431e",
+      "company": "Databricks",
+      "title": "Manager, Strategy & Operations ",
+      "location": "Bengaluru, India; Mumbai, India",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:23:03-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482368002",
+      "source": "Greenhouse",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "0b39fe47d709e5c2e3",
+      "company": "Databricks",
+      "title": "Go-To-Market (GTM) Digital Natives Program Leader",
+      "location": "San Francisco, California; United States",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:14:07-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8356420002",
+      "source": "Greenhouse",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "7fbe42b9db444a3b58",
+      "company": "Databricks",
+      "title": "Sr Product Manager, Employee Experience",
+      "location": "Mountain View, California; San Francisco, California",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:11:36-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8203285002",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "672e049e12ccaa7772",
+      "company": "Databricks",
+      "title": "Program Analyst, Legal Ops",
+      "location": "Bellevue, Washington; Denver, Colorado; Seattle, Washington; Washington, D.C.",
+      "employmentType": "",
+      "postedAt": "2026-09-02T00:11:29-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8199399002",
+      "source": "Greenhouse",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 72
+    },
+    {
+      "id": "a87c72f23a8f408374",
+      "company": "Notion",
+      "title": "Chief of Staff, Sales",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-09-01T22:32:45.668+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/c5c69246-74db-4960-a0e0-7945be6c30ae",
+      "source": "Ashby",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "6b46881f75f25a6f2e",
+      "company": "Zip",
+      "title": "Technical Program Manager",
+      "location": "San Francisco",
+      "employmentType": "FullTime",
+      "postedAt": "2026-09-01T14:47:54.025+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/d5abddc0-e7f3-4966-ab53-3e70e20da61d",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "3fa5688d4566687634",
+      "company": "Notion",
+      "title": "Technical Program Manager, Finance Systems & Compliance",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-24T22:54:52.599+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/7ec83090-7c5b-4691-bf20-e11e892cede1",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 60
+    },
+    {
+      "id": "6d77a9046bde551d38",
+      "company": "Notion",
+      "title": "Workflow + Process Designer (AI Enablement)",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-24T22:48:20.355+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/c799f1f0-0e7b-4eac-98ce-44223130f2b0",
+      "source": "Ashby",
+      "category": "Innovation & AI",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "eb33886e0bef683688",
+      "company": "Databricks",
+      "title": "Product Operations Manager",
+      "location": "Costa Rica",
+      "employmentType": "",
+      "postedAt": "2026-08-24T16:54:58-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8720202002",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 72
+    },
+    {
+      "id": "e7657df11a21144603",
+      "company": "Databricks",
+      "title": "Associate Product Manager, New Grad (2027 Start)",
+      "location": "Bellevue, Washington; Mountain View, California; San Francisco, California",
+      "employmentType": "",
+      "postedAt": "2026-08-18T13:17:07-04:00",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002",
+      "source": "Greenhouse",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Internship"
+      ],
+      "matchScore": 92
+    },
+    {
+      "id": "04426d74c30ffb4b79",
+      "company": "Sierra",
+      "title": "Operations Manager, Product & Engineering",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-10T13:54:19.158+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/cc6e10fd-9420-446c-915d-6edac6ca93ef",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "800eb40e22df35b56a",
+      "company": "Sierra",
+      "title": "Operations Manager, Product & Engineering",
+      "location": "London",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-10T13:49:03.588+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/09d3d084-02f2-49a2-acb9-d1fe380b817c",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "bd1971394714f9d8ef",
+      "company": "Notion",
+      "title": "Notino Experience Program Manager - EMEA & APAC, Early Career",
+      "location": "Dublin, Ireland",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-04T15:16:59.087+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/9c2e6e72-6dc0-496c-a705-32d441fa04c7",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Entry Level"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "1315a87fd85dbbb3d1",
+      "company": "Notion",
+      "title": "GTM Recruiter, Tokyo",
+      "location": "Tokyo, Japan ",
+      "employmentType": "FullTime",
+      "postedAt": "2026-08-04T05:07:37.576+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/86138d2b-2e7a-4cbb-b108-549280cc4f03",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "168d4299fdffd7e57f",
+      "company": "Zip",
+      "title": "Marketing Development Representative",
+      "location": "Australia",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-27T21:15:00.923+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/b495a25d-6124-4386-abcf-1d5a645bcf38",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "d1aa8fd9b195b9718d",
+      "company": "Notion",
+      "title": "Technical Quality Program Manager",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-27T17:17:46.939+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/9cded2a2-2666-4108-a2bb-23cb63c92a24",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "d32e2af0a4f3fd73c7",
+      "company": "Zip",
+      "title": "Marketing Development Representative",
+      "location": "London",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-21T16:56:51.213+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/a41a4a91-74b8-4846-b615-ed308e84b1be",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "780071390e46bf2d6e",
+      "company": "Sierra",
+      "title": "GTM Operations, Agent Development",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-21T04:06:36.950+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/85e1d0f9-e0d5-4a82-9b30-fa4372e32872",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "314145f6cd8558b2e4",
+      "company": "Sierra",
+      "title": "SEO Manager",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-20T05:28:43.869+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/b81e10f9-96cc-4e97-861b-8dc0fc5a6ddd",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "a07519e1c4ced3f841",
+      "company": "Sierra",
+      "title": "Performance Marketing Manager, International",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-20T05:28:10.330+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/cd2656a7-cabe-40ac-8cab-6d7668b3ed6b",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "7e05612b724895ef1c",
+      "company": "Notion",
+      "title": "Regional Partner Manager, UK",
+      "location": "London, United Kingdom",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-15T14:33:12.063+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/dc87f28a-5666-4c51-b1f5-f539c6a5ce2b",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "6419a0450bc9378c43",
+      "company": "Zip",
+      "title": "VP, Namer Strategic Sales",
+      "location": "New York City",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-14T15:48:26.333+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/977e38c3-8614-415a-a082-0bd30c72eaa7",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "329162df3d268b90fc",
+      "company": "Sierra",
+      "title": "Brand Visual Designer",
+      "location": "Singapore",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-08T19:42:13.804+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/74f6ab38-3588-4486-b837-05ea432eac0e",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "8424ff85b21b8d544a",
+      "company": "Sierra",
+      "title": "Brand Visual Designer",
+      "location": "London",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-03T14:34:11.252+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/ab678265-1a53-4800-910c-9b128a7f3e81",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "5231da4ca9c3a44f97",
+      "company": "Notion",
+      "title": "Product Designer",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-02T17:18:41.823+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/d177d052-ef57-4900-acf2-d58e9eded620",
+      "source": "Ashby",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 58
+    },
+    {
+      "id": "0c57fd585cb108c3e8",
+      "company": "Sierra",
+      "title": "Commercial Counsel",
+      "location": "New York, NY",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-02T00:49:40.585+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/b61f6eb8-2485-4ba8-b569-fa26eba5a6e8",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "1f15c1a5f693b3201c",
+      "company": "Notion",
+      "title": "Business Development Manager, Product & Platform",
+      "location": "New York, New York",
+      "employmentType": "FullTime",
+      "postedAt": "2026-07-02T00:13:00.462+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/f603aedb-1454-4a75-b2f0-a3afb2a8f973",
+      "source": "Ashby",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "cdd02800d6e16e89de",
+      "company": "Notion",
+      "title": "Recruiting Program Manager",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-06-30T17:47:18.849+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/6b9d5c16-450a-42e4-af2a-d492460ca811",
+      "source": "Ashby",
+      "category": "Program Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 62
+    },
+    {
+      "id": "d83a9d4e8eb3e593d5",
+      "company": "Zip",
+      "title": "Technical Solutions Consultant - AUS",
+      "location": "Sydney",
+      "employmentType": "FullTime",
+      "postedAt": "2026-06-23T18:30:49.803+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/3b9b4644-1b15-465a-afe8-00a6fbc1600e",
+      "source": "Ashby",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 58
+    },
+    {
+      "id": "730d5ebfdb25e71902",
+      "company": "Notion",
+      "title": "Global Strategic Partner Manager",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-06-03T20:29:28.226+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/ed0afe5b-df69-400c-bf48-81d2269da4fd",
+      "source": "Ashby",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 86
+    },
+    {
+      "id": "3b073adc1ed94a6e51",
+      "company": "Notion",
+      "title": "Regional Partner Manager, France",
+      "location": "Paris, France",
+      "employmentType": "FullTime",
+      "postedAt": "2026-05-28T10:59:38.180+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/bdd71456-876d-4ec2-96cf-de8a401e3e19",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "e3217f41151c135524",
+      "company": "Notion",
+      "title": "Regional Partner Manager, DACH",
+      "location": "Munich, Germany",
+      "employmentType": "FullTime",
+      "postedAt": "2026-05-28T09:58:07.555+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/6ba79c2f-1f18-49b6-acaa-53100e105556",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 76
+    },
+    {
+      "id": "b0552c91fc67783db2",
+      "company": "Sierra",
+      "title": "Product Manager, Infrastructure",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-05-01T03:10:31.648+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/1e052261-0c89-4ccb-abfa-3820a1596a6e",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "87319c6c84e6dba3a7",
+      "company": "Zip",
+      "title": "Product Manager, Onboarding",
+      "location": "Toronto",
+      "employmentType": "FullTime",
+      "postedAt": "2026-04-30T23:26:12.650+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/c163d70c-89cc-406a-8f39-76b922eb7da2",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 60
+    },
+    {
+      "id": "157ccc5379f472f65e",
+      "company": "Notion",
+      "title": "Business Development Representative, New York",
+      "location": "New York, New York",
+      "employmentType": "FullTime",
+      "postedAt": "2026-04-02T21:00:55.755+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/05e14247-17c4-4e98-9a13-53828a4e2f13",
+      "source": "Ashby",
+      "category": "Partnerships & BD",
+      "tags": [
+        "Entry Level"
+      ],
+      "matchScore": 84
+    },
+    {
+      "id": "03be6794e9ce52a4d4",
+      "company": "Zip",
+      "title": "Technical Integrations Consultant ",
+      "location": "London",
+      "employmentType": "FullTime",
+      "postedAt": "2026-03-06T19:28:14.157+00:00",
+      "url": "https://jobs.ashbyhq.com/zip/6318ac0c-51f5-4fc0-acee-78e6578318f5",
+      "source": "Ashby",
+      "category": "Customer & Solutions",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 58
+    },
+    {
+      "id": "8e5a24df1578519176",
+      "company": "Notion",
+      "title": "Product Operations Manager",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2026-02-12T18:31:04.052+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/8b82e596-e828-45db-94d5-b76acc89e749",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74
+    },
+    {
+      "id": "9f37a310d869919930",
+      "company": "Sierra",
+      "title": "GTM Engineer",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2026-01-29T19:00:05.861+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/1c991675-099f-49dd-9b9b-bd3c9111e65c",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 60
+    },
+    {
+      "id": "49ea7b5308c2b0d348",
+      "company": "Sierra",
+      "title": "Commercial Counsel",
+      "location": "San Francisco, CA",
+      "employmentType": "FullTime",
+      "postedAt": "2025-11-17T21:57:25.217+00:00",
+      "url": "https://jobs.ashbyhq.com/Sierra/e9f85c28-882b-4fc6-b7e1-b24b17b54599",
+      "source": "Ashby",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 72
+    },
+    {
+      "id": "c4f571d03c415d7338",
+      "company": "Notion",
+      "title": "Forward Deployed Engineer, GTM, AMER",
+      "location": "San Francisco, California",
+      "employmentType": "FullTime",
+      "postedAt": "2025-08-07T23:35:32.716+00:00",
+      "url": "https://jobs.ashbyhq.com/notion/10437426-14c8-4c45-8075-67959ce80393",
+      "source": "Ashby",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 64
     }
   ]
 }
