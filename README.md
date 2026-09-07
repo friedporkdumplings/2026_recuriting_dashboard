@@ -1,4 +1,4 @@
-# Jae's Recruiting Radar
+# Recruiting Radar
 
 A static GitHub Pages recruiting dashboard with an automated GitHub Actions job feed.
 
