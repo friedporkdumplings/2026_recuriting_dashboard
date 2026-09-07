@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-07T09:15:44.250Z",
-  "count": 355,
-  "rawCount": 4279,
+  "generatedAt": "2026-09-07T09:25:24.734Z",
+  "count": 341,
+  "rawCount": 4230,
   "sourceCount": 43,
   "directSourceCount": 37,
   "communityFeedCount": 6,
@@ -13,301 +13,301 @@
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 204,
-      "ms": 377
+      "ms": 473
     },
     {
       "company": "Airtable",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 16,
-      "ms": 124
+      "ms": 61
     },
     {
       "company": "ApplyGuy — 2027 Product Internships",
       "ats": "Community JSON",
       "status": "ok",
       "fetched": 0,
-      "ms": 119
+      "ms": 8
     },
     {
       "company": "BlackRock",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 51,
-      "ms": 8312
+      "fetched": 50,
+      "ms": 14943
     },
     {
       "company": "Bristol Myers Squibb",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25616
+      "ms": 23400
     },
     {
       "company": "Capital One",
       "ats": "Workday",
       "status": "ok",
       "fetched": 15,
-      "ms": 2943
+      "ms": 3538
     },
     {
       "company": "Citi",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 111,
-      "ms": 33225
+      "fetched": 58,
+      "ms": 29764
     },
     {
       "company": "Comcast",
       "ats": "Workday",
       "status": "ok",
       "fetched": 12,
-      "ms": 4081
+      "ms": 3144
     },
     {
       "company": "CVS Health",
       "ats": "Workday",
       "status": "ok",
       "fetched": 61,
-      "ms": 10450
+      "ms": 15554
     },
     {
       "company": "Databricks",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 868,
-      "ms": 1076
+      "fetched": 869,
+      "ms": 1017
     },
     {
       "company": "Datadog",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 444,
-      "ms": 561
+      "ms": 402
     },
     {
       "company": "Disney",
       "ats": "Workday",
       "status": "ok",
       "fetched": 37,
-      "ms": 7126
+      "ms": 8994
     },
     {
       "company": "Fidelity International",
       "ats": "Workday",
       "status": "ok",
       "fetched": 20,
-      "ms": 12568
+      "ms": 12722
     },
     {
       "company": "Figma",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 157,
-      "ms": 314
+      "ms": 369
     },
     {
       "company": "Jobright — Product Management Internships",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 100,
-      "ms": 100
+      "ms": 6
     },
     {
       "company": "Jobright — Product Management New Grad",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 761,
-      "ms": 95
+      "ms": 49
     },
     {
       "company": "Johnson & Johnson",
       "ats": "Workday",
       "status": "ok",
       "fetched": 33,
-      "ms": 6347
+      "ms": 7541
     },
     {
       "company": "Mastercard",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 26,
-      "ms": 12265
+      "fetched": 27,
+      "ms": 11218
     },
     {
       "company": "Medtronic",
       "ats": "Workday",
       "status": "ok",
       "fetched": 75,
-      "ms": 24760
+      "ms": 23261
     },
     {
       "company": "Morgan Stanley",
       "ats": "Workday",
       "status": "ok",
       "fetched": 58,
-      "ms": 19358
+      "ms": 29227
     },
     {
       "company": "Nike",
       "ats": "Workday",
       "status": "ok",
       "fetched": 25,
-      "ms": 6743
+      "ms": 5588
     },
     {
       "company": "Notion",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 132,
-      "ms": 156
+      "ms": 157
     },
     {
       "company": "PepsiCo",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 26117
+      "ms": 23020
     },
     {
       "company": "PM Recruiting Hub — New Grad",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 5,
-      "ms": 127
+      "ms": 79
     },
     {
       "company": "PM Recruiting Hub — Product Management",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 6,
-      "ms": 181
+      "ms": 57
     },
     {
       "company": "PM Recruiting Hub — Product Operations",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 0,
-      "ms": 130
+      "ms": 58
     },
     {
       "company": "Postman",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 63,
-      "ms": 202
+      "ms": 381
     },
     {
       "company": "Procter & Gamble",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25872
+      "ms": 22983
     },
     {
       "company": "Ramp",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 142,
-      "ms": 144
+      "ms": 225
     },
     {
       "company": "Robinhood",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 128,
-      "ms": 269
+      "ms": 425
     },
     {
       "company": "S&P Global",
       "ats": "Workday",
       "status": "ok",
       "fetched": 62,
-      "ms": 23362
+      "ms": 25489
     },
     {
       "company": "Sierra",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 212,
-      "ms": 251
+      "ms": 115
     },
     {
       "company": "Starbucks",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 23641
+      "ms": 25973
     },
     {
       "company": "Target",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 30,
-      "ms": 14822
+      "fetched": 32,
+      "ms": 16823
     },
     {
       "company": "Thomson Reuters",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 29,
-      "ms": 13372
+      "fetched": 30,
+      "ms": 20492
     },
     {
       "company": "Unilever",
       "ats": "Workday",
       "status": "ok",
       "fetched": 30,
-      "ms": 16319
+      "ms": 15642
     },
     {
       "company": "UnitedHealth Group / Optum",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 24012
+      "ms": 24931
     },
     {
       "company": "Vanguard",
       "ats": "Workday",
       "status": "ok",
       "fetched": 71,
-      "ms": 16784
+      "ms": 15809
     },
     {
       "company": "Walmart",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 23219
+      "ms": 25675
     },
     {
       "company": "Warner Bros. Discovery",
       "ats": "Workday",
       "status": "ok",
       "fetched": 55,
-      "ms": 12356
+      "ms": 14256
     },
     {
       "company": "West Monroe",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 0,
-      "ms": 59
+      "ms": 48
     },
     {
       "company": "West Monroe",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 118,
-      "ms": 279
+      "ms": 408
     },
     {
       "company": "Zip",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 122,
-      "ms": 100
+      "ms": 121
     }
   ],
   "jobs": [
@@ -2300,30 +2300,6 @@
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 78
-      }
-    },
-    {
-      "id": "c5e794cad4c1031ab2",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Regional Marketing Lead Analyst",
-      "location": "New York New York United States",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-04T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/New-York-New-York-United-States/Regional-Marketing-Lead-Analyst_26991449",
-      "source": "Workday",
-      "category": "Marketing & GTM",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 84,
-        "experienceFit": 85,
         "companyFit": 82,
         "careerFit": 88,
         "freshness": 78
@@ -4387,31 +4363,6 @@
       }
     },
     {
-      "id": "fd2f92973a7a15d69f",
-      "company": "Thomson Reuters",
-      "companyTier": "A",
-      "industry": "Information / Data",
-      "title": "Partner Activation and Acceleration Specialist",
-      "location": "Mexico, Mexico City",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-02T00:00:00.000Z",
-      "url": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site/job/Mexico-Mexico-City/Partner-Activation-and-Acceleration-Specialist_JREQ203381",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 90,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 85,
-        "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 78
-      }
-    },
-    {
       "id": "ab95ceeb7d26ad9d81",
       "company": "BluePill AI",
       "companyTier": "C",
@@ -5484,31 +5435,6 @@
         "roleFit": 94,
         "experienceFit": 75,
         "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 78
-      }
-    },
-    {
-      "id": "2fee5d169af2a79249",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "Taipei Taipei City Taiwan",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-01T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taipei-Taipei-City-Taiwan/KYC-Operations-Analyst_26971492",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship",
-        "Remote"
-      ],
-      "matchScore": 82,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
         "careerFit": 88,
         "freshness": 78
       }
@@ -7609,30 +7535,6 @@
       }
     },
     {
-      "id": "f5bd1c5492625b0c36",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Officer, Syndicated Loan Operations Analyst, Operations",
-      "location": "Chiyoda-ku Tokyo Japan",
-      "employmentType": "Full time",
-      "postedAt": "2026-08-14T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Chiyoda-ku-Tokyo-Japan/Officer--Syndicated-Loan-Operations-Analyst--Operations_26985102-1",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 85,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 48
-      }
-    },
-    {
       "id": "83d1fc14f0442d4172",
       "company": "Medtronic",
       "companyTier": "B",
@@ -7994,31 +7896,6 @@
       }
     },
     {
-      "id": "1d840c824b073c0629",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Regional Marketing Analyst",
-      "location": "Hong Kong  Hong Kong",
-      "employmentType": "Full time",
-      "postedAt": "2026-07-30T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Hong-Kong--Hong-Kong/Regional-Marketing-Analyst_26983048",
-      "source": "Workday",
-      "category": "Marketing & GTM",
-      "tags": [
-        "Internship",
-        "Remote"
-      ],
-      "matchScore": 73,
-      "scoreBreakdown": {
-        "roleFit": 84,
-        "experienceFit": 60,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
       "id": "1a249b72c4ee66b9ee",
       "company": "Citi",
       "companyTier": "B",
@@ -8037,31 +7914,6 @@
         "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
-      "id": "308a98c1da05968cf2",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "Astana  Kazakhstan; Almaty  Kazakhstan",
-      "employmentType": "Full time",
-      "postedAt": "2026-07-23T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Astana--Kazakhstan/KYC-Operations-Analyst_26978365",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Entry Level",
-        "Internship"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 100,
         "freshness": 35
       }
     },
@@ -8230,30 +8082,6 @@
       }
     },
     {
-      "id": "c5ec201b1ab3c9133d",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "Pune Maharashtra India",
-      "employmentType": "",
-      "postedAt": "2026-06-02T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Pune-Maharashtra-India/KYC-Operations-Analyst_26947874",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
       "id": "677b83e07467d78fbe",
       "company": "Databricks",
       "companyTier": "A",
@@ -8401,56 +8229,6 @@
       }
     },
     {
-      "id": "dab03556f6d16c642a",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "DLF CYBERCITY 12B",
-      "employmentType": "Full time",
-      "postedAt": "2026-03-19T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/DLF-CYBERCITY-12B/KYC-Operations-Analyst_25915007",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Entry Level",
-        "Internship"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 100,
-        "freshness": 35
-      }
-    },
-    {
-      "id": "28b41ef9f7aab99889",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "1/124, SHIVAJI GARDENS, MOONLI",
-      "employmentType": "Full time",
-      "postedAt": "2026-03-18T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/1124-SHIVAJI-GARDENS-MOONLI/KYC-Operations-Analyst_26947724",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Entry Level",
-        "Internship"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 100,
-        "freshness": 35
-      }
-    },
-    {
       "id": "54476df09478a269ff",
       "company": "Citi",
       "companyTier": "B",
@@ -8521,30 +8299,6 @@
       }
     },
     {
-      "id": "0245655cb68f665275",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst - International Personal Banking, Wealth Operations",
-      "location": "Singapore  Singapore",
-      "employmentType": "Full time",
-      "postedAt": "2026-01-09T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Singapore--Singapore/KYC-Operations-Analyst-2---International-Personal-Banking--Wealth-Operations_26930576",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
       "id": "672e049e12ccaa7772",
       "company": "Databricks",
       "companyTier": "A",
@@ -8569,74 +8323,6 @@
       }
     },
     {
-      "id": "0841dc111e342075d3",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "KYC Operations Analyst",
-      "location": "Mumbai Maharashtra India",
-      "employmentType": "Full time",
-      "postedAt": "2025-09-17T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Mumbai-Maharashtra-India/KYC-Operations-Analyst-1---Mumbai_25883645-1",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
-      "id": "511b87c6d57ccb7a01",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Affluent Cards Product Specialist - C14 - SINGAPORE",
-      "location": "Singapore  Singapore",
-      "employmentType": "Full time",
-      "postedAt": "2025-07-25T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Singapore--Singapore/Affluent-Cards-Product-Specialist---C14---SINGAPORE_25889362",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [],
-      "matchScore": 81,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 75,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
-      "id": "0ac31231da8cb33cb2",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Program Management Analyst - Korean Speaker",
-      "location": "Taguig  Philippines",
-      "employmentType": "Full time",
-      "postedAt": "2025-07-18T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taguig--Philippines/Program-Management-Analyst---Korean-Speaker_25887624",
-      "source": "Workday",
-      "category": "Program Management",
-      "tags": [],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 86,
-        "experienceFit": 75,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
       "id": "765e22700a41b8ab75",
       "company": "Citi",
       "companyTier": "B",
@@ -8655,28 +8341,6 @@
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 60,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 35
-      }
-    },
-    {
-      "id": "d8dd1eb4f4e0ae2f21",
-      "company": "Citi",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Program Management Analyst - C10 - DALIAN",
-      "location": "Dalian Shanghai China",
-      "employmentType": "Full time",
-      "postedAt": "2025-02-05T00:00:00.000Z",
-      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Dalian-Shanghai-China/Program-Management-Analyst---C10---DALIAN_25823271-1",
-      "source": "Workday",
-      "category": "Program Management",
-      "tags": [],
-      "matchScore": 76,
-      "scoreBreakdown": {
-        "roleFit": 86,
-        "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
         "freshness": 35
