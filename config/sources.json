@@ -1,11 +1,279 @@
 {
   "greenhouse": [
-    { "company": "Databricks", "board": "databricks" }
+    {
+      "company": "Databricks",
+      "board": "databricks",
+      "tier": "A",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Figma",
+      "board": "figma",
+      "tier": "A",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Robinhood",
+      "board": "robinhood",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Affirm",
+      "board": "affirm",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Postman",
+      "board": "postman",
+      "tier": "B",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Airtable",
+      "board": "airtable",
+      "tier": "A",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Datadog",
+      "board": "datadog",
+      "tier": "B",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "West Monroe",
+      "board": "westmonroe4",
+      "tier": "A",
+      "industry": "Consulting"
+    },
+    {
+      "company": "West Monroe",
+      "board": "westmonroe3",
+      "tier": "A",
+      "industry": "Consulting"
+    }
   ],
   "lever": [],
   "ashby": [
-    { "company": "Notion", "board": "notion" },
-    { "company": "Zip", "board": "zip" },
-    { "company": "Sierra", "board": "Sierra" }
+    {
+      "company": "Notion",
+      "board": "notion",
+      "tier": "A",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Zip",
+      "board": "zip",
+      "tier": "B",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Sierra",
+      "board": "Sierra",
+      "tier": "B",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Ramp",
+      "board": "ramp",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    }
+  ],
+  "workday": [
+    {
+      "company": "Disney",
+      "host": "disney.wd5.myworkdayjobs.com",
+      "tenant": "disney",
+      "site": "disneycareer",
+      "tier": "A",
+      "industry": "Media / Entertainment"
+    },
+    {
+      "company": "Mastercard",
+      "host": "mastercard.wd1.myworkdayjobs.com",
+      "tenant": "mastercard",
+      "site": "CorporateCareers",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "BlackRock",
+      "host": "blackrock.wd1.myworkdayjobs.com",
+      "tenant": "blackrock",
+      "site": "BlackRock_Professional",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "host": "warnerbros.wd5.myworkdayjobs.com",
+      "tenant": "warnerbros",
+      "site": "global",
+      "tier": "A",
+      "industry": "Media / Entertainment"
+    },
+    {
+      "company": "Johnson & Johnson",
+      "host": "jj.wd5.myworkdayjobs.com",
+      "tenant": "jj",
+      "site": "jj",
+      "tier": "A",
+      "industry": "Healthcare / Pharma"
+    },
+    {
+      "company": "Unilever",
+      "host": "unilever.wd3.myworkdayjobs.com",
+      "tenant": "unilever",
+      "site": "Unilever_Experienced_Professionals",
+      "tier": "A",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "Morgan Stanley",
+      "host": "ms.wd5.myworkdayjobs.com",
+      "tenant": "ms",
+      "site": "External",
+      "tier": "B",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Vanguard",
+      "host": "vanguard.wd5.myworkdayjobs.com",
+      "tenant": "vanguard",
+      "site": "vanguard_external",
+      "tier": "B",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Fidelity International",
+      "host": "fil.wd3.myworkdayjobs.com",
+      "tenant": "fil",
+      "site": "001",
+      "tier": "B",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Target",
+      "host": "target.wd5.myworkdayjobs.com",
+      "tenant": "target",
+      "site": "targetcareers",
+      "tier": "A",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "Walmart",
+      "host": "walmart.wd5.myworkdayjobs.com",
+      "tenant": "walmart",
+      "site": "WalmartExternal",
+      "tier": "B",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "Starbucks",
+      "host": "starbucks.wd5.myworkdayjobs.com",
+      "tenant": "starbucks",
+      "site": "starbucks",
+      "tier": "B",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "PepsiCo",
+      "host": "pepsico.wd1.myworkdayjobs.com",
+      "tenant": "pepsico",
+      "site": "pepsico",
+      "tier": "A",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "Procter & Gamble",
+      "host": "pg.wd1.myworkdayjobs.com",
+      "tenant": "pg",
+      "site": "pg-careers",
+      "tier": "A",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "Capital One",
+      "host": "capitalone.wd12.myworkdayjobs.com",
+      "tenant": "capitalone",
+      "site": "Capital_One",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "S&P Global",
+      "host": "spgi.wd5.myworkdayjobs.com",
+      "tenant": "spgi",
+      "site": "SPGI_Careers",
+      "tier": "A",
+      "industry": "Information / Data"
+    },
+    {
+      "company": "Thomson Reuters",
+      "host": "thomsonreuters.wd5.myworkdayjobs.com",
+      "tenant": "thomsonreuters",
+      "site": "External_Career_Site",
+      "tier": "A",
+      "industry": "Information / Data"
+    },
+    {
+      "company": "Citi",
+      "host": "citi.wd5.myworkdayjobs.com",
+      "tenant": "citi",
+      "site": "2",
+      "tier": "B",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Comcast",
+      "host": "comcast.wd115.myworkdayjobs.com",
+      "tenant": "comcast",
+      "site": "Comcast_Careers",
+      "tier": "A",
+      "industry": "Media / Entertainment"
+    },
+    {
+      "company": "Nike",
+      "host": "nike.wd1.myworkdayjobs.com",
+      "tenant": "nike",
+      "site": "nke",
+      "tier": "A",
+      "industry": "Consumer / Retail"
+    },
+    {
+      "company": "CVS Health",
+      "host": "cvshealth.wd1.myworkdayjobs.com",
+      "tenant": "cvshealth",
+      "site": "CVS_Health_Careers",
+      "tier": "B",
+      "industry": "Healthcare / Pharma"
+    },
+    {
+      "company": "UnitedHealth Group / Optum",
+      "host": "uhg.wd5.myworkdayjobs.com",
+      "tenant": "uhg",
+      "site": "uhg",
+      "tier": "A",
+      "industry": "Healthcare / Pharma"
+    },
+    {
+      "company": "Bristol Myers Squibb",
+      "host": "bms.wd1.myworkdayjobs.com",
+      "tenant": "bms",
+      "site": "Careers",
+      "tier": "B",
+      "industry": "Healthcare / Pharma"
+    },
+    {
+      "company": "Medtronic",
+      "host": "medtronic.wd1.myworkdayjobs.com",
+      "tenant": "medtronic",
+      "site": "MedtronicCareers",
+      "tier": "B",
+      "industry": "Healthcare / Pharma"
+    }
   ]
 }

@@ -18,21 +18,22 @@
             <p>May 2027 · New Grad</p>
           </div>
         </div>
-
         <nav class="nav" id="categoryNav"></nav>
       </div>
 
       <div class="sidebar-footer">
         <button class="ghost full" id="exportBtn">Export saved jobs</button>
         <p id="refreshStamp">Waiting for data…</p>
+        <p id="coverageStamp"></p>
       </div>
     </aside>
 
     <main>
       <header class="topbar">
         <div>
-          <p class="eyebrow">GOOD AFTERNOON, JAE</p>
+          <p class="eyebrow">JAE'S 2027 RECRUITING RADAR</p>
           <h2>Find the newest roles before everyone else.</h2>
+          <p class="subhead">Product · Strategy & Ops · Consulting · GTM · Innovation · Programs</p>
         </div>
         <div class="header-actions">
           <button class="ghost" id="showSavedBtn">Saved</button>
@@ -45,7 +46,7 @@
       <section class="toolbar card">
         <div class="search-wrap">
           <span>⌕</span>
-          <input id="searchInput" type="search" placeholder="Search title, company, location…" />
+          <input id="searchInput" type="search" placeholder="Search title, company, industry, location…" />
         </div>
         <select id="freshnessFilter" aria-label="Freshness">
           <option value="all">Any date</option>
@@ -68,9 +69,18 @@
           <option value="london">London</option>
           <option value="canada">Canada</option>
         </select>
+        <select id="industryFilter" aria-label="Industry">
+          <option value="all">All industries</option>
+        </select>
+        <select id="tierFilter" aria-label="Company priority">
+          <option value="all">All company tiers</option>
+          <option value="A">Priority A</option>
+          <option value="B">Priority B</option>
+          <option value="C">Priority C</option>
+        </select>
         <select id="sortFilter" aria-label="Sort jobs">
           <option value="newest">Newest first</option>
-          <option value="match">Best match</option>
+          <option value="recommended">Best fit</option>
           <option value="company">Company A–Z</option>
         </select>
       </section>
@@ -79,7 +89,7 @@
 
       <section class="section-heading">
         <div>
-          <p class="eyebrow">LIVE FEED</p>
+          <p class="eyebrow">LIVE FEED · REFRESHES EVERY 6 HOURS</p>
           <h3 id="feedTitle">All matching jobs</h3>
         </div>
         <p id="resultCount"></p>
@@ -87,8 +97,8 @@
 
       <section class="jobs" id="jobs"></section>
       <div class="empty hidden" id="emptyState">
-        <h3>No matching roles yet.</h3>
-        <p>Try widening the filters, or add more ATS sources in <code>config/sources.json</code>.</p>
+        <h3>No matching roles with these filters.</h3>
+        <p>Try widening freshness, industry, company tier, or location.</p>
       </div>
     </main>
   </div>
@@ -102,6 +112,7 @@
             <span class="company"></span>
             <span class="badge age"></span>
             <span class="badge source"></span>
+            <span class="badge tier"></span>
           </div>
           <h4 class="title"></h4>
           <p class="meta"></p>
@@ -110,8 +121,9 @@
       </div>
       <div class="job-side">
         <div class="match-wrap">
-          <span class="match-label">MATCH</span>
+          <span class="match-label">FIT SCORE</span>
           <strong class="match"></strong>
+          <span class="priority-text"></span>
         </div>
         <div class="job-actions">
           <button class="icon-btn save" title="Save job">☆</button>

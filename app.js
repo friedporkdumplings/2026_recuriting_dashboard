@@ -1,5 +1,7 @@
 const state = {
   jobs: [],
+  payload: {},
+  universe: null,
   category: 'All',
   quick: 'All',
   view: 'all',
@@ -14,6 +16,8 @@ const els = {
   search: document.querySelector('#searchInput'),
   freshness: document.querySelector('#freshnessFilter'),
   location: document.querySelector('#locationFilter'),
+  industry: document.querySelector('#industryFilter'),
+  tier: document.querySelector('#tierFilter'),
   sort: document.querySelector('#sortFilter'),
   stats: document.querySelector('#stats'),
   categoryNav: document.querySelector('#categoryNav'),
@@ -21,6 +25,7 @@ const els = {
   resultCount: document.querySelector('#resultCount'),
   feedTitle: document.querySelector('#feedTitle'),
   refreshStamp: document.querySelector('#refreshStamp'),
+  coverageStamp: document.querySelector('#coverageStamp'),
   empty: document.querySelector('#emptyState'),
 };
 
@@ -30,7 +35,7 @@ const categories = [
   'Partnerships & BD', 'Marketplace & Growth'
 ];
 
-const quickFilters = ['All', 'New Grad', 'Internship', 'Entry Level', 'Remote', 'NYC', 'California'];
+const quickFilters = ['All', '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Internship', 'Entry Level', 'Remote', 'NYC', 'California'];
 
 function saveState() {
   localStorage.setItem('savedJobs', JSON.stringify([...state.saved]));
@@ -40,7 +45,8 @@ function saveState() {
 
 function ageInDays(dateString) {
   if (!dateString) return Infinity;
-  return (Date.now() - new Date(dateString).getTime()) / 86400000;
+  const age = (Date.now() - new Date(dateString).getTime()) / 86400000;
+  return Number.isFinite(age) ? Math.max(0, age) : Infinity;
 }
 
 function ageLabel(dateString) {
@@ -54,16 +60,21 @@ function ageLabel(dateString) {
 
 function locationMatches(location, value) {
   if (value === 'all') return true;
-  return (location || '').toLowerCase().includes(value);
+  const loc = (location || '').toLowerCase();
+  if (value === 'new york') return /new york|nyc|manhattan|brooklyn/.test(loc);
+  if (value === 'california') return /california|san francisco|los angeles|mountain view|palo alto|san jose|bay area|sunnyvale|burbank|santa monica/.test(loc);
+  if (value === 'canada') return /canada|toronto|vancouver|montreal/.test(loc);
+  return loc.includes(value);
 }
 
 function quickMatches(job) {
-  const hay = `${job.title} ${job.location} ${job.employmentType || ''}`.toLowerCase();
-  const q = state.quick.toLowerCase();
+  const hay = `${job.title} ${job.location} ${job.employmentType || ''} ${(job.tags || []).join(' ')}`.toLowerCase();
   if (state.quick === 'All') return true;
+  if (state.quick === '🔥 Apply ASAP') return (job.matchScore || 0) >= 85 && ageInDays(job.postedAt) <= 3;
+  if (state.quick === 'Priority A') return job.companyTier === 'A';
   if (state.quick === 'NYC') return /new york|nyc|manhattan|brooklyn/.test(hay);
-  if (state.quick === 'California') return /california|san francisco|los angeles|mountain view|palo alto|san jose|bay area|sunnyvale/.test(hay);
-  return hay.includes(q);
+  if (state.quick === 'California') return /california|san francisco|los angeles|mountain view|palo alto|san jose|bay area|sunnyvale|burbank|santa monica/.test(hay);
+  return hay.includes(state.quick.toLowerCase());
 }
 
 function filteredJobs() {
@@ -76,9 +87,11 @@ function filteredJobs() {
     if (state.category !== 'All' && job.category !== state.category) return false;
     if (!quickMatches(job)) return false;
     if (!locationMatches(job.location, els.location.value)) return false;
+    if (els.industry.value !== 'all' && (job.industry || 'Other') !== els.industry.value) return false;
+    if (els.tier.value !== 'all' && (job.companyTier || 'C') !== els.tier.value) return false;
     if (freshness !== 'all' && ageInDays(job.postedAt) > Number(freshness)) return false;
     if (query) {
-      const hay = `${job.title} ${job.company} ${job.location} ${job.category} ${(job.tags || []).join(' ')}`.toLowerCase();
+      const hay = `${job.title} ${job.company} ${job.location} ${job.category} ${job.industry || ''} ${(job.tags || []).join(' ')}`.toLowerCase();
       if (!hay.includes(query)) return false;
     }
     return true;
@@ -86,8 +99,8 @@ function filteredJobs() {
 
   if (els.sort.value === 'newest') {
     list.sort((a, b) => new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
-  } else if (els.sort.value === 'match') {
-    list.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
+  } else if (els.sort.value === 'recommended') {
+    list.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0) || new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
   } else {
     list.sort((a, b) => a.company.localeCompare(b.company));
   }
@@ -119,11 +132,14 @@ function renderQuickFilters() {
 
 function renderStats() {
   const day = state.jobs.filter(j => ageInDays(j.postedAt) <= 1).length;
-  const three = state.jobs.filter(j => ageInDays(j.postedAt) <= 3).length;
+  const asap = state.jobs.filter(j => (j.matchScore || 0) >= 85 && ageInDays(j.postedAt) <= 3).length;
+  const healthy = state.payload.successfulSources ?? 0;
+  const totalSources = state.payload.sourceCount ?? 0;
   const stats = [
     [state.jobs.length, 'Matching jobs'],
     [day, 'Posted ≤24h'],
-    [three, 'Posted ≤3d'],
+    [asap, 'Apply ASAP'],
+    [totalSources ? `${healthy}/${totalSources}` : '—', 'Sources live'],
     [state.saved.size, 'Saved'],
     [state.applied.size, 'Applied']
   ];
@@ -132,6 +148,20 @@ function renderStats() {
 
 function initials(company) {
   return company.split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase();
+}
+
+function priorityLabel(job) {
+  const score = job.matchScore || 0;
+  if (score >= 90 && ageInDays(job.postedAt) <= 3) return '🔥 APPLY ASAP';
+  if (score >= 85) return 'STRONG FIT';
+  if (score >= 75) return 'GOOD FIT';
+  return 'CONSIDER';
+}
+
+function scoreTooltip(job) {
+  const b = job.scoreBreakdown;
+  if (!b) return 'Heuristic fit score';
+  return `Role ${b.roleFit} · Experience ${b.experienceFit} · Company ${b.companyFit} · Early-career ${b.careerFit} · Freshness ${b.freshness}`;
 }
 
 function renderJobs() {
@@ -148,12 +178,23 @@ function renderJobs() {
     node.querySelector('.company').textContent = job.company;
     node.querySelector('.title').textContent = job.title;
     node.querySelector('.meta').textContent = [job.location, job.employmentType].filter(Boolean).join(' · ');
+
     const age = node.querySelector('.age');
     age.textContent = ageLabel(job.postedAt);
     if (ageInDays(job.postedAt) <= 1) age.classList.add('new');
+
     node.querySelector('.source').textContent = job.source || 'CAREERS';
-    node.querySelector('.match').textContent = `${job.matchScore || 0}%`;
-    node.querySelector('.tags').innerHTML = [job.category, ...(job.tags || []).slice(0,3)].map(t => `<span class="tag">${t}</span>`).join('');
+    const tier = node.querySelector('.tier');
+    tier.textContent = `TIER ${job.companyTier || 'C'}`;
+    tier.classList.add(`tier-${(job.companyTier || 'C').toLowerCase()}`);
+
+    const match = node.querySelector('.match');
+    match.textContent = `${job.matchScore || 0}%`;
+    match.title = scoreTooltip(job);
+    node.querySelector('.priority-text').textContent = priorityLabel(job);
+
+    const tags = [job.category, job.industry, ...(job.tags || []).slice(0, 3)].filter(Boolean);
+    node.querySelector('.tags').innerHTML = tags.map(t => `<span class="tag">${t}</span>`).join('');
 
     const save = node.querySelector('.save');
     save.textContent = state.saved.has(job.id) ? '★' : '☆';
@@ -164,8 +205,10 @@ function renderJobs() {
     };
 
     node.querySelector('.hide-job').onclick = () => { state.hidden.add(job.id); saveState(); render(); };
+
     const apply = node.querySelector('.apply-btn');
     apply.href = job.url;
+
     const applied = node.querySelector('.mark-applied');
     applied.textContent = state.applied.has(job.id) ? '✓ Applied' : 'Mark applied';
     applied.classList.toggle('active', state.applied.has(job.id));
@@ -179,20 +222,50 @@ function renderJobs() {
   });
 }
 
+function populateIndustryFilter() {
+  const current = els.industry.value;
+  const industries = [...new Set(state.jobs.map(j => j.industry).filter(Boolean))].sort();
+  els.industry.innerHTML = '<option value="all">All industries</option>' + industries.map(x => `<option value="${x}">${x}</option>`).join('');
+  if ([...els.industry.options].some(o => o.value === current)) els.industry.value = current;
+}
+
+function renderCoverage() {
+  const universeCount = state.universe?.count || 0;
+  const automated = state.universe?.automatedCount || state.payload.sourceCount || 0;
+  const failures = state.payload.failedSources || 0;
+  const parts = [];
+  if (automated) parts.push(`${automated} automated companies`);
+  if (universeCount) parts.push(`${universeCount} target companies`);
+  if (failures) parts.push(`${failures} source failures this run`);
+  els.coverageStamp.textContent = parts.join(' · ');
+}
+
 function render() {
   renderNav();
   renderQuickFilters();
   renderStats();
   renderJobs();
+  renderCoverage();
 }
 
-async function loadJobs() {
+async function loadData() {
   try {
-    const res = await fetch(`data/jobs.json?ts=${Date.now()}`);
-    if (!res.ok) throw new Error('Could not load jobs.json');
-    const payload = await res.json();
+    const [jobRes, universeRes] = await Promise.all([
+      fetch(`data/jobs.json?ts=${Date.now()}`),
+      fetch(`config/company-universe.json?ts=${Date.now()}`).catch(() => null)
+    ]);
+    if (!jobRes.ok) throw new Error('Could not load jobs.json');
+    const payload = await jobRes.json();
+    state.payload = payload;
     state.jobs = payload.jobs || [];
-    els.refreshStamp.textContent = payload.generatedAt ? `Updated ${new Date(payload.generatedAt).toLocaleString()}` : 'Updated automatically';
+
+    if (universeRes?.ok) state.universe = await universeRes.json();
+
+    els.refreshStamp.textContent = payload.generatedAt
+      ? `Updated ${new Date(payload.generatedAt).toLocaleString()}`
+      : 'Updated automatically';
+
+    populateIndustryFilter();
     render();
   } catch (err) {
     console.error(err);
@@ -201,16 +274,17 @@ async function loadJobs() {
 }
 
 ['input','change'].forEach(evt => els.search.addEventListener(evt, render));
-[els.freshness, els.location, els.sort].forEach(el => el.addEventListener('change', render));
-
+[els.freshness, els.location, els.industry, els.tier, els.sort].forEach(el => el.addEventListener('change', render));
 document.querySelector('#showSavedBtn').onclick = () => { state.view = state.view === 'saved' ? 'all' : 'saved'; render(); };
 document.querySelector('#showAppliedBtn').onclick = () => { state.view = state.view === 'applied' ? 'all' : 'applied'; render(); };
 document.querySelector('#exportBtn').onclick = () => {
   const selected = state.jobs.filter(j => state.saved.has(j.id) || state.applied.has(j.id));
   const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), jobs: selected }, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob); a.download = 'recruiting-tracker-export.json'; a.click();
+  a.href = URL.createObjectURL(blob);
+  a.download = 'recruiting-tracker-export.json';
+  a.click();
   URL.revokeObjectURL(a.href);
 };
 
-loadJobs();
+loadData();
