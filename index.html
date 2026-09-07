@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jae's Recruiting Radar</title>
   <meta name="description" content="A recruiting dashboard for early-career product, strategy, consulting, marketing, innovation, and operations roles." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <div class="shell">
@@ -48,6 +48,7 @@
           <span>⌕</span>
           <input id="searchInput" type="search" placeholder="Search title, company, industry, location…" />
         </div>
+
         <select id="freshnessFilter" aria-label="Freshness">
           <option value="all">Any date</option>
           <option value="1">Past 24 hours</option>
@@ -56,33 +57,46 @@
           <option value="14">Past 14 days</option>
           <option value="30">Past 30 days</option>
         </select>
-        <select id="locationFilter" aria-label="Location">
-          <option value="all">All locations</option>
-          <option value="new york">New York</option>
-          <option value="california">California</option>
-          <option value="remote">Remote</option>
-          <option value="chicago">Chicago</option>
-          <option value="boston">Boston</option>
-          <option value="seattle">Seattle</option>
-          <option value="austin">Austin</option>
-          <option value="shanghai">Shanghai</option>
-          <option value="london">London</option>
-          <option value="canada">Canada</option>
-        </select>
-        <select id="industryFilter" aria-label="Industry">
-          <option value="all">All industries</option>
-        </select>
-        <select id="tierFilter" aria-label="Company priority">
-          <option value="all">All company tiers</option>
-          <option value="A">Priority A</option>
-          <option value="B">Priority B</option>
-          <option value="C">Priority C</option>
-        </select>
+
+        <details class="multi-select" id="locationMulti">
+          <summary><span id="locationSummary">All locations</span><span class="caret">⌄</span></summary>
+          <div class="multi-menu" id="locationOptions">
+            <label class="multi-option featured-option"><input type="checkbox" value="usa" /><span>🇺🇸 USA based</span></label>
+            <div class="multi-divider"></div>
+            <label class="multi-option"><input type="checkbox" value="new york" /><span>New York</span></label>
+            <label class="multi-option"><input type="checkbox" value="california" /><span>California</span></label>
+            <label class="multi-option"><input type="checkbox" value="remote" /><span>Remote</span></label>
+            <label class="multi-option"><input type="checkbox" value="chicago" /><span>Chicago</span></label>
+            <label class="multi-option"><input type="checkbox" value="boston" /><span>Boston</span></label>
+            <label class="multi-option"><input type="checkbox" value="seattle" /><span>Seattle</span></label>
+            <label class="multi-option"><input type="checkbox" value="austin" /><span>Austin</span></label>
+            <label class="multi-option"><input type="checkbox" value="shanghai" /><span>Shanghai</span></label>
+            <label class="multi-option"><input type="checkbox" value="london" /><span>London</span></label>
+            <label class="multi-option"><input type="checkbox" value="canada" /><span>Canada</span></label>
+          </div>
+        </details>
+
+        <details class="multi-select" id="industryMulti">
+          <summary><span id="industrySummary">All industries</span><span class="caret">⌄</span></summary>
+          <div class="multi-menu scroll-menu" id="industryOptions"></div>
+        </details>
+
+        <details class="multi-select" id="tierMulti">
+          <summary><span id="tierSummary">All company tiers</span><span class="caret">⌄</span></summary>
+          <div class="multi-menu" id="tierOptions">
+            <label class="multi-option"><input type="checkbox" value="A" /><span>Priority A</span></label>
+            <label class="multi-option"><input type="checkbox" value="B" /><span>Priority B</span></label>
+            <label class="multi-option"><input type="checkbox" value="C" /><span>Priority C</span></label>
+          </div>
+        </details>
+
         <select id="sortFilter" aria-label="Sort jobs">
           <option value="newest">Newest first</option>
           <option value="recommended">Best fit</option>
           <option value="company">Company A–Z</option>
         </select>
+
+        <button class="reset-filter" id="resetFilters" type="button">Reset filters</button>
       </section>
 
       <section class="quick-filters" id="quickFilters"></section>
@@ -135,6 +149,6 @@
     </article>
   </template>
 
-  <script src="app.js" defer></script>
+  <script src="app.js?v=5" defer></script>
 </body>
 </html>
