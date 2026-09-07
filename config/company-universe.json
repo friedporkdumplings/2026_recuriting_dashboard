@@ -1,101 +1,10 @@
 {
-  "count": 326,
+  "count": 372,
   "automatedCount": 36,
   "companies": [
     {
-      "company": "Gartner",
-      "industry": "Consulting",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Publicis Sapient",
-      "industry": "Consulting",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "West Monroe",
-      "industry": "Consulting",
-      "tier": "A",
-      "automated": true,
-      "source": "Greenhouse"
-    },
-    {
-      "company": "Estée Lauder Companies",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Etsy",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "L'Oréal",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Nike",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "PepsiCo",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Procter & Gamble",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Ralph Lauren",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Target",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Unilever",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Walmart",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Wayfair",
-      "industry": "Consumer / Retail / Beauty / Fashion",
+      "company": "Adobe",
+      "industry": "Tech / SaaS / AI",
       "tier": "A",
       "automated": false,
       "source": null
@@ -108,8 +17,36 @@
       "source": "Greenhouse"
     },
     {
+      "company": "Airbnb",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Airtable",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": true,
+      "source": "Greenhouse"
+    },
+    {
       "company": "American Express",
       "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Appian",
+      "industry": "Tech / SaaS",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Apple",
+      "industry": "Tech / Consumer",
       "tier": "A",
       "automated": false,
       "source": null
@@ -120,6 +57,34 @@
       "tier": "A",
       "automated": true,
       "source": "Workday"
+    },
+    {
+      "company": "Block",
+      "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Booking Holdings",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Booking.com",
+      "industry": "Travel / Hospitality",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "ByteDance",
+      "industry": "Tech / Consumer",
+      "tier": "A",
+      "automated": false,
+      "source": null
     },
     {
       "company": "Capital One",
@@ -136,83 +101,6 @@
       "source": "Workday"
     },
     {
-      "company": "JPMorgan Chase",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Mastercard",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Morgan Stanley",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Robinhood",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": true,
-      "source": "Greenhouse"
-    },
-    {
-      "company": "S&P Global",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Stripe",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Visa",
-      "industry": "Financial Services / Fintech",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "CVS Health",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Johnson & Johnson",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "UnitedHealth Group / Optum",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Thomson Reuters",
-      "industry": "Information / Data / B2B Services",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
       "company": "Comcast",
       "industry": "Media / Entertainment / Creator",
       "tier": "A",
@@ -220,53 +108,11 @@
       "source": "Workday"
     },
     {
-      "company": "Disney",
-      "industry": "Media / Entertainment / Creator",
+      "company": "CVS Health",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "A",
       "automated": true,
       "source": "Workday"
-    },
-    {
-      "company": "NBCUniversal",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Pinterest",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Spotify",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Warner Bros. Discovery",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "A",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Adobe",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Airtable",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": true,
-      "source": "Greenhouse"
     },
     {
       "company": "Databricks",
@@ -283,6 +129,13 @@
       "source": "Greenhouse"
     },
     {
+      "company": "Disney",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
       "company": "Duolingo",
       "industry": "Tech / SaaS / AI",
       "tier": "A",
@@ -290,78 +143,15 @@
       "source": null
     },
     {
-      "company": "Figma",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": true,
-      "source": "Greenhouse"
-    },
-    {
-      "company": "Intuit",
-      "industry": "Tech / SaaS / AI",
+      "company": "Estée Lauder Companies",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Notion",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": true,
-      "source": "Ashby"
-    },
-    {
-      "company": "Plaid",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Ramp",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": true,
-      "source": "Ashby"
-    },
-    {
-      "company": "Roblox",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Salesforce",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "ServiceNow",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Workday",
-      "industry": "Tech / SaaS / AI",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Airbnb",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "A",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Booking Holdings",
-      "industry": "Travel / Hospitality / Mobility",
+      "company": "Etsy",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "A",
       "automated": false,
       "source": null
@@ -374,323 +164,358 @@
       "source": null
     },
     {
-      "company": "Accenture",
+      "company": "Figma",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": true,
+      "source": "Greenhouse"
+    },
+    {
+      "company": "Gartner",
       "industry": "Consulting",
-      "tier": "B",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Capgemini",
-      "industry": "Consulting",
-      "tier": "B",
+      "company": "GitHub",
+      "industry": "Tech / SaaS",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Cognizant",
-      "industry": "Consulting",
-      "tier": "B",
+      "company": "Google",
+      "industry": "Tech / AI",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Deloitte",
-      "industry": "Consulting",
-      "tier": "B",
+      "company": "Hulu",
+      "industry": "Media / Entertainment",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "EY",
-      "industry": "Consulting",
-      "tier": "B",
+      "company": "IBM",
+      "industry": "Tech / AI",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Grant Thornton",
-      "industry": "Consulting",
-      "tier": "B",
+      "company": "Intuit",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Guidehouse",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "IBM Consulting",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "KPMG",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Protiviti",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "PwC",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "RSM",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Slalom",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "ZS",
-      "industry": "Consulting",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Amazon",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Best Buy",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Chewy",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Coca-Cola",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Coty",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "General Mills",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Kraft Heinz",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Mars",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Mondelez International",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sephora",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Starbucks",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
+      "company": "Johnson & Johnson",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "A",
       "automated": true,
       "source": "Workday"
     },
     {
-      "company": "Ulta Beauty",
+      "company": "JPMorgan Chase",
+      "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "L'Oréal",
       "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "e.l.f. Beauty",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "B",
+      "company": "LinkedIn",
+      "industry": "Tech / Consumer",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "BNY",
+      "company": "Marriott",
+      "industry": "Travel / Hospitality",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Mastercard",
       "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Bank of America",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Broadridge",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Charles Schwab",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Discover",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "FIS",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "FactSet",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Fidelity International",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
+      "tier": "A",
       "automated": true,
       "source": "Workday"
     },
     {
-      "company": "Fidelity Investments",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
+      "company": "Meta",
+      "industry": "Tech / Consumer",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Fiserv",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
+      "company": "Microsoft",
+      "industry": "Tech / AI",
+      "tier": "A",
       "automated": false,
       "source": null
     },
     {
-      "company": "Goldman Sachs",
+      "company": "Morgan Stanley",
       "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Moody's",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Morningstar",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Nasdaq",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "PayPal",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "SoFi",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Synchrony",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Vanguard",
-      "industry": "Financial Services / Fintech",
-      "tier": "B",
+      "tier": "A",
       "automated": true,
       "source": "Workday"
     },
     {
-      "company": "Wells Fargo",
+      "company": "NBCUniversal",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "New York Times",
+      "industry": "Media / Entertainment",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Nike",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Notion",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": true,
+      "source": "Ashby"
+    },
+    {
+      "company": "NVIDIA",
+      "industry": "Tech / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Oracle",
+      "industry": "Tech / SaaS",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PepsiCo",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Pinterest",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Plaid",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Procter & Gamble",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Publicis Sapient",
+      "industry": "Consulting",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Ralph Lauren",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Ramp",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": true,
+      "source": "Ashby"
+    },
+    {
+      "company": "Robinhood",
       "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": true,
+      "source": "Greenhouse"
+    },
+    {
+      "company": "Roblox",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "S&P Global",
+      "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Salesforce",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "SAP",
+      "industry": "Tech / SaaS",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "ServiceNow",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sony",
+      "industry": "Media / Entertainment",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Spotify",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Stripe",
+      "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Target",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Tesla",
+      "industry": "Tech / Consumer",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Thomson Reuters",
+      "industry": "Information / Data / B2B Services",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "TikTok",
+      "industry": "Tech / Consumer",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Unilever",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "UnitedHealth Group / Optum",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Visa",
+      "industry": "Financial Services / Fintech",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Walmart",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "A",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Wayfair",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "West Monroe",
+      "industry": "Consulting",
+      "tier": "A",
+      "automated": true,
+      "source": "Greenhouse"
+    },
+    {
+      "company": "Workday",
+      "industry": "Tech / SaaS / AI",
+      "tier": "A",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "3M",
+      "industry": "Industrials",
       "tier": "B",
       "automated": false,
       "source": null
@@ -703,113 +528,8 @@
       "source": null
     },
     {
-      "company": "Amgen",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "AstraZeneca",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Biogen",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Boston Scientific",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Bristol Myers Squibb",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Eli Lilly",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "GE HealthCare",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "GSK",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Medtronic",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": true,
-      "source": "Workday"
-    },
-    {
-      "company": "Merck",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Moderna",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Novartis",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Pfizer",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Regeneron",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sanofi",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Stryker",
-      "industry": "Healthcare / Pharma / Medtech",
+      "company": "Accenture",
+      "industry": "Consulting",
       "tier": "B",
       "automated": false,
       "source": null
@@ -822,155 +542,29 @@
       "source": null
     },
     {
-      "company": "Clarivate",
-      "industry": "Information / Data / B2B Services",
+      "company": "Amazon",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Equifax",
-      "industry": "Information / Data / B2B Services",
+      "company": "AMD",
+      "industry": "Tech / Hardware",
       "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Experian",
-      "industry": "Information / Data / B2B Services",
+      "company": "Amgen",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Forrester",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "IQVIA",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "LexisNexis",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "RELX",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "TransUnion",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Wolters Kluwer",
-      "industry": "Information / Data / B2B Services",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Condé Nast",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Electronic Arts",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Hasbro",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Hearst",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "LEGO",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Live Nation",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Mattel",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Paramount",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Roku",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Snap",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sony Pictures",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "The New York Times",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Ticketmaster",
-      "industry": "Media / Entertainment / Creator",
+      "company": "AppLovin",
+      "industry": "Tech / Consumer",
       "tier": "B",
       "automated": false,
       "source": null
@@ -983,8 +577,57 @@
       "source": null
     },
     {
+      "company": "AstraZeneca",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Atlassian",
       "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Bank of America",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Best Buy",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Biogen",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "BNY",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Boeing",
+      "industry": "Industrials",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Boston Scientific",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1011,8 +654,36 @@
       "source": null
     },
     {
+      "company": "Bristol Myers Squibb",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Broadridge",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Canva",
       "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Capgemini",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Caterpillar",
+      "industry": "Industrials",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1025,8 +696,50 @@
       "source": null
     },
     {
+      "company": "Charles Schwab",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Chewy",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Cisco",
+      "industry": "Tech / SaaS",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Clarivate",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Cloudflare",
       "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Coca-Cola",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Cognizant",
+      "industry": "Consulting",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1039,8 +752,22 @@
       "source": null
     },
     {
+      "company": "Condé Nast",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Confluent",
       "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Coty",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1053,134 +780,15 @@
       "source": null
     },
     {
-      "company": "DocuSign",
-      "industry": "Tech / SaaS / AI",
+      "company": "Dell Technologies",
+      "industry": "Tech / Hardware",
       "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Dropbox",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "GitLab",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "HubSpot",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Miro",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Monday.com",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "MongoDB",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Okta",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Postman",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": true,
-      "source": "Greenhouse"
-    },
-    {
-      "company": "Reddit",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Rippling",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sierra",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": true,
-      "source": "Ashby"
-    },
-    {
-      "company": "Snowflake",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Toast",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Twilio",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Vercel",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Webflow",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Zip",
-      "industry": "Tech / SaaS / AI",
-      "tier": "B",
-      "automated": true,
-      "source": "Ashby"
-    },
-    {
-      "company": "Zoom",
-      "industry": "Tech / SaaS / AI",
+      "company": "Deloitte",
+      "industry": "Consulting",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1193,6 +801,20 @@
       "source": null
     },
     {
+      "company": "Discover",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "DocuSign",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "DoorDash",
       "industry": "Travel / Hospitality / Mobility",
       "tier": "B",
@@ -1200,8 +822,281 @@
       "source": null
     },
     {
+      "company": "Dropbox",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "e.l.f. Beauty",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Electronic Arts",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Eli Lilly",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Equifax",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Experian",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "EY",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "FactSet",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Fidelity International",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Fidelity Investments",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "FIS",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Fiserv",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Ford",
+      "industry": "Automotive",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Forrester",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GE Aerospace",
+      "industry": "Industrials",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GE HealthCare",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GE Vernova",
+      "industry": "Industrials",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "General Mills",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "General Motors",
+      "industry": "Automotive",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GitLab",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Goldman Sachs",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Grant Thornton",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GSK",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Guidehouse",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Hasbro",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Hearst",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Hilton",
       "industry": "Travel / Hospitality / Mobility",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Honeywell",
+      "industry": "Industrials",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "HP",
+      "industry": "Tech / Hardware",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "HubSpot",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "IBM Consulting",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Intel",
+      "industry": "Tech / Hardware",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "IQVIA",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "IXL Learning",
+      "industry": "Tech / Education",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "KPMG",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Kraft Heinz",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "LEGO",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "LexisNexis",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Live Nation",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Lockheed Martin",
+      "industry": "Industrials",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1221,8 +1116,358 @@
       "source": null
     },
     {
+      "company": "Mars",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Mattel",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Medtronic",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Merck",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Micron",
+      "industry": "Tech / Hardware",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Miro",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Moderna",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Monday.com",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Mondelez International",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "MongoDB",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Moody's",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Morningstar",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Nasdaq",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Novartis",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Okta",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Paramount",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PayPal",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Pfizer",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PIMCO",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PNC",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Postman",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": true,
+      "source": "Greenhouse"
+    },
+    {
+      "company": "Protiviti",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PwC",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Qualtrics",
+      "industry": "Tech / SaaS",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Reddit",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Regeneron",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "RELX",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Rippling",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Rivian",
+      "industry": "Tech / Consumer",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Roku",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "RSM",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "RTX",
+      "industry": "Industrials",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sanofi",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sephora",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sierra",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": true,
+      "source": "Ashby"
+    },
+    {
+      "company": "Slalom",
+      "industry": "Consulting",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Snap",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Snowflake",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "SoFi",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sony Pictures",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "SpaceX",
+      "industry": "Tech / Hardware",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Starbucks",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "B",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Stryker",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Synchrony",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "The New York Times",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Ticketmaster",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Toast",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "TransUnion",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Twilio",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Uber",
       "industry": "Travel / Hospitality / Mobility",
+      "tier": "B",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Ulta Beauty",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "B",
       "automated": false,
       "source": null
@@ -1235,127 +1480,78 @@
       "source": null
     },
     {
-      "company": "AlixPartners",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Vanguard",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
+      "automated": true,
+      "source": "Workday"
+    },
+    {
+      "company": "Vercel",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Alvarez & Marsal",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Webflow",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Bain & Company",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Wells Fargo",
+      "industry": "Financial Services / Fintech",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "BearingPoint",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Wolters Kluwer",
+      "industry": "Information / Data / B2B Services",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Booz Allen Hamilton",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Workiva",
+      "industry": "Tech / SaaS",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "Boston Consulting Group",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Yelp",
+      "industry": "Tech / Consumer",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "CGI",
-      "industry": "Consulting",
-      "tier": "C",
+      "company": "Zip",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
+      "automated": true,
+      "source": "Ashby"
+    },
+    {
+      "company": "Zoom",
+      "industry": "Tech / SaaS / AI",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "EPAM",
+      "company": "ZS",
       "industry": "Consulting",
-      "tier": "C",
+      "tier": "B",
       "automated": false,
       "source": null
     },
     {
-      "company": "FTI Consulting",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Genpact",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Infosys",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Kearney",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "L.E.K. Consulting",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "McKinsey & Company",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Oliver Wyman",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "PA Consulting",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Tata Consultancy Services",
-      "industry": "Consulting",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Wipro",
-      "industry": "Consulting",
+      "company": "Abbott",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1375,8 +1571,92 @@
       "source": null
     },
     {
+      "company": "Akamai",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Alaska Airlines",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Algolia",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "AlixPartners",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Alvarez & Marsal",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Amadeus",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "AMC Networks",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "American Airlines",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "American Eagle Outfitters",
       "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Amplitude",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Anthropic",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Aon",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Audible",
+      "industry": "Media / Entertainment / Creator",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1389,8 +1669,99 @@
       "source": null
     },
     {
+      "company": "Avis Budget Group",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Bain & Company",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "BearingPoint",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Becton Dickinson",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Boston Consulting Group",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "BuzzFeed",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "C.H. Robinson",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "CarMax",
       "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Carnival Corporation",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "CDW",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Centene",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "CGI",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Chime",
+      "industry": "Financial Services / Fintech",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1403,6 +1774,34 @@
       "source": null
     },
     {
+      "company": "Cigna / Evernorth",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Cineverse",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Cintas",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Circana",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Clorox",
       "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
@@ -1410,8 +1809,36 @@
       "source": null
     },
     {
+      "company": "Cloudinary",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "CME Group",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Colgate-Palmolive",
       "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Contentsquare",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "CoStar Group",
+      "industry": "Information / Data / B2B Services",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1431,8 +1858,92 @@
       "source": null
     },
     {
+      "company": "Danaher",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Danone",
       "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Discord",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Dotdash Meredith",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Dun & Bradstreet",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Edwards Lifesciences",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Elastic",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Elevance Health",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Endeavor",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "EPAM",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Flexport",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Fox Corporation",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "FTI Consulting",
+      "industry": "Consulting",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1445,6 +1956,27 @@
       "source": null
     },
     {
+      "company": "Genpact",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Grainger",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "GXO Logistics",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Henkel",
       "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
@@ -1452,8 +1984,99 @@
       "source": null
     },
     {
+      "company": "Hertz",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Hologic",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Home Depot",
       "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Humana",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Hyatt",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "ICE",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "iHeartMedia",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "IHG Hotels & Resorts",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Infosys",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Insight Enterprises",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Intuitive Surgical",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "JetBlue",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Kantar",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Kearney",
+      "industry": "Consulting",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1487,8 +2110,15 @@
       "source": null
     },
     {
-      "company": "LVMH",
-      "industry": "Consumer / Retail / Beauty / Fashion",
+      "company": "L.E.K. Consulting",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Labcorp",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1501,105 +2131,14 @@
       "source": null
     },
     {
+      "company": "Liberty Mutual",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Lowe's",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Macy's",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "McDonald's",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Nestlé",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "New Balance",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Newell Brands",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Nordstrom",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "PVH",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Reckitt",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Stanley Black & Decker",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Tapestry",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Under Armour",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "VF Corporation",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Williams-Sonoma",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "YETI",
       "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
       "automated": false,
@@ -1613,36 +2152,22 @@
       "source": null
     },
     {
-      "company": "Aon",
-      "industry": "Financial Services / Fintech",
+      "company": "LVMH",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
       "automated": false,
       "source": null
     },
     {
-      "company": "CME Group",
-      "industry": "Financial Services / Fintech",
+      "company": "Macy's",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
       "automated": false,
       "source": null
     },
     {
-      "company": "Chime",
-      "industry": "Financial Services / Fintech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "ICE",
-      "industry": "Financial Services / Fintech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Liberty Mutual",
-      "industry": "Financial Services / Fintech",
+      "company": "Manhattan Associates",
+      "industry": "Information / Data / B2B Services",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1650,6 +2175,20 @@
     {
       "company": "Marsh McLennan",
       "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "McDonald's",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "McKinsey & Company",
+      "industry": "Consulting",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1669,8 +2208,113 @@
       "source": null
     },
     {
+      "company": "NCR Voyix",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Nestlé",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "New Balance",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "New York Life",
       "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Newell Brands",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "News Corp",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Nielsen",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Nordstrom",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Norwegian Cruise Line Holdings",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Oliver Wyman",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "OpenAI",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "PA Consulting",
+      "industry": "Consulting",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Palantir",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Paychex",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Perplexity",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Philips",
+      "industry": "Healthcare / Pharma / Medtech",
       "tier": "C",
       "automated": false,
       "source": null
@@ -1697,6 +2341,97 @@
       "source": null
     },
     {
+      "company": "PVH",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Quest Diagnostics",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Reckitt",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Royal Caribbean Group",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sabre",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Samsara",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "SHI International",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "SiriusXM",
+      "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Slack",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Southwest Airlines",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Splunk",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Sprinklr",
+      "industry": "Tech / SaaS / AI",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Stanley Black & Decker",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "State Farm",
       "industry": "Financial Services / Fintech",
       "tier": "C",
@@ -1711,316 +2446,22 @@
       "source": null
     },
     {
-      "company": "Travelers",
-      "industry": "Financial Services / Fintech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "USAA",
-      "industry": "Financial Services / Fintech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Abbott",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Becton Dickinson",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Centene",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Cigna / Evernorth",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Danaher",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Edwards Lifesciences",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Elevance Health",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Hologic",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Humana",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Intuitive Surgical",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Labcorp",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Philips",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Quest Diagnostics",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Thermo Fisher Scientific",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Vertex Pharmaceuticals",
-      "industry": "Healthcare / Pharma / Medtech",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "C.H. Robinson",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "CDW",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Cintas",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Circana",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "CoStar Group",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Dun & Bradstreet",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Flexport",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "GXO Logistics",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Grainger",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Insight Enterprises",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Kantar",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Manhattan Associates",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "NCR Voyix",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Nielsen",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Paychex",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "SHI International",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Verisk",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Zebra Technologies",
-      "industry": "Information / Data / B2B Services",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "AMC Networks",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Audible",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "BuzzFeed",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Cineverse",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Dotdash Meredith",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Endeavor",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Fox Corporation",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "News Corp",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "SiriusXM",
-      "industry": "Media / Entertainment / Creator",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
       "company": "Take-Two Interactive",
       "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Tapestry",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "industry": "Consulting",
       "tier": "C",
       "automated": false,
       "source": null
@@ -2033,8 +2474,71 @@
       "source": null
     },
     {
+      "company": "Thermo Fisher Scientific",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Travelers",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Tripadvisor",
+      "industry": "Travel / Hospitality / Mobility",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
       "company": "Twitch",
       "industry": "Media / Entertainment / Creator",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Under Armour",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "USAA",
+      "industry": "Financial Services / Fintech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Verisk",
+      "industry": "Information / Data / B2B Services",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Vertex Pharmaceuticals",
+      "industry": "Healthcare / Pharma / Medtech",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "VF Corporation",
+      "industry": "Consumer / Retail / Beauty / Fashion",
+      "tier": "C",
+      "automated": false,
+      "source": null
+    },
+    {
+      "company": "Viator",
+      "industry": "Travel / Hospitality / Mobility",
       "tier": "C",
       "automated": false,
       "source": null
@@ -2061,113 +2565,22 @@
       "source": null
     },
     {
-      "company": "iHeartMedia",
-      "industry": "Media / Entertainment / Creator",
+      "company": "Williams-Sonoma",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
       "automated": false,
       "source": null
     },
     {
-      "company": "Akamai",
-      "industry": "Tech / SaaS / AI",
+      "company": "Wipro",
+      "industry": "Consulting",
       "tier": "C",
       "automated": false,
       "source": null
     },
     {
-      "company": "Algolia",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Amplitude",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Anthropic",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Cloudinary",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Contentsquare",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Discord",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Elastic",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "OpenAI",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Palantir",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Perplexity",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Samsara",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Slack",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Splunk",
-      "industry": "Tech / SaaS / AI",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sprinklr",
-      "industry": "Tech / SaaS / AI",
+      "company": "YETI",
+      "industry": "Consumer / Retail / Beauty / Fashion",
       "tier": "C",
       "automated": false,
       "source": null
@@ -2180,106 +2593,15 @@
       "source": null
     },
     {
-      "company": "Alaska Airlines",
-      "industry": "Travel / Hospitality / Mobility",
+      "company": "Zebra Technologies",
+      "industry": "Information / Data / B2B Services",
       "tier": "C",
       "automated": false,
       "source": null
     },
     {
-      "company": "Amadeus",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "American Airlines",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Avis Budget Group",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Carnival Corporation",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Hertz",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Hyatt",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "IHG Hotels & Resorts",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "JetBlue",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Norwegian Cruise Line Holdings",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Royal Caribbean Group",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Sabre",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Southwest Airlines",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Tripadvisor",
-      "industry": "Travel / Hospitality / Mobility",
-      "tier": "C",
-      "automated": false,
-      "source": null
-    },
-    {
-      "company": "Viator",
-      "industry": "Travel / Hospitality / Mobility",
+      "company": "ZoomInfo",
+      "industry": "Tech / SaaS",
       "tier": "C",
       "automated": false,
       "source": null

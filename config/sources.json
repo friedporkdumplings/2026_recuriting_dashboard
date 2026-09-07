@@ -275,5 +275,43 @@
       "tier": "B",
       "industry": "Healthcare / Pharma"
     }
+  ],
+  "community": [
+    {
+      "name": "PM Recruiting Hub — Product Management",
+      "type": "pmhub-markdown",
+      "url": "https://raw.githubusercontent.com/abbybravo/PM-Recruiting-Hub/main/opportunities/product-management.md",
+      "careerHint": "Early Career Product Management"
+    },
+    {
+      "name": "PM Recruiting Hub — New Grad",
+      "type": "pmhub-markdown",
+      "url": "https://raw.githubusercontent.com/abbybravo/PM-Recruiting-Hub/main/opportunities/new-grad.md",
+      "careerHint": "New Grad"
+    },
+    {
+      "name": "PM Recruiting Hub — Product Operations",
+      "type": "pmhub-markdown",
+      "url": "https://raw.githubusercontent.com/abbybravo/PM-Recruiting-Hub/main/opportunities/product-operations.md",
+      "careerHint": "Early Career Product Operations"
+    },
+    {
+      "name": "ApplyGuy — 2027 Product Internships",
+      "type": "applyguy-json",
+      "url": "https://raw.githubusercontent.com/ApplyGuy/2027-Internships/main/data/internships.json",
+      "category": "Product Management"
+    },
+    {
+      "name": "Jobright — Product Management New Grad",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Product-Management-New-Grad/master/README.md",
+      "careerHint": "New Grad"
+    },
+    {
+      "name": "Jobright — Product Management Internships",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Product-Management-Internship/master/README.md",
+      "careerHint": "Internship"
+    }
   ]
 }
