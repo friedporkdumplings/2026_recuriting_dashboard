@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T04:53:19.641Z",
-  "count": 331,
-  "rawCount": 4199,
+  "generatedAt": "2026-09-10T11:30:12.445Z",
+  "count": 323,
+  "rawCount": 4223,
   "sourceCount": 43,
   "directSourceCount": 37,
   "communityFeedCount": 6,
@@ -13,223 +13,223 @@
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 200,
-      "ms": 290
+      "ms": 381
     },
     {
       "company": "Airtable",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 16,
-      "ms": 129
+      "ms": 79
     },
     {
       "company": "ApplyGuy — 2027 Product Internships",
       "ats": "Community JSON",
       "status": "ok",
       "fetched": 0,
-      "ms": 156
+      "ms": 10
     },
     {
       "company": "BlackRock",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 49,
-      "ms": 9269
+      "fetched": 53,
+      "ms": 7357
     },
     {
       "company": "Bristol Myers Squibb",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25028
+      "ms": 24022
     },
     {
       "company": "Capital One",
       "ats": "Workday",
       "status": "ok",
       "fetched": 18,
-      "ms": 3493
+      "ms": 4061
     },
     {
       "company": "Citi",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 94,
-      "ms": 38461
+      "fetched": 109,
+      "ms": 34305
     },
     {
       "company": "Comcast",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 20,
-      "ms": 6102
+      "fetched": 21,
+      "ms": 4924
     },
     {
       "company": "CVS Health",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 34,
-      "ms": 8454
+      "fetched": 35,
+      "ms": 6990
     },
     {
       "company": "Databricks",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 869,
-      "ms": 608
+      "fetched": 873,
+      "ms": 1151
     },
     {
       "company": "Datadog",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 451,
-      "ms": 529
+      "ms": 544
     },
     {
       "company": "Disney",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 29,
-      "ms": 8317
+      "fetched": 30,
+      "ms": 8319
     },
     {
       "company": "Fidelity International",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 22,
-      "ms": 11664
+      "fetched": 23,
+      "ms": 11002
     },
     {
       "company": "Figma",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 158,
-      "ms": 242
+      "ms": 326
     },
     {
       "company": "Jobright — Product Management Internships",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 100,
-      "ms": 165
+      "ms": 6
     },
     {
       "company": "Jobright — Product Management New Grad",
       "ats": "Community Feed",
       "status": "ok",
-      "fetched": 747,
-      "ms": 152
+      "fetched": 739,
+      "ms": 12
     },
     {
       "company": "Johnson & Johnson",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 19,
-      "ms": 5214
+      "fetched": 25,
+      "ms": 7296
     },
     {
       "company": "Mastercard",
       "ats": "Workday",
       "status": "ok",
       "fetched": 21,
-      "ms": 12524
+      "ms": 11053
     },
     {
       "company": "Medtronic",
       "ats": "Workday",
       "status": "ok",
       "fetched": 79,
-      "ms": 28047
+      "ms": 32888
     },
     {
       "company": "Morgan Stanley",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 56,
-      "ms": 16066
+      "fetched": 53,
+      "ms": 15680
     },
     {
       "company": "Nike",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 18,
-      "ms": 6254
+      "fetched": 20,
+      "ms": 7241
     },
     {
       "company": "Notion",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 130,
-      "ms": 158
+      "ms": 183
     },
     {
       "company": "PepsiCo",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25874
+      "ms": 23569
     },
     {
       "company": "PM Recruiting Hub — New Grad",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 5,
-      "ms": 192
+      "ms": 85
     },
     {
       "company": "PM Recruiting Hub — Product Management",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 6,
-      "ms": 205
+      "ms": 116
     },
     {
       "company": "PM Recruiting Hub — Product Operations",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 0,
-      "ms": 167
+      "ms": 83
     },
     {
       "company": "Postman",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 67,
-      "ms": 167
+      "ms": 205
     },
     {
       "company": "Procter & Gamble",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25867
+      "ms": 23268
     },
     {
       "company": "Ramp",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 146,
-      "ms": 205
+      "ms": 124
     },
     {
       "company": "Robinhood",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 123,
-      "ms": 210
+      "fetched": 127,
+      "ms": 277
     },
     {
       "company": "S&P Global",
       "ats": "Workday",
       "status": "ok",
       "fetched": 65,
-      "ms": 17366
+      "ms": 18788
     },
     {
       "company": "Sierra",
       "ats": "Ashby",
       "status": "ok",
-      "fetched": 210,
+      "fetched": 209,
       "ms": 210
     },
     {
@@ -237,77 +237,77 @@
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 24503
+      "ms": 25740
     },
     {
       "company": "Target",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 23,
-      "ms": 16433
+      "fetched": 20,
+      "ms": 16007
     },
     {
       "company": "Thomson Reuters",
       "ats": "Workday",
       "status": "ok",
       "fetched": 26,
-      "ms": 15685
+      "ms": 11914
     },
     {
       "company": "Unilever",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 28,
-      "ms": 15599
+      "fetched": 29,
+      "ms": 14624
     },
     {
       "company": "UnitedHealth Group / Optum",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 23939
+      "ms": 25411
     },
     {
       "company": "Vanguard",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 69,
-      "ms": 20228
+      "fetched": 68,
+      "ms": 28801
     },
     {
       "company": "Walmart",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 24281
+      "ms": 26137
     },
     {
       "company": "Warner Bros. Discovery",
       "ats": "Workday",
       "status": "ok",
       "fetched": 61,
-      "ms": 14339
-    },
-    {
-      "company": "West Monroe",
-      "ats": "Greenhouse",
-      "status": "ok",
-      "fetched": 115,
-      "ms": 172
+      "ms": 16082
     },
     {
       "company": "West Monroe",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 0,
-      "ms": 1163
+      "ms": 58
+    },
+    {
+      "company": "West Monroe",
+      "ats": "Greenhouse",
+      "status": "ok",
+      "fetched": 115,
+      "ms": 330
     },
     {
       "company": "Zip",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 125,
-      "ms": 211
+      "ms": 141
     }
   ],
   "jobs": [
@@ -354,6 +354,31 @@
       "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 78,
+        "experienceFit": 75,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 100
+      }
+    },
+    {
+      "id": "3cdf0494ce1e6dc664",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Specialist Oncology, Jeddah",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Jeddah-Makkah-Saudi-Arabia/Product-Specialist-Oncology--Jeddah_R-096131",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 90,
+      "scoreBreakdown": {
+        "roleFit": 95,
         "experienceFit": 75,
         "companyFit": 95,
         "careerFit": 88,
@@ -611,32 +636,6 @@
       }
     },
     {
-      "id": "c95fb256e3cf82a619",
-      "company": "Johnson & Johnson",
-      "companyTier": "A",
-      "industry": "Healthcare / Pharma",
-      "title": "Product Development Engineering Spring Co-op",
-      "location": "Santa Clara, California, United States of America",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Santa-Clara-California-United-States-of-America/Product-Development-Engineering-Intern_R-095154",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [
-        "New Grad",
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 90,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 75,
-        "companyFit": 95,
-        "careerFit": 100,
-        "freshness": 90
-      }
-    },
-    {
       "id": "4061bd0427f32d7936",
       "company": "Vanguard",
       "companyTier": "B",
@@ -854,6 +853,54 @@
       }
     },
     {
+      "id": "61cfc45fc877307424",
+      "company": "TravisMathew",
+      "companyTier": "C",
+      "industry": "Other",
+      "title": "Product Development Assistant",
+      "location": "Huntington Beach, CA, United States",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-09T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a974d6d246d697dcee04c1f?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 70,
+        "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "ef96535d156d132f55",
+      "company": "National Energy System Operator",
+      "companyTier": "C",
+      "industry": "Other",
+      "title": "Product Owner",
+      "location": "Warwick, England, United Kingdom",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-09T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a9ef5f6352f093fc756d3f1?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 70,
+        "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
       "id": "3a461bc9e2fe3e7c05",
       "company": "lululemon",
       "companyTier": "C",
@@ -962,30 +1009,6 @@
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
       "url": "https://jobright.ai/jobs/info/6aa1dd972f936e4a53dae7c4?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 81,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 60,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "05ca2c017b73433d35",
-      "company": "lululemon",
-      "companyTier": "C",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "title": "Product Operations Lead / Seasonal Contract",
-      "location": "Denver, CO, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa1dd903272060a8e3f28a7?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -1171,7 +1194,7 @@
       }
     },
     {
-      "id": "a9364e8af25c8cd393",
+      "id": "62b38d0ccccb78bdd4",
       "company": "Indigo",
       "companyTier": "C",
       "industry": "Other",
@@ -1179,7 +1202,7 @@
       "location": "Toronto, ON, Canada",
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9b6cccd5ff1f3f1c39f12f?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a9a100e551435518ebf2db8?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -1243,15 +1266,15 @@
       }
     },
     {
-      "id": "612d70d6db5416bdd4",
+      "id": "9853757e286360a131",
       "company": "NetBrain Technologies Inc.",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Burlington, MA, United States",
+      "location": "Toronto, ON, Canada",
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa1758e0ffb3d4fea6b4d49?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6aa1759e500b01124c77cc09?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -1267,15 +1290,15 @@
       }
     },
     {
-      "id": "9853757e286360a131",
+      "id": "612d70d6db5416bdd4",
       "company": "NetBrain Technologies Inc.",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Toronto, ON, Canada",
+      "location": "Burlington, MA, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa1759e500b01124c77cc09?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6aa1758e0ffb3d4fea6b4d49?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -1731,6 +1754,31 @@
       }
     },
     {
+      "id": "4e343a640a17df011a",
+      "company": "Cambridge International Advisory Group (CIAG)",
+      "companyTier": "C",
+      "industry": "Other",
+      "title": "Product Development Intern",
+      "location": "San Francisco Bay Area, United States",
+      "employmentType": "Internship",
+      "postedAt": "2026-09-09T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6aa23049a841402ec45aca35?utm_campaign=1047&utm_source=git",
+      "source": "Jobright Internships",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 70,
+        "careerFit": 80,
+        "freshness": 90
+      }
+    },
+    {
       "id": "2f4b2446ecdf958995",
       "company": "ITT Inc.",
       "companyTier": "C",
@@ -1879,15 +1927,15 @@
       }
     },
     {
-      "id": "03dd05a188aa081ef8",
+      "id": "bac23920894bb44e37",
       "company": "IBM",
       "companyTier": "A",
       "industry": "Tech / AI",
-      "title": "Product Manager Intern 2027",
-      "location": "Lowell, Massachusetts, United States",
+      "title": "Storage Product Management Intern 2027 -Tucson, AZ",
+      "location": "Tucson, AZ, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9e341e75edfa11b47108b8?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9e3b62dacf777321a90e4d?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -1905,15 +1953,15 @@
       }
     },
     {
-      "id": "bac23920894bb44e37",
+      "id": "03dd05a188aa081ef8",
       "company": "IBM",
       "companyTier": "A",
       "industry": "Tech / AI",
-      "title": "Storage Product Management Intern 2027 -Tucson, AZ",
-      "location": "Tucson, AZ, United States",
+      "title": "Product Manager Intern 2027",
+      "location": "Lowell, Massachusetts, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9e3b62dacf777321a90e4d?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9e341e75edfa11b47108b8?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2104,7 +2152,7 @@
       }
     },
     {
-      "id": "4ea772eec14bc0201c",
+      "id": "32ee69ab1cdb2c1623",
       "company": "Navy Federal Credit Union",
       "companyTier": "C",
       "industry": "Other",
@@ -2112,7 +2160,7 @@
       "location": "Vienna, VA, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa17958dbc0e60e37e11709?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6aa17f1f2f936e4a53dabea9?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2449,7 +2497,7 @@
       }
     },
     {
-      "id": "621f8f37d4c184624e",
+      "id": "df08f87635ff872e06",
       "company": "Schaeffler",
       "companyTier": "C",
       "industry": "Other",
@@ -2457,7 +2505,7 @@
       "location": "Strongsville, OH, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9700f7246d697dcee02a4f?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9700a7b22f636c814151e3?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2525,15 +2573,40 @@
       }
     },
     {
-      "id": "e21e7f4f82753b8068",
+      "id": "c42ffa84ed5c2e5189",
+      "company": "TikTok",
+      "companyTier": "A",
+      "industry": "Tech / Consumer",
+      "title": "Product Management Project Intern (TikTok Shop- Operations) - 2026 Start (BS/MS)",
+      "location": "Seattle, WA, United States",
+      "employmentType": "Internship",
+      "postedAt": "2026-09-09T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a30d179093df201d07b2c30?utm_campaign=1047&utm_source=git",
+      "source": "Jobright Internships",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 95,
+        "careerFit": 80,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "60b3e79f59afd56783",
       "company": "TikTok",
       "companyTier": "A",
       "industry": "Tech / Consumer",
       "title": "Product Manager Intern (Ads Interface and Platform) - 2027 Summer",
-      "location": "Seattle, WA, United States",
+      "location": "San Jose, CA, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a7c2fcfd77e8156a8e3155f?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a7c2fc1d77e8156a8e3155c?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2551,15 +2624,15 @@
       }
     },
     {
-      "id": "60b3e79f59afd56783",
+      "id": "e21e7f4f82753b8068",
       "company": "TikTok",
       "companyTier": "A",
       "industry": "Tech / Consumer",
       "title": "Product Manager Intern (Ads Interface and Platform) - 2027 Summer",
-      "location": "San Jose, CA, United States",
+      "location": "Seattle, WA, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a7c2fc1d77e8156a8e3155c?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a7c2fcfd77e8156a8e3155f?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2701,31 +2774,6 @@
       }
     },
     {
-      "id": "f7366666204364f473",
-      "company": "Mastercard",
-      "companyTier": "A",
-      "industry": "Financial Services / Fintech",
-      "title": "Specialist, Product Management",
-      "location": "Lisbon, Portugal",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Lisbon-Portugal/Specialist--Product-Management_R-287371",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 90,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 80,
-        "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 90
-      }
-    },
-    {
       "id": "13a37407d1a59f4bac",
       "company": "Johnson & Johnson",
       "companyTier": "A",
@@ -2772,55 +2820,6 @@
         "experienceFit": 65,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "186e8d10973679f2cd",
-      "company": "Morgan Stanley",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Business Development Associate",
-      "location": "Deerfield, Illinois, United States of America",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Deerfield-Illinois-United-States-of-America/Business-Development-Associate_JR041286",
-      "source": "Workday",
-      "category": "Partnerships & BD",
-      "tags": [
-        "Internship"
-      ],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 78,
-        "experienceFit": 65,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "7c456dabb1cd517173",
-      "company": "Target",
-      "companyTier": "A",
-      "industry": "Consumer / Retail",
-      "title": "Marketplace Operations Analyst",
-      "location": "Bangalore,India",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Marketplace-Operations-Analyst_R0000451671",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 65,
-        "companyFit": 95,
-        "careerFit": 70,
         "freshness": 90
       }
     },
@@ -2913,30 +2912,6 @@
       "tags": [
         "New Grad",
         "Remote"
-      ],
-      "matchScore": 80,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "61cfc45fc877307424",
-      "company": "TravisMathew",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Development Assistant",
-      "location": "Huntington Beach, CA, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a974d6d246d697dcee04c1f?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
       ],
       "matchScore": 80,
       "scoreBreakdown": {
@@ -3165,7 +3140,7 @@
       }
     },
     {
-      "id": "220e67bddb162a0db3",
+      "id": "a7377db4b7fda0eb06",
       "company": "BNY",
       "companyTier": "B",
       "industry": "Financial Services / Fintech",
@@ -3173,7 +3148,7 @@
       "location": "Lake Mary, FL, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa01822500b01124c776c7a?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6aa01b26500b01124c776d75?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -3583,6 +3558,31 @@
       }
     },
     {
+      "id": "77012db01889c3ce1a",
+      "company": "TikTok",
+      "companyTier": "A",
+      "industry": "Tech / Consumer",
+      "title": "Art & Nature Category Management Project Intern (TikTok Shop - Art & Nature) - 2026 Start",
+      "location": "Los Angeles, CA, United States",
+      "employmentType": "Internship",
+      "postedAt": "2026-09-08T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a5fe09e193b51130967b5b4?utm_campaign=1047&utm_source=git",
+      "source": "Jobright Internships",
+      "category": "Marketplace & Growth",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 82,
+        "experienceFit": 55,
+        "companyFit": 95,
+        "careerFit": 80,
+        "freshness": 90
+      }
+    },
+    {
       "id": "513fb852a407329b39",
       "company": "USAA",
       "companyTier": "C",
@@ -3980,7 +3980,7 @@
       }
     },
     {
-      "id": "dd961c8ac27a49821c",
+      "id": "f83381f38599272112",
       "company": "TikTok",
       "companyTier": "A",
       "industry": "Tech / Consumer",
@@ -3988,7 +3988,7 @@
       "location": "Seattle, WA, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a7284f8e2b7476e7b213b46?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a73f27132ebbc14ffb516e4?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -4389,82 +4389,6 @@
       }
     },
     {
-      "id": "3aa0f531701a6a04f8",
-      "company": "TikTok",
-      "companyTier": "A",
-      "industry": "Tech / Consumer",
-      "title": "Product Solutions and Operations Project Intern (Commerce Ads) - 2026 Start (BS/MS)",
-      "location": "San Jose, CA, United States",
-      "employmentType": "Internship",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a46063b971cd25b06f8af13?utm_campaign=1047&utm_source=git",
-      "source": "Jobright Internships",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 83,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 95,
-        "careerFit": 80,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "d40f56671b711101bf",
-      "company": "TikTok",
-      "companyTier": "A",
-      "industry": "Tech / Consumer",
-      "title": "Recommendation Product Manager Intern (TikTok-Product-Content Ecosystem) - 2027 Summer",
-      "location": "San Jose, CA, United States",
-      "employmentType": "Internship",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a71a431ee751e0c79344640?utm_campaign=1047&utm_source=git",
-      "source": "Jobright Internships",
-      "category": "Product Management",
-      "tags": [
-        "New Grad",
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 85,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 95,
-        "careerFit": 100,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "5682c113ae0d3fd441",
-      "company": "TikTok",
-      "companyTier": "A",
-      "industry": "Tech / Consumer",
-      "title": "Product Solutions and Operations project Intern (Ads Interface and Platform Product ) - 2026 Start",
-      "location": "Seattle, WA, United States",
-      "employmentType": "Internship",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a6815202bf1fb2b71928606?utm_campaign=1047&utm_source=git",
-      "source": "Jobright Internships",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 83,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 95,
-        "careerFit": 80,
-        "freshness": 90
-      }
-    },
-    {
       "id": "e177b87a95a738c37d",
       "company": "Morgan Stanley",
       "companyTier": "B",
@@ -4607,30 +4531,6 @@
       }
     },
     {
-      "id": "ef96535d156d132f55",
-      "company": "National Energy System Operator",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Owner",
-      "location": "Warwick, England, United Kingdom",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-07T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9ef5f6352f093fc756d3f1?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 78
-      }
-    },
-    {
       "id": "f3fe3b530763434f17",
       "company": "Blue Square",
       "companyTier": "C",
@@ -4703,7 +4603,7 @@
       }
     },
     {
-      "id": "02d1eceb32a23c8882",
+      "id": "b95255d34074c9fba3",
       "company": "HP",
       "companyTier": "B",
       "industry": "Tech / Hardware",
@@ -4711,7 +4611,7 @@
       "location": "Fort Collins, CO, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-07T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a8e043325fc4e7ae3dbf480?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a8e11cbd34f700f87fd7bd5?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5027,15 +4927,15 @@
       }
     },
     {
-      "id": "5e2c52f1d00d0d8e99",
+      "id": "6a3ad2a79eb0da8488",
       "company": "Air Techniques",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Melville, NY, US",
+      "location": "Melville, NY, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-06T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a2bfe1fc260bb1b8ae1405d?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a5da616686b4755d1e1e737?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5051,15 +4951,15 @@
       }
     },
     {
-      "id": "6a3ad2a79eb0da8488",
+      "id": "5e2c52f1d00d0d8e99",
       "company": "Air Techniques",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Melville, NY, United States",
+      "location": "Melville, NY, US",
       "employmentType": "New Grad",
       "postedAt": "2026-09-06T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a5da616686b4755d1e1e737?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a2bfe1fc260bb1b8ae1405d?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5244,30 +5144,6 @@
       }
     },
     {
-      "id": "5a3b4d5f3c455371cb",
-      "company": "Roku",
-      "companyTier": "B",
-      "industry": "Media / Entertainment / Creator",
-      "title": "Product Strategy and Operations Associate",
-      "location": "New York, NY, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-05T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a4323e0c662c35651adb8bd?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 99,
-        "experienceFit": 60,
-        "companyFit": 82,
-        "careerFit": 100,
-        "freshness": 78
-      }
-    },
-    {
       "id": "bd1470816dd4611ee2",
       "company": "Roku",
       "companyTier": "B",
@@ -5292,6 +5168,30 @@
       }
     },
     {
+      "id": "5a3b4d5f3c455371cb",
+      "company": "Roku",
+      "companyTier": "B",
+      "industry": "Media / Entertainment / Creator",
+      "title": "Product Strategy and Operations Associate",
+      "location": "New York, NY, United States",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-05T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a4323e0c662c35651adb8bd?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
       "id": "6b7009d8a2025290ac",
       "company": "Midland Credit Management",
       "companyTier": "C",
@@ -5301,30 +5201,6 @@
       "employmentType": "New Grad",
       "postedAt": "2026-09-05T00:00:00.000Z",
       "url": "https://jobright.ai/jobs/info/6a614f46ab14335fc0f17a7b?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 78
-      }
-    },
-    {
-      "id": "3da40fffbc9804ce91",
-      "company": "Camping World",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Specialist Advisor",
-      "location": "Kaysville, UT, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-05T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a5c3726686b4755d1e1b3ba?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5894,28 +5770,6 @@
       }
     },
     {
-      "id": "b06632b4bd19878769",
-      "company": "Medtronic",
-      "companyTier": "B",
-      "industry": "Healthcare / Pharma",
-      "title": "Product Specialist-2.",
-      "location": "Bogotá, Bogota, Colombia",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Bogot-Bogota-Colombia/Product-Specialist-2_R72848-1",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [],
-      "matchScore": 85,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 80,
-        "companyFit": 82,
-        "careerFit": 88,
-        "freshness": 62
-      }
-    },
-    {
       "id": "ea0af828e77f722044",
       "company": "Hive",
       "companyTier": "C",
@@ -6180,103 +6034,6 @@
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "5a8470e3a286cfe3fb",
-      "company": "Blue Owl Capital",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Management & Investor Relations – Real Assets, Analyst",
-      "location": "Chicago, Illinois, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a54e5da81744f383a313c0a?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 77,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "f2b2f88267f6ae9246",
-      "company": "Blue Owl Capital",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Management & Investor Relations – Real Assets, Analyst",
-      "location": "New York City, NY, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a3c2997982bb239f812e9cd?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 77,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "66a2b127a6158e8bf2",
-      "company": "Dashing Diva",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Development Coordinator",
-      "location": "Port Washington, NY, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a8ee48dd7c91d0cf446c66d?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 77,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "7c3ea29a6723f473cc",
-      "company": "Workday",
-      "companyTier": "A",
-      "industry": "Tech / SaaS / AI",
-      "title": "Product Manager",
-      "location": "USA, OH, Mason, United States of America",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a4618034f64ba41dcb4fd12?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad",
-        "Priority A"
-      ],
-      "matchScore": 82,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 95,
         "careerFit": 100,
         "freshness": 62
       }
@@ -8046,6 +7803,28 @@
       }
     },
     {
+      "id": "0ac31231da8cb33cb2",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - Korean Speaker",
+      "location": "Taguig  Philippines",
+      "employmentType": "Full time",
+      "postedAt": "2025-07-18T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taguig--Philippines/Program-Management-Analyst---Korean-Speaker_25887624",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
       "id": "765e22700a41b8ab75",
       "company": "Citi",
       "companyTier": "B",
@@ -8064,6 +7843,28 @@
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "d8dd1eb4f4e0ae2f21",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - C10 - DALIAN",
+      "location": "Dalian Shanghai China",
+      "employmentType": "Full time",
+      "postedAt": "2025-02-05T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Dalian-Shanghai-China/Program-Management-Analyst---C10---DALIAN_25823271-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 76,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
         "freshness": 35
@@ -8144,22 +7945,24 @@
       }
     },
     {
-      "id": "3ea3bf1cd612dcaedc",
+      "id": "b58778cf150329eceb",
       "company": "Datadog",
       "companyTier": "B",
       "industry": "Tech / SaaS",
       "title": "Customer Success Associate",
       "location": "Tokyo, Japan",
       "employmentType": "",
-      "postedAt": "2024-06-07T12:53:38-04:00",
-      "url": "https://careers.datadoghq.com/detail/6009779/?gh_jid=6009779",
+      "postedAt": "2023-12-27T22:26:19-05:00",
+      "url": "https://careers.datadoghq.com/detail/5486716/?gh_jid=5486716",
       "source": "Greenhouse",
       "category": "Customer & Solutions",
-      "tags": [],
-      "matchScore": 72,
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 74,
       "scoreBreakdown": {
         "roleFit": 80,
-        "experienceFit": 60,
+        "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
         "freshness": 35
