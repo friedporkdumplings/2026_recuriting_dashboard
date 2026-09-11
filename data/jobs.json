@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T20:57:32.954Z",
-  "count": 314,
-  "rawCount": 3641,
+  "generatedAt": "2026-09-11T04:50:13.770Z",
+  "count": 325,
+  "rawCount": 3685,
   "sourceCount": 43,
   "directSourceCount": 37,
   "communityFeedCount": 6,
@@ -12,305 +12,404 @@
       "company": "Affirm",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 202,
-      "ms": 328
+      "fetched": 203,
+      "ms": 488
     },
     {
       "company": "Airtable",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 16,
-      "ms": 99
+      "ms": 174
     },
     {
       "company": "ApplyGuy — 2027 Product Internships",
       "ats": "Community JSON",
       "status": "ok",
       "fetched": 0,
-      "ms": 8
+      "ms": 111
     },
     {
       "company": "BlackRock",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 57,
-      "ms": 10293
+      "fetched": 55,
+      "ms": 7525
     },
     {
       "company": "Bristol Myers Squibb",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 23894
+      "ms": 27362
     },
     {
       "company": "Capital One",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 21,
-      "ms": 4614
+      "fetched": 22,
+      "ms": 4243
     },
     {
       "company": "Citi",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 80,
-      "ms": 34418
+      "fetched": 110,
+      "ms": 33189
     },
     {
       "company": "Comcast",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 18,
-      "ms": 4147
+      "fetched": 21,
+      "ms": 5580
     },
     {
       "company": "CVS Health",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 31,
-      "ms": 8288
+      "fetched": 37,
+      "ms": 6745
     },
     {
       "company": "Databricks",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 874,
-      "ms": 635
+      "fetched": 877,
+      "ms": 994
     },
     {
       "company": "Datadog",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 450,
-      "ms": 586
+      "fetched": 451,
+      "ms": 789
     },
     {
       "company": "Disney",
       "ats": "Workday",
       "status": "ok",
       "fetched": 30,
-      "ms": 7938
+      "ms": 7378
     },
     {
       "company": "Fidelity International",
       "ats": "Workday",
       "status": "ok",
       "fetched": 24,
-      "ms": 10774
+      "ms": 11062
     },
     {
       "company": "Figma",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 158,
-      "ms": 256
+      "ms": 387
     },
     {
       "company": "Jobright — Product Management Internships",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 100,
-      "ms": 43
+      "ms": 18
     },
     {
       "company": "Jobright — Product Management New Grad",
       "ats": "Community Feed",
       "status": "ok",
-      "fetched": 191,
-      "ms": 10
+      "fetched": 189,
+      "ms": 17
     },
     {
       "company": "Johnson & Johnson",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 21,
-      "ms": 6774
+      "fetched": 24,
+      "ms": 6063
     },
     {
       "company": "Mastercard",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 15,
-      "ms": 11229
+      "fetched": 14,
+      "ms": 11053
     },
     {
       "company": "Medtronic",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 80,
-      "ms": 34417
+      "fetched": 79,
+      "ms": 30807
     },
     {
       "company": "Morgan Stanley",
       "ats": "Workday",
       "status": "ok",
       "fetched": 56,
-      "ms": 18346
+      "ms": 15722
     },
     {
       "company": "Nike",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 20,
-      "ms": 7983
+      "fetched": 26,
+      "ms": 5786
     },
     {
       "company": "Notion",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 127,
-      "ms": 325
+      "ms": 504
     },
     {
       "company": "PepsiCo",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 23902
+      "ms": 25047
     },
     {
       "company": "PM Recruiting Hub — New Grad",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 5,
-      "ms": 95
+      "ms": 105
     },
     {
       "company": "PM Recruiting Hub — Product Management",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 6,
-      "ms": 87
+      "ms": 141
     },
     {
       "company": "PM Recruiting Hub — Product Operations",
       "ats": "Community Feed",
       "status": "ok",
       "fetched": 0,
-      "ms": 714
+      "ms": 118
     },
     {
       "company": "Postman",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 63,
-      "ms": 191
+      "ms": 322
     },
     {
       "company": "Procter & Gamble",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 24105
+      "ms": 25364
     },
     {
       "company": "Ramp",
       "ats": "Ashby",
       "status": "ok",
-      "fetched": 146,
-      "ms": 119
+      "fetched": 144,
+      "ms": 238
     },
     {
       "company": "Robinhood",
       "ats": "Greenhouse",
       "status": "ok",
-      "fetched": 130,
-      "ms": 282
+      "fetched": 129,
+      "ms": 436
     },
     {
       "company": "S&P Global",
       "ats": "Workday",
       "status": "ok",
       "fetched": 64,
-      "ms": 24324
+      "ms": 17703
     },
     {
       "company": "Sierra",
       "ats": "Ashby",
       "status": "ok",
-      "fetched": 209,
-      "ms": 311
+      "fetched": 210,
+      "ms": 337
     },
     {
       "company": "Starbucks",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 27617
+      "ms": 26309
     },
     {
       "company": "Target",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 21,
-      "ms": 16898
+      "fetched": 20,
+      "ms": 15703
     },
     {
       "company": "Thomson Reuters",
       "ats": "Workday",
       "status": "ok",
       "fetched": 28,
-      "ms": 15969
+      "ms": 20202
     },
     {
       "company": "Unilever",
       "ats": "Workday",
       "status": "ok",
       "fetched": 28,
-      "ms": 15246
+      "ms": 14159
     },
     {
       "company": "UnitedHealth Group / Optum",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25682
+      "ms": 25424
     },
     {
       "company": "Vanguard",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 68,
-      "ms": 26538
+      "fetched": 66,
+      "ms": 16643
     },
     {
       "company": "Walmart",
       "ats": "Workday",
       "status": "ok",
       "fetched": 0,
-      "ms": 25876
+      "ms": 26014
     },
     {
       "company": "Warner Bros. Discovery",
       "ats": "Workday",
       "status": "ok",
-      "fetched": 61,
-      "ms": 16346
+      "fetched": 62,
+      "ms": 15082
     },
     {
       "company": "West Monroe",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 0,
-      "ms": 40
+      "ms": 61
     },
     {
       "company": "West Monroe",
       "ats": "Greenhouse",
       "status": "ok",
       "fetched": 116,
-      "ms": 163
+      "ms": 197
     },
     {
       "company": "Zip",
       "ats": "Ashby",
       "status": "ok",
       "fetched": 125,
-      "ms": 285
+      "ms": 343
     }
   ],
   "jobs": [
+    {
+      "id": "77f91a88442d119e79",
+      "company": "BlackRock",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Associate, APAC ETF Platform",
+      "location": "Hong Kong, Hong Kong",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-11T00:00:00.000Z",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional/job/Hong-Kong-Hong-Kong/Associate--APAC-ETF-Platform_R265902",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 91,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 100
+      }
+    },
+    {
+      "id": "db54437986fa0f1cae",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Specialist",
+      "location": "Mongkok, Kowloon, Hong Kong",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-11T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Mongkok-Kowloon-Hong-Kong/Product-Specialist_R-098819",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Priority A"
+      ],
+      "matchScore": 89,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 100
+      }
+    },
+    {
+      "id": "b9903c9d3702bfc17a",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "[Innovative Medicine] Analyst BI",
+      "location": "Seoul, Korea, Republic of",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-11T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Seoul-Korea-Republic-of/XMLNAME--Innovative-Medicine--Analyst-BI_R-098498",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 92,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 100
+      }
+    },
+    {
+      "id": "33e3f63d8c439062dd",
+      "company": "Nike",
+      "companyTier": "A",
+      "industry": "Consumer / Retail",
+      "title": "Specialist II, GPS GTM Event Planning",
+      "location": "Shanghai, China Mainland",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-11T00:00:00.000Z",
+      "url": "https://nike.wd1.myworkdayjobs.com/nke/job/Shanghai-China-Mainland/Specialist-II--GPS-GTM-Event-Planning_R-91836",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 65,
+        "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 100
+      }
+    },
     {
       "id": "778e7edb2b6a16216f",
       "company": "Datadog",
@@ -326,13 +425,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 75,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -353,13 +452,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 92,
+      "matchScore": 91,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 80,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -378,13 +477,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 87,
+      "matchScore": 86,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 80,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -402,13 +501,13 @@
       "tags": [
         "Priority A"
       ],
-      "matchScore": 89,
+      "matchScore": 88,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 70,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -427,13 +526,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 94,
+      "matchScore": 93,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 90,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -451,13 +550,13 @@
       "tags": [
         "Priority A"
       ],
-      "matchScore": 91,
+      "matchScore": 90,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 80,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -476,13 +575,88 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 84,
+      "matchScore": 83,
       "scoreBreakdown": {
         "roleFit": 78,
         "experienceFit": 75,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
+      }
+    },
+    {
+      "id": "4fbdcd853eff7021ce",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Manager, Bladder Cancer Professional Promotion Marketing, Erda-iDRS",
+      "location": "Horsham, Pennsylvania, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Horsham-Pennsylvania-United-States-of-America/Product-Manager--Bladder-Cancer-Professional-Promotion-Marketing--Erda-iDRS_R-092746-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Priority A"
+      ],
+      "matchScore": 93,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 85,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "d07324b8a8428635c1",
+      "company": "Johnson & Johnson",
+      "companyTier": "A",
+      "industry": "Healthcare / Pharma",
+      "title": "Product Manager, Customer Journey & Omnichannel Marketing, Erda-iDRS",
+      "location": "Horsham, Pennsylvania, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Horsham-Pennsylvania-United-States-of-America/Product-Manager--Customer-Journey---Omnichannel-Marketing--Erda-iDRS_R-099071-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 91,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 80,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "f51c92689bb682a021",
+      "company": "Morgan Stanley",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Parametric - Operations Analyst Cohort, Winter, 2027 (Recent Grads)",
+      "location": "Seattle WA 800; Minneapolis, Minnesota, United States of America",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Seattle-WA-800/Parametric---Operations-Analyst-Cohort--Winter--2027--Recent-Grads-_JR043249",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 92,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 95,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 90
       }
     },
     {
@@ -502,39 +676,13 @@
         "Internship",
         "Remote"
       ],
-      "matchScore": 93,
+      "matchScore": 92,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 95,
         "companyFit": 82,
         "careerFit": 100,
-        "freshness": 100
-      }
-    },
-    {
-      "id": "0c1fbf0f2a5dbdbea7",
-      "company": "Morgan Stanley",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Parametric - Operations Analyst Cohort, Winter, 2027 (Recent Grads)",
-      "location": "Alpharetta GA 1 Edison",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-10T00:00:00.000Z",
-      "url": "https://ms.wd5.myworkdayjobs.com/External/job/Alpharetta-GA-1-Edison/Parametric---Operations-Analyst-Cohort--Winter--2027--Recent-Grads-_JR043249",
-      "source": "Workday",
-      "category": "Strategy & Operations",
-      "tags": [
-        "New Grad",
-        "Internship",
-        "Remote"
-      ],
-      "matchScore": 93,
-      "scoreBreakdown": {
-        "roleFit": 94,
-        "experienceFit": 95,
-        "companyFit": 82,
-        "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -552,13 +700,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 65,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -576,13 +724,35 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 86,
+      "matchScore": 85,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
+      }
+    },
+    {
+      "id": "199d4e32782ac59e50",
+      "company": "Vanguard",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Lead Data Analyst",
+      "location": "Malvern, PA; Scottsdale, AZ; Charlotte, NC",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Lead-Data-Analyst_182025-1",
+      "source": "Workday",
+      "category": "Product Management",
+      "tags": [],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 70,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 90
       }
     },
     {
@@ -601,13 +771,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 70,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -626,62 +796,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 65,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
-      }
-    },
-    {
-      "id": "2676e29f7700a70d93",
-      "company": "Capital One",
-      "companyTier": "A",
-      "industry": "Financial Services / Fintech",
-      "title": "Sr Associate, Product Management - PULSE",
-      "location": "Houston, TX; McLean, VA; Chicago, IL; New York, NY; Riverwoods, IL",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-10T00:00:00.000Z",
-      "url": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Houston-TX/Sr-Associate--Product-Management---PULSE_R248860-1",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 90,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 75,
-        "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 100
-      }
-    },
-    {
-      "id": "b7fedc4403331cc8f4",
-      "company": "Capital One",
-      "companyTier": "A",
-      "industry": "Financial Services / Fintech",
-      "title": "Sr Marketing Associate, Business Travel",
-      "location": "McLean, VA; Richmond, VA; New York, NY",
-      "employmentType": "Full time",
-      "postedAt": "2026-09-10T00:00:00.000Z",
-      "url": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/McLean-VA/Sr-Marketing-Associate--Business-Travel_R1000128-1",
-      "source": "Workday",
-      "category": "Marketing & GTM",
-      "tags": [
-        "Priority A"
-      ],
-      "matchScore": 86,
-      "scoreBreakdown": {
-        "roleFit": 84,
-        "experienceFit": 75,
-        "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -700,13 +821,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 88,
+      "matchScore": 87,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 70,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -724,13 +845,39 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 87,
+      "matchScore": 86,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 75,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 100
+        "freshness": 90
+      }
+    },
+    {
+      "id": "9e388bbada07d16a69",
+      "company": "Roblox",
+      "companyTier": "A",
+      "industry": "Tech / SaaS / AI",
+      "title": "[[2027] Associate Product Manager, Early Career](https://jobright.ai/jobs/info/6a98527bc8ed473c5c7634bc?utm_campaign=Product%20Management&utm_source=1103)",
+      "location": "San Mateo, CA, United States",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a98527bc8ed473c5c7634bc?utm_campaign=Product%20Management&utm_source=1103)**",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Entry Level",
+        "Priority A"
+      ],
+      "matchScore": 88,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 60,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 90
       }
     },
     {
@@ -748,13 +895,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -773,13 +920,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 87,
+      "matchScore": 86,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -797,13 +944,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -821,37 +968,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 100
-      }
-    },
-    {
-      "id": "16d1d9a318d23d5d22",
-      "company": "Mizuho OSI",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Regional Product Specialist",
-      "location": "Atlanta, GA, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-10T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a69c05b19d76667a2abc1fe?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 81,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -869,13 +992,37 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
+      }
+    },
+    {
+      "id": "16d1d9a318d23d5d22",
+      "company": "Mizuho OSI",
+      "companyTier": "C",
+      "industry": "Other",
+      "title": "Regional Product Specialist",
+      "location": "Atlanta, GA, United States",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a69c05b19d76667a2abc1fe?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad"
+      ],
+      "matchScore": 80,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 70,
+        "careerFit": 100,
+        "freshness": 90
       }
     },
     {
@@ -893,13 +1040,63 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 100
+        "freshness": 90
+      }
+    },
+    {
+      "id": "bf5a286f6358947ca0",
+      "company": "Machina Labs",
+      "companyTier": "C",
+      "industry": "Other",
+      "title": "Product Management, Intern",
+      "location": "Chatsworth, CA, United States",
+      "employmentType": "Internship",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a962b1d4c22023a07938718?utm_campaign=1047&utm_source=git",
+      "source": "Jobright Internships",
+      "category": "Product Management",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 70,
+        "careerFit": 80,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "15536bca535838a1a5",
+      "company": "Mastercard",
+      "companyTier": "A",
+      "industry": "Financial Services / Fintech",
+      "title": "Product Management – Technical Intern, Summer 2027 – St. Louis, MO, US",
+      "location": "O'Fallon, MO, United States",
+      "employmentType": "Internship",
+      "postedAt": "2026-09-10T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a984bc183fc633357630956?utm_campaign=1047&utm_source=git",
+      "source": "Jobright Internships",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Internship",
+        "Priority A"
+      ],
+      "matchScore": 85,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 90
       }
     },
     {
@@ -917,13 +1114,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 79,
+      "matchScore": 78,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 100
+        "freshness": 90
       }
     },
     {
@@ -1199,6 +1396,28 @@
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
+        "freshness": 90
+      }
+    },
+    {
+      "id": "ea37e82a2eb37be39a",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "ETF Operations Analyst",
+      "location": "Tampa Florida United States",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-09T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Tampa-Florida-United-States/ETF-Operations-Analyst_26992274",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [],
+      "matchScore": 83,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
         "freshness": 90
       }
     },
@@ -1640,15 +1859,15 @@
       }
     },
     {
-      "id": "a9364e8af25c8cd393",
+      "id": "ed9175fb53c73c5c8e",
       "company": "Indigo",
       "companyTier": "C",
       "industry": "Other",
-      "title": "Product Operations Leader - Contract",
-      "location": "Toronto, ON, Canada",
+      "title": "Product Operations Leader/ Responsable des activités liées aux produits",
+      "location": "Pointe-Claire, QC, Canada",
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9b6cccd5ff1f3f1c39f12f?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a7621dea26ccc369f833e02?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -1664,15 +1883,15 @@
       }
     },
     {
-      "id": "ed9175fb53c73c5c8e",
+      "id": "62b38d0ccccb78bdd4",
       "company": "Indigo",
       "companyTier": "C",
       "industry": "Other",
-      "title": "Product Operations Leader/ Responsable des activités liées aux produits",
-      "location": "Pointe-Claire, QC, Canada",
+      "title": "Product Operations Leader - Contract",
+      "location": "Toronto, ON, Canada",
       "employmentType": "New Grad",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a7621dea26ccc369f833e02?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a9a100e551435518ebf2db8?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -2176,31 +2395,6 @@
       }
     },
     {
-      "id": "4e343a640a17df011a",
-      "company": "Cambridge International Advisory Group (CIAG)",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Product Development Intern",
-      "location": "San Francisco Bay Area, United States",
-      "employmentType": "Internship",
-      "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa23049a841402ec45aca35?utm_campaign=1047&utm_source=git",
-      "source": "Jobright Internships",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Remote"
-      ],
-      "matchScore": 78,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 80,
-        "freshness": 90
-      }
-    },
-    {
       "id": "2f4b2446ecdf958995",
       "company": "ITT Inc.",
       "companyTier": "C",
@@ -2349,15 +2543,15 @@
       }
     },
     {
-      "id": "03dd05a188aa081ef8",
+      "id": "bac23920894bb44e37",
       "company": "IBM",
       "companyTier": "A",
       "industry": "Tech / AI",
-      "title": "Product Manager Intern 2027",
-      "location": "Lowell, Massachusetts, United States",
+      "title": "Storage Product Management Intern 2027 -Tucson, AZ",
+      "location": "Tucson, AZ, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9e341e75edfa11b47108b8?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9e3b62dacf777321a90e4d?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2375,15 +2569,15 @@
       }
     },
     {
-      "id": "bac23920894bb44e37",
+      "id": "03dd05a188aa081ef8",
       "company": "IBM",
       "companyTier": "A",
       "industry": "Tech / AI",
-      "title": "Storage Product Management Intern 2027 -Tucson, AZ",
-      "location": "Tucson, AZ, United States",
+      "title": "Product Manager Intern 2027",
+      "location": "Lowell, Massachusetts, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9e3b62dacf777321a90e4d?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9e341e75edfa11b47108b8?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2574,7 +2768,7 @@
       }
     },
     {
-      "id": "4ea772eec14bc0201c",
+      "id": "32ee69ab1cdb2c1623",
       "company": "Navy Federal Credit Union",
       "companyTier": "C",
       "industry": "Other",
@@ -2582,7 +2776,7 @@
       "location": "Vienna, VA, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa17958dbc0e60e37e11709?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6aa17f1f2f936e4a53dabea9?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -2919,7 +3113,7 @@
       }
     },
     {
-      "id": "df08f87635ff872e06",
+      "id": "621f8f37d4c184624e",
       "company": "Schaeffler",
       "companyTier": "C",
       "industry": "Other",
@@ -2927,7 +3121,7 @@
       "location": "Strongsville, OH, United States",
       "employmentType": "Internship",
       "postedAt": "2026-09-09T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9700a7b22f636c814151e3?utm_campaign=1047&utm_source=git",
+      "url": "https://jobright.ai/jobs/info/6a9700f7246d697dcee02a4f?utm_campaign=1047&utm_source=git",
       "source": "Jobright Internships",
       "category": "Product Management",
       "tags": [
@@ -3183,13 +3377,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 78,
         "experienceFit": 65,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3208,13 +3402,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 80,
         "experienceFit": 65,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3233,13 +3427,13 @@
         "Internship",
         "Remote"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 78,
         "experienceFit": 75,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3257,13 +3451,13 @@
       "tags": [
         "Priority A"
       ],
-      "matchScore": 86,
+      "matchScore": 85,
       "scoreBreakdown": {
         "roleFit": 84,
         "experienceFit": 80,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3282,13 +3476,13 @@
         "New Grad",
         "Remote"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3306,13 +3500,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3330,13 +3524,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3354,13 +3548,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3378,13 +3572,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3402,13 +3596,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3427,13 +3621,13 @@
         "New Grad",
         "Remote"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3451,13 +3645,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3475,17 +3669,17 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
-      "id": "321f793c24d14a8b20",
+      "id": "2203c6e35bd6cc6fd8",
       "company": "BNY",
       "companyTier": "B",
       "industry": "Financial Services / Fintech",
@@ -3493,19 +3687,19 @@
       "location": "Lake Mary, FL, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6aa01b7fea127c3794694f81?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6aa0236aa2266b538d22e5bd?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
         "New Grad"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 82,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3523,13 +3717,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3547,13 +3741,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3572,13 +3766,13 @@
         "New Grad",
         "Remote"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3597,13 +3791,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3622,38 +3816,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "31a52bc2f13bc8a13d",
-      "company": "TikTok",
-      "companyTier": "A",
-      "industry": "Tech / Consumer",
-      "title": "Product Manager Graduate (Ads Interface Platform) - 2027 Start",
-      "location": "Seattle, WA, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a7e7e470cd4a070325805df?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad",
-        "Priority A"
-      ],
-      "matchScore": 85,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 95,
-        "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3672,13 +3841,38 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
+      }
+    },
+    {
+      "id": "31a52bc2f13bc8a13d",
+      "company": "TikTok",
+      "companyTier": "A",
+      "industry": "Tech / Consumer",
+      "title": "Product Manager Graduate (Ads Interface Platform) - 2027 Start",
+      "location": "Seattle, WA, United States",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-08T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a7e7e470cd4a070325805df?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad",
+        "Priority A"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 95,
+        "experienceFit": 55,
+        "companyFit": 95,
+        "careerFit": 100,
+        "freshness": 78
       }
     },
     {
@@ -3697,13 +3891,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3722,13 +3916,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 88,
+      "matchScore": 86,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3747,13 +3941,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3772,13 +3966,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3796,13 +3990,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3820,13 +4014,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 83,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3845,13 +4039,13 @@
         "Internship",
         "Remote"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3869,13 +4063,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3893,13 +4087,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3918,13 +4112,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 82,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3942,13 +4136,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3967,13 +4161,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 82,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -3992,13 +4186,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 83,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4016,13 +4210,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4041,13 +4235,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4066,13 +4260,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4091,13 +4285,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 82,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4116,13 +4310,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 81,
+      "matchScore": 80,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4141,13 +4335,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4166,13 +4360,13 @@
         "Internship",
         "Remote"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4190,13 +4384,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 79,
+      "matchScore": 78,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4214,13 +4408,13 @@
       "tags": [
         "Internship"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4239,13 +4433,13 @@
         "New Grad",
         "Internship"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4264,13 +4458,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 84,
+      "matchScore": 83,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4289,13 +4483,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 86,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4315,13 +4509,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4340,13 +4534,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4366,13 +4560,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 86,
+      "matchScore": 85,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4392,13 +4586,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4418,13 +4612,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4443,13 +4637,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4469,13 +4663,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 86,
+      "matchScore": 85,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4494,13 +4688,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4519,13 +4713,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4545,13 +4739,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 86,
+      "matchScore": 85,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4570,13 +4764,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 82,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4596,13 +4790,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4622,13 +4816,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4647,13 +4841,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 83,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4673,13 +4867,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 85,
+      "matchScore": 84,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -4698,38 +4892,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 78,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 82,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 90
-      }
-    },
-    {
-      "id": "4e40a48a9681a20eb7",
-      "company": "TikTok",
-      "companyTier": "A",
-      "industry": "Tech / Consumer",
-      "title": "Methodology Product Operations Project Intern (TikTok Shop - US Operation) - 2026 Start (BS/MS)",
-      "location": "Los Angeles, CA",
-      "employmentType": "Internship",
-      "postedAt": "2026-09-08T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a30b41a093df201d07b26b0?utm_campaign=1047&utm_source=git",
-      "source": "Jobright Internships",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 60,
-        "companyFit": 95,
-        "careerFit": 80,
-        "freshness": 90
+        "freshness": 78
       }
     },
     {
@@ -5271,15 +5440,15 @@
       }
     },
     {
-      "id": "6a3ad2a79eb0da8488",
+      "id": "5e2c52f1d00d0d8e99",
       "company": "Air Techniques",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Melville, NY, United States",
+      "location": "Melville, NY, US",
       "employmentType": "New Grad",
       "postedAt": "2026-09-06T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a5da616686b4755d1e1e737?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a2bfe1fc260bb1b8ae1405d?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5295,15 +5464,15 @@
       }
     },
     {
-      "id": "5e2c52f1d00d0d8e99",
+      "id": "6a3ad2a79eb0da8488",
       "company": "Air Techniques",
       "companyTier": "C",
       "industry": "Other",
       "title": "Associate Product Manager",
-      "location": "Melville, NY, US",
+      "location": "Melville, NY, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-06T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a2bfe1fc260bb1b8ae1405d?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a5da616686b4755d1e1e737?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5488,30 +5657,6 @@
       }
     },
     {
-      "id": "bd1470816dd4611ee2",
-      "company": "Roku",
-      "companyTier": "B",
-      "industry": "Media / Entertainment / Creator",
-      "title": "Product Strategy and Operations Associate",
-      "location": "New York, New York",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-05T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a0b715b538d03366dc8554e?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 84,
-      "scoreBreakdown": {
-        "roleFit": 99,
-        "experienceFit": 60,
-        "companyFit": 82,
-        "careerFit": 100,
-        "freshness": 78
-      }
-    },
-    {
       "id": "5a3b4d5f3c455371cb",
       "company": "Roku",
       "companyTier": "B",
@@ -5536,7 +5681,31 @@
       }
     },
     {
-      "id": "84210e69f38b4e1378",
+      "id": "bd1470816dd4611ee2",
+      "company": "Roku",
+      "companyTier": "B",
+      "industry": "Media / Entertainment / Creator",
+      "title": "Product Strategy and Operations Associate",
+      "location": "New York, New York",
+      "employmentType": "New Grad",
+      "postedAt": "2026-09-05T00:00:00.000Z",
+      "url": "https://jobright.ai/jobs/info/6a0b715b538d03366dc8554e?utm_campaign=Product%20Management&utm_source=1103",
+      "source": "Jobright New Grad",
+      "category": "Product Management",
+      "tags": [
+        "New Grad"
+      ],
+      "matchScore": 84,
+      "scoreBreakdown": {
+        "roleFit": 99,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 78
+      }
+    },
+    {
+      "id": "6b7009d8a2025290ac",
       "company": "Midland Credit Management",
       "companyTier": "C",
       "industry": "Other",
@@ -5544,7 +5713,7 @@
       "location": "San Diego, CA, United States",
       "employmentType": "New Grad",
       "postedAt": "2026-09-05T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a8e1b0347679c68bf5e6b60?utm_campaign=Product%20Management&utm_source=1103",
+      "url": "https://jobright.ai/jobs/info/6a614f46ab14335fc0f17a7b?utm_campaign=Product%20Management&utm_source=1103",
       "source": "Jobright New Grad",
       "category": "Product Management",
       "tags": [
@@ -5624,13 +5793,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 78,
         "experienceFit": 70,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5649,13 +5818,13 @@
         "Internship",
         "Priority A"
       ],
-      "matchScore": 84,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 65,
         "companyFit": 95,
         "careerFit": 80,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5671,13 +5840,37 @@
       "source": "Workday",
       "category": "Strategy & Operations",
       "tags": [],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 65,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 78
+        "freshness": 62
+      }
+    },
+    {
+      "id": "c5e794cad4c1031ab2",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Regional Marketing Lead Analyst",
+      "location": "New York New York United States",
+      "employmentType": "Full time",
+      "postedAt": "2026-09-04T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/New-York-New-York-United-States/Regional-Marketing-Lead-Analyst_26991449",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 82,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 85,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 62
       }
     },
     {
@@ -5693,13 +5886,13 @@
       "source": "Workday",
       "category": "Strategy & Operations",
       "tags": [],
-      "matchScore": 88,
+      "matchScore": 87,
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 90,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5717,13 +5910,13 @@
       "tags": [
         "Remote"
       ],
-      "matchScore": 82,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 75,
         "companyFit": 82,
         "careerFit": 62,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5739,37 +5932,13 @@
       "source": "Workday",
       "category": "Product Management",
       "tags": [],
-      "matchScore": 88,
+      "matchScore": 86,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 85,
         "companyFit": 82,
         "careerFit": 88,
-        "freshness": 78
-      }
-    },
-    {
-      "id": "cc632b4bc6cedcc5eb",
-      "company": "MannyAI",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Junior Product Manager",
-      "location": "London, United Kingdom",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-04T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a9d015b75edfa11b470ee8e?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5787,13 +5956,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5812,13 +5981,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 84,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5836,13 +6005,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5860,13 +6029,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 79,
+      "matchScore": 77,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5884,13 +6053,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 78,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 60,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5909,13 +6078,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 84,
+      "matchScore": 82,
       "scoreBreakdown": {
         "roleFit": 95,
         "experienceFit": 55,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5934,13 +6103,13 @@
         "New Grad",
         "Remote"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -5958,13 +6127,13 @@
       "tags": [
         "New Grad"
       ],
-      "matchScore": 80,
+      "matchScore": 79,
       "scoreBreakdown": {
         "roleFit": 99,
         "experienceFit": 55,
         "companyFit": 70,
         "careerFit": 100,
-        "freshness": 78
+        "freshness": 62
       }
     },
     {
@@ -6061,54 +6230,6 @@
         "experienceFit": 80,
         "companyFit": 95,
         "careerFit": 88,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "ea0af828e77f722044",
-      "company": "Hive",
-      "companyTier": "C",
-      "industry": "Other",
-      "title": "Associate Product Manager, Hive Models",
-      "location": "San Francisco, CA, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a6269eef805ef6ff4232c23?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 79,
-      "scoreBreakdown": {
-        "roleFit": 99,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
-        "freshness": 62
-      }
-    },
-    {
-      "id": "ad91b8bc3787e845e9",
-      "company": "Nestlé",
-      "companyTier": "C",
-      "industry": "Consumer / Retail / Beauty / Fashion",
-      "title": "Product Development Associate",
-      "location": "St. Louis, MO, United States",
-      "employmentType": "New Grad",
-      "postedAt": "2026-09-03T00:00:00.000Z",
-      "url": "https://jobright.ai/jobs/info/6a616f6aab14335fc0f1827c?utm_campaign=Product%20Management&utm_source=1103",
-      "source": "Jobright New Grad",
-      "category": "Product Management",
-      "tags": [
-        "New Grad"
-      ],
-      "matchScore": 77,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 55,
-        "companyFit": 70,
-        "careerFit": 100,
         "freshness": 62
       }
     },
@@ -6237,25 +6358,26 @@
       }
     },
     {
-      "id": "200127ca8600d32d1e",
-      "company": "Target",
-      "companyTier": "A",
-      "industry": "Consumer / Retail",
-      "title": "Analyst Marketplace Partner Performance",
-      "location": "Bangalore,India",
+      "id": "2fee5d169af2a79249",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Taipei Taipei City Taiwan",
       "employmentType": "Full time",
       "postedAt": "2026-09-01T00:00:00.000Z",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Marketplace-Partner-Performance_R0000441183-1",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taipei-Taipei-City-Taiwan/KYC-Operations-Analyst_26971492",
       "source": "Workday",
       "category": "Strategy & Operations",
       "tags": [
-        "Priority A"
+        "Internship",
+        "Remote"
       ],
-      "matchScore": 86,
+      "matchScore": 81,
       "scoreBreakdown": {
         "roleFit": 94,
-        "experienceFit": 75,
-        "companyFit": 95,
+        "experienceFit": 65,
+        "companyFit": 82,
         "careerFit": 88,
         "freshness": 62
       }
@@ -6311,31 +6433,6 @@
       }
     },
     {
-      "id": "f02b282783d9a69fbb",
-      "company": "Unilever",
-      "companyTier": "A",
-      "industry": "Consumer / Retail",
-      "title": "Associate CO Data & Analytics Product Manager",
-      "location": "Hoboken US HQ; Trumbull, CT",
-      "employmentType": "Full time",
-      "postedAt": "2026-08-28T00:00:00.000Z",
-      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Hoboken-US-HQ/Associate-CO-Data---Analytics-Product-Manager_R-1184388-1",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [
-        "Internship",
-        "Priority A"
-      ],
-      "matchScore": 90,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 90,
-        "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 62
-      }
-    },
-    {
       "id": "5eb3eedeb015293ce5",
       "company": "Robinhood",
       "companyTier": "A",
@@ -6351,13 +6448,13 @@
         "New Grad",
         "Priority A"
       ],
-      "matchScore": 79,
+      "matchScore": 78,
       "scoreBreakdown": {
         "roleFit": 80,
         "experienceFit": 65,
         "companyFit": 95,
         "careerFit": 100,
-        "freshness": 62
+        "freshness": 48
       }
     },
     {
@@ -6406,28 +6503,6 @@
         "roleFit": 95,
         "experienceFit": 80,
         "companyFit": 95,
-        "careerFit": 88,
-        "freshness": 48
-      }
-    },
-    {
-      "id": "f5ea25dcc450f756f7",
-      "company": "Vanguard",
-      "companyTier": "B",
-      "industry": "Financial Services / Fintech",
-      "title": "Technical Product Manager, Specialist",
-      "location": "Malvern, PA",
-      "employmentType": "Full time",
-      "postedAt": "2026-08-27T00:00:00.000Z",
-      "url": "https://vanguard.wd5.myworkdayjobs.com/vanguard_external/job/Malvern-PA/Technical-Product-Manager--Specialist_178897",
-      "source": "Workday",
-      "category": "Product Management",
-      "tags": [],
-      "matchScore": 80,
-      "scoreBreakdown": {
-        "roleFit": 95,
-        "experienceFit": 65,
-        "companyFit": 82,
         "careerFit": 88,
         "freshness": 48
       }
@@ -7305,6 +7380,31 @@
       }
     },
     {
+      "id": "1d840c824b073c0629",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Regional Marketing Analyst",
+      "location": "Hong Kong  Hong Kong",
+      "employmentType": "Full time",
+      "postedAt": "2026-07-30T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Hong-Kong--Hong-Kong/Regional-Marketing-Analyst_26983048",
+      "source": "Workday",
+      "category": "Marketing & GTM",
+      "tags": [
+        "Internship",
+        "Remote"
+      ],
+      "matchScore": 73,
+      "scoreBreakdown": {
+        "roleFit": 84,
+        "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
       "id": "1a249b72c4ee66b9ee",
       "company": "Citi",
       "companyTier": "B",
@@ -7444,6 +7544,30 @@
       }
     },
     {
+      "id": "c5ec201b1ab3c9133d",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Pune Maharashtra India",
+      "employmentType": "",
+      "postedAt": "2026-06-02T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Pune-Maharashtra-India/KYC-Operations-Analyst_26947874",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
       "id": "677b83e07467d78fbe",
       "company": "Databricks",
       "companyTier": "A",
@@ -7540,6 +7664,56 @@
       }
     },
     {
+      "id": "dab03556f6d16c642a",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "DLF CYBERCITY 12B",
+      "employmentType": "Full time",
+      "postedAt": "2026-03-19T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/DLF-CYBERCITY-12B/KYC-Operations-Analyst_25915007",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Entry Level",
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "28b41ef9f7aab99889",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "1/124, SHIVAJI GARDENS, MOONLI",
+      "employmentType": "Full time",
+      "postedAt": "2026-03-18T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/1124-SHIVAJI-GARDENS-MOONLI/KYC-Operations-Analyst_26947724",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Entry Level",
+        "Internship"
+      ],
+      "matchScore": 79,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 100,
+        "freshness": 35
+      }
+    },
+    {
       "id": "54476df09478a269ff",
       "company": "Citi",
       "companyTier": "B",
@@ -7610,6 +7784,30 @@
       }
     },
     {
+      "id": "0245655cb68f665275",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst - International Personal Banking, Wealth Operations",
+      "location": "Singapore  Singapore",
+      "employmentType": "Full time",
+      "postedAt": "2026-01-09T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Singapore--Singapore/KYC-Operations-Analyst-2---International-Personal-Banking--Wealth-Operations_26930576",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
       "id": "672e049e12ccaa7772",
       "company": "Databricks",
       "companyTier": "A",
@@ -7629,6 +7827,30 @@
         "roleFit": 86,
         "experienceFit": 75,
         "companyFit": 95,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "0841dc111e342075d3",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "KYC Operations Analyst",
+      "location": "Mumbai Maharashtra India",
+      "employmentType": "Full time",
+      "postedAt": "2025-09-17T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Mumbai-Maharashtra-India/KYC-Operations-Analyst-1---Mumbai_25883645-1",
+      "source": "Workday",
+      "category": "Strategy & Operations",
+      "tags": [
+        "Internship"
+      ],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 94,
+        "experienceFit": 65,
+        "companyFit": 82,
         "careerFit": 88,
         "freshness": 35
       }
@@ -7656,6 +7878,28 @@
       }
     },
     {
+      "id": "0ac31231da8cb33cb2",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - Korean Speaker",
+      "location": "Taguig  Philippines",
+      "employmentType": "Full time",
+      "postedAt": "2025-07-18T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Taguig--Philippines/Program-Management-Analyst---Korean-Speaker_25887624",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 78,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 75,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
       "id": "765e22700a41b8ab75",
       "company": "Citi",
       "companyTier": "B",
@@ -7674,6 +7918,28 @@
       "scoreBreakdown": {
         "roleFit": 94,
         "experienceFit": 60,
+        "companyFit": 82,
+        "careerFit": 88,
+        "freshness": 35
+      }
+    },
+    {
+      "id": "d8dd1eb4f4e0ae2f21",
+      "company": "Citi",
+      "companyTier": "B",
+      "industry": "Financial Services / Fintech",
+      "title": "Program Management Analyst - C10 - DALIAN",
+      "location": "Dalian Shanghai China",
+      "employmentType": "Full time",
+      "postedAt": "2025-02-05T00:00:00.000Z",
+      "url": "https://citi.wd5.myworkdayjobs.com/2/job/Dalian-Shanghai-China/Program-Management-Analyst---C10---DALIAN_25823271-1",
+      "source": "Workday",
+      "category": "Program Management",
+      "tags": [],
+      "matchScore": 76,
+      "scoreBreakdown": {
+        "roleFit": 86,
+        "experienceFit": 70,
         "companyFit": 82,
         "careerFit": 88,
         "freshness": 35
