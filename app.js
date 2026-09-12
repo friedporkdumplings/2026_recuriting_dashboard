@@ -24,6 +24,7 @@ const state = {
   universe: null,
   categories: new Set(),
   quick: new Set(),
+  mainView: true,
   locations: new Set(),
   industries: new Set(),
   tiers: new Set(),
@@ -272,6 +273,11 @@ function quickMatchesOne(job, item) {
   return hay.includes(item.toLowerCase());
 }
 
+function mainViewMatches(job) {
+  if (!state.mainView) return true;
+  return locationMatchesValue(job.location, 'usa') && quickMatchesOne(job, '🔥 Apply ASAP');
+}
+
 function quickMatches(job) {
   if (state.quick.size === 0) return true;
   // Multiple quick filters narrow the feed together instead of broadening it.
@@ -318,6 +324,7 @@ function filteredJobs() {
   let list = state.jobs.filter(job => {
     if (!visibleInCurrentView(job)) return false;
     if (state.categories.size && !state.categories.has(job.category)) return false;
+    if (!mainViewMatches(job)) return false;
     if (!quickMatches(job)) return false;
     if (!locationMatches(job.location)) return false;
     if (!salaryMatches(job)) return false;
@@ -351,6 +358,7 @@ function renderNav() {
   allBtn.className = state.categories.size === 0 ? 'active' : '';
   allBtn.innerHTML = `<span>All</span><span class="count">${state.jobs.length}</span>`;
   allBtn.onclick = () => {
+    state.mainView = false;
     state.categories.clear();
     render();
   };
@@ -362,6 +370,7 @@ function renderNav() {
     btn.className = state.categories.has(category) ? 'active' : '';
     btn.innerHTML = `<span>${category}</span><span class="count">${count}</span>`;
     btn.onclick = () => {
+      state.mainView = false;
       state.categories.has(category) ? state.categories.delete(category) : state.categories.add(category);
       render();
     };
@@ -373,19 +382,33 @@ function renderQuickFilters() {
   els.quickFilters.innerHTML = '';
 
   const allBtn = document.createElement('button');
-  allBtn.className = `chip ${state.quick.size === 0 ? 'active' : ''}`;
+  allBtn.className = `chip ${!state.mainView && state.quick.size === 0 ? 'active' : ''}`;
   allBtn.textContent = 'All';
   allBtn.onclick = () => {
+    state.mainView = false;
     state.quick.clear();
     render();
   };
   els.quickFilters.appendChild(allBtn);
 
+  const mainBtn = document.createElement('button');
+  mainBtn.className = `chip ${state.mainView ? 'active' : ''}`;
+  mainBtn.textContent = 'Main View';
+  mainBtn.title = 'USA-based roles that meet Apply ASAP criteria';
+  mainBtn.onclick = () => {
+    state.mainView = true;
+    state.quick.clear();
+    state.locations.clear();
+    render();
+  };
+  els.quickFilters.appendChild(mainBtn);
+
   quickFilters.forEach(item => {
     const btn = document.createElement('button');
-    btn.className = `chip ${state.quick.has(item) ? 'active' : ''}`;
+    btn.className = `chip ${!state.mainView && state.quick.has(item) ? 'active' : ''}`;
     btn.textContent = item;
     btn.onclick = () => {
+      state.mainView = false;
       state.quick.has(item) ? state.quick.delete(item) : state.quick.add(item);
       render();
     };
@@ -640,7 +663,11 @@ function renderJobs() {
   els.empty.classList.toggle('hidden', jobs.length !== 0);
   els.resultCount.textContent = `${jobs.length} role${jobs.length === 1 ? '' : 's'}`;
 
-  if (state.view === 'today') {
+  if (state.mainView && state.view === 'all') {
+    els.feedEyebrow.textContent = 'MAIN VIEW · USA · APPLY ASAP';
+    els.feedTitle.textContent = 'Main View';
+    els.emptyMessage.textContent = 'No USA-based roles currently meet the Apply ASAP criteria. Switch to All to browse the full feed.';
+  } else if (state.view === 'today') {
     els.feedEyebrow.textContent = 'NEW TODAY · APPLY EARLY';
     els.feedTitle.textContent = 'Roles posted in the past 24 hours';
     els.emptyMessage.textContent = 'No roles were posted in the past 24 hours with these filters. Try widening your role or location filters.';
@@ -699,6 +726,7 @@ function bindStaticMultiSelect(container, stateSet) {
   container.querySelectorAll('input[type="checkbox"]').forEach(input => {
     input.checked = stateSet.has(input.value);
     input.addEventListener('change', () => {
+      state.mainView = false;
       input.checked ? stateSet.add(input.value) : stateSet.delete(input.value);
       render();
     });
@@ -719,6 +747,7 @@ function populateIndustryOptions() {
     input.value = industry;
     input.checked = state.industries.has(industry);
     input.addEventListener('change', () => {
+      state.mainView = false;
       input.checked ? state.industries.add(industry) : state.industries.delete(industry);
       render();
     });
@@ -771,6 +800,7 @@ function render() {
 }
 
 function resetFilters() {
+  state.mainView = true;
   state.categories.clear();
   state.quick.clear();
   state.locations.clear();
@@ -790,6 +820,7 @@ function resetFilters() {
 }
 
 function setView(view) {
+  state.mainView = false;
   state.view = state.view === view ? 'all' : view;
   if (state.view === 'today') {
     els.freshness.value = 'all';
@@ -901,6 +932,9 @@ document.querySelector('#showHiddenBtn').onclick = () => setView('hidden');
 
 document.querySelector('#clearViewBtn').onclick = () => {
   state.view = 'all';
+  state.mainView = true;
+  state.quick.clear();
+  state.locations.clear();
   render();
 };
 

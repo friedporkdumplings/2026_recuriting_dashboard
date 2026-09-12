@@ -106,3 +106,26 @@ After commit, manually run the refresh workflow once so `data/jobs.json` is rege
 - The footer now reports the source counts that actually generated the current `jobs.json`, instead of the configured/aspirational count.
 - Expanded matching for product-adjacent, marketing, content, communications, creator, research, partnerships, growth, marketplace, and digital-commerce roles.
 - The refresh workflow now runs automatically when the scraper or source configuration changes, in addition to the six-hour schedule and manual run.
+
+
+## v3.3 — Main View
+
+The quick-filter row now starts with:
+
+- **All**
+- **Main View**
+
+`Main View` is selected by default and shows only jobs that are:
+
+- USA based
+- eligible for the current **Apply ASAP** rule
+
+The current Apply ASAP rule requires:
+- posted within 24 hours
+- overall fit score ≥ 85
+- role-fit score ≥ 85
+- early-career fit ≥ 70
+
+Selecting another quick filter, location, category, salary, freshness, search term, or top-level view exits Main View so the user's manual filters take control.
+
+`Reset filters` returns the dashboard to Main View.
