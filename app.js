@@ -58,15 +58,26 @@ const els = {
   tierSummary: document.querySelector('#tierSummary'),
   resetFilters: document.querySelector('#resetFilters'),
   actionQueue: document.querySelector('#actionQueue'),
+  actionQueuePriorityCount: document.querySelector('#actionQueuePriorityCount'),
+  salary: document.querySelector('#salaryFilter'),
+  includeUnknownSalary: document.querySelector('#includeUnknownSalary'),
   toast: document.querySelector('#toast'),
   toastMessage: document.querySelector('#toastMessage'),
   toastUndo: document.querySelector('#toastUndo'),
 };
 
 const categories = [
-  'Product Management', 'Strategy & Operations', 'Consulting', 'Marketing & GTM',
-  'Program Management', 'Innovation & AI', 'Customer & Solutions', 'Research & Insights',
-  'Partnerships & BD', 'Marketplace & Growth'
+  'Product',
+  'Strategy & Operations',
+  'Business & Analytics',
+  'Consulting & Transformation',
+  'Programs & Projects',
+  'Innovation & AI',
+  'GTM & Commercial',
+  'Customer & Solutions',
+  'Research & Insights',
+  'Partnerships & Platforms',
+  'Growth & Marketplace'
 ];
 
 const quickFilters = [
@@ -250,6 +261,26 @@ function visibleInCurrentView(job) {
   return true;
 }
 
+function salaryMatches(job) {
+  const threshold = els.salary?.value || 'all';
+  if (threshold === 'all') return true;
+
+  const minRequired = Number(threshold);
+  const known = Boolean(job.salaryKnown) && Number.isFinite(Number(job.salaryMin));
+
+  if (!known) return Boolean(els.includeUnknownSalary?.checked);
+  return Number(job.salaryMin) >= minRequired;
+}
+
+function formatSalary(job) {
+  if (!job.salaryKnown || !Number.isFinite(Number(job.salaryMin))) return '';
+  const min = Number(job.salaryMin);
+  const max = Number(job.salaryMax);
+  const compact = n => `$${Math.round(n / 1000)}K`;
+  if (Number.isFinite(max) && max > min) return `${compact(min)}–${compact(max)} base`;
+  return `${compact(min)}+ base`;
+}
+
 function filteredJobs() {
   const query = els.search.value.trim().toLowerCase();
   const freshness = els.freshness.value;
@@ -259,6 +290,7 @@ function filteredJobs() {
     if (state.categories.size && !state.categories.has(job.category)) return false;
     if (!quickMatches(job)) return false;
     if (!locationMatches(job.location)) return false;
+    if (!salaryMatches(job)) return false;
     if (state.industries.size && !state.industries.has(job.industry || 'Other')) return false;
     if (state.tiers.size && !state.tiers.has(job.companyTier || 'C')) return false;
 
@@ -376,6 +408,7 @@ function actionCounts() {
 
 function renderActionQueue() {
   const counts = actionCounts();
+  if (els.actionQueuePriorityCount) els.actionQueuePriorityCount.textContent = counts.newPriority;
 
   const items = [
     {
@@ -486,6 +519,13 @@ function createJobNode(job) {
   node.querySelector('.company').textContent = job.company;
   node.querySelector('.title').textContent = job.title;
   node.querySelector('.meta').textContent = [job.location, job.employmentType].filter(Boolean).join(' · ');
+  const salaryText = formatSalary(job);
+  if (salaryText) {
+    const salary = document.createElement('div');
+    salary.className = 'salary-display';
+    salary.textContent = salaryText;
+    node.querySelector('.meta').insertAdjacentElement('afterend', salary);
+  }
 
   const age = node.querySelector('.age');
   age.textContent = ageLabel(job.postedAt);
@@ -708,6 +748,8 @@ function resetFilters() {
   els.search.value = '';
   els.freshness.value = 'all';
   els.sort.value = 'newest';
+  if (els.salary) els.salary.value = 'all';
+  if (els.includeUnknownSalary) els.includeUnknownSalary.checked = true;
 
   document.querySelectorAll('.multi-menu input[type="checkbox"]').forEach(input => {
     input.checked = false;
@@ -817,6 +859,8 @@ async function loadData() {
 els.search.addEventListener('input', render);
 els.freshness.addEventListener('change', render);
 els.sort.addEventListener('change', render);
+if (els.salary) els.salary.addEventListener('change', render);
+if (els.includeUnknownSalary) els.includeUnknownSalary.addEventListener('change', render);
 els.resetFilters.addEventListener('click', resetFilters);
 
 document.querySelector('#showTodayBtn').onclick = () => setView('today');

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Recruiting Dashboard</title>
   <meta name="description" content="An early-career job recruiting dashboard for product, strategy, operations, consulting, and related business roles." />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
   <div class="shell">
@@ -50,16 +50,25 @@
         </div>
       </header>
 
-      <section class="action-queue card" aria-labelledby="actionQueueTitle">
-        <div class="action-queue-head">
-          <div>
-            <p class="eyebrow">ACTION QUEUE</p>
-            <h3 id="actionQueueTitle">What needs attention</h3>
+      <details class="action-queue action-queue-compact card" id="actionQueueDetails">
+        <summary>
+          <div class="action-summary-copy">
+            <span class="action-summary-count" id="actionQueuePriorityCount">0</span>
+            <span><strong>high-fit or Priority A roles</strong> posted in the past 24 hours</span>
           </div>
-          <button class="text-btn" id="clearViewBtn" type="button">View all jobs</button>
+          <span class="action-expand-label">Expand queue <span class="action-caret">⌄</span></span>
+        </summary>
+        <div class="action-queue-expanded">
+          <div class="action-queue-head">
+            <div>
+              <p class="eyebrow">ACTION QUEUE</p>
+              <h3 id="actionQueueTitle">What needs attention</h3>
+            </div>
+            <button class="text-btn" id="clearViewBtn" type="button">View all jobs</button>
+          </div>
+          <div class="action-grid" id="actionQueue"></div>
         </div>
-        <div class="action-grid" id="actionQueue"></div>
-      </section>
+      </details>
 
       <section class="stats" id="stats"></section>
 
@@ -111,6 +120,16 @@
             <label class="multi-option"><input type="checkbox" value="C" /><span>Priority C</span></label>
           </div>
         </details>
+
+        <div class="salary-filter-wrap">
+          <select id="salaryFilter" aria-label="Minimum disclosed salary">
+            <option value="all">Any salary</option>
+            <option value="80000">$80K+ minimum</option>
+            <option value="100000">$100K+ minimum</option>
+            <option value="120000">$120K+ minimum</option>
+          </select>
+          <label class="salary-unknown"><input id="includeUnknownSalary" type="checkbox" checked /> Include unlisted</label>
+        </div>
 
         <select id="sortFilter" aria-label="Sort jobs">
           <option value="newest">Newest first</option>
@@ -183,6 +202,6 @@
     <button id="toastUndo" type="button">Undo</button>
   </div>
 
-  <script src="app.js?v=6" defer></script>
+  <script src="app.js?v=7" defer></script>
 </body>
 </html>

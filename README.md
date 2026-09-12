@@ -1,140 +1,82 @@
-# Job Recruiting Dashboard
+# Job Recruiting Dashboard — v3
 
-A GitHub Pages dashboard for discovering and tracking early-career roles across product, strategy, operations, consulting, and related business functions.
+A GitHub Pages dashboard for discovering and tracking early-career roles across product, strategy, operations, analytics, consulting, transformation, programs, GTM, innovation, customer, research, platform, marketplace, and related business functions.
 
-The job feed refreshes public ATS sources every six hours with GitHub Actions, classifies relevant early-career roles, and ranks them with a heuristic fit score to make a large job feed easier to review.
+## v3 changes
 
-## v2 workflow update
+### Broader coverage
+- Expands direct ATS coverage from the prior 36-company setup to roughly 60+ configured direct sources.
+- Keeps the existing Workday employers.
+- Adds more public Greenhouse, Lever, and Ashby boards.
+- Expands broad early-career feeds beyond PM into:
+  - business analyst
+  - consulting
+  - marketing
+  - data analysis
+- Companies outside A/B/C can now appear as **Other / Unranked** instead of being implicitly treated as Tier C.
 
-This release focuses on turning the site from a job feed into a lightweight recruiting workflow:
+### Broader role matching
+New or expanded matching includes:
+- Business Analyst / Digital Business Analyst / Business Process Analyst
+- Product Analyst / Product Enablement / Product Adoption
+- Revenue Operations / Commercial Operations / GTM Operations
+- Digital Adoption / AI Enablement / Product Excellence
+- Change Management / Change & Adoption / Transformation
+- Strategic Programs / Special Projects / Enterprise Programs
+- Operational Excellence / Process Improvement
+- Innovation Programs / Corporate Innovation / Venture roles
+- Customer Strategy / Implementation / Client Strategy
+- Creator Strategy / Creator Operations / Community Strategy
+- Platform Strategy / Platform Operations / Audience Development
+- Rotational / leadership-development / Level I / Analyst I style early-career titles
 
-- Generic public branding with no individual name, initials, graduation date, contact information, or private recruiting notes.
-- **New Today** view grouped into:
-  - under 6 hours
-  - 6–12 hours
-  - 12–24 hours
-- Clear **Save**, **Hide**, and **View role** actions.
-- **Hide + Undo** and a dedicated **Hidden jobs** view with Restore.
-- Application pipeline:
-  - Saved
-  - Applying
-  - Applied
-  - OA / Assessment
-  - Interview
-  - Final Round
-  - Offer
-  - Rejected
-  - Withdrawn
-- Homepage **Action Queue** for:
-  - strong-fit / Priority A roles posted in the past 24 hours
-  - saved roles that have not moved into an application
-  - roles currently marked Applying
-  - roles at OA / Interview / Final Round
-- Browser-local **Export / Import** for saved, hidden, and application-stage state.
-- Existing multi-select role, location, industry, and company-tier filters remain available.
+The 5+ years requirement remains an exclusion unless a posting explicitly identifies itself as early career.
 
-## Privacy model
+### Salary filter
+Each fetched posting is scanned for disclosed US base salary language and normalized into:
+- `salaryMin`
+- `salaryMax`
+- `salaryCurrency`
+- `salaryPeriod`
+- `salaryText`
+- `salaryKnown`
 
-The repository and GitHub Pages site can be public without exposing a visitor's personal recruiting state.
+The UI supports:
+- Any salary
+- $80K+ minimum
+- $100K+ minimum
+- $120K+ minimum
 
-Personal state is stored only in the browser with `localStorage`:
+`Include unlisted` is checked by default so employers that do not disclose pay are not accidentally hidden.
 
-- saved job IDs
-- hidden job IDs
-- application stages
+The threshold uses the **minimum disclosed base salary**, not the top of the range.
 
-Nothing in the v2 frontend requires personal names, email addresses, LinkedIn profiles, networking contacts, resume files, coffee-chat notes, or private application notes to be committed to the repository.
+### Compact Action Queue
+The Action Queue is now collapsed by default and only shows:
 
-A different visitor opening the same GitHub Pages URL gets their own separate browser-local state.
+> high-fit or Priority A roles posted in the past 24 hours
 
-Use **Export local data** periodically if you want a backup. Use **Import local data** to restore that state in another browser.
+Expand it to see the full current queue for saved roles, applying roles, and interview/assessment stages.
 
-## Fit score
+### Privacy
+The scraper user-agent is now generic and points to the renamed repository:
+`JobRecruitingDashboard/3.0`
 
-The score is a heuristic sorting aid, not a hiring prediction.
+No personal name is included.
 
-Current weighting:
+## Upload files
 
-- Role fit: **35%**
-- Experience overlap: **25%**
-- Company priority: **20%**
-- Early-career fit: **10%**
-- Posting freshness: **10%**
+Replace / add:
+- `index.html`
+- `styles.css`
+- `app.js`
+- `README.md`
+- `config/sources.json`
+- `scripts/fetch-jobs.mjs`
 
-The experience-overlap component uses broad product, technology, research, operations, transformation, GTM, customer, testing, analytics, process-improvement, and innovation signals.
+Do not replace:
+- `.github/workflows/`
+- `data/` manually (the workflow regenerates it)
+- `config/company-universe.json`
 
-## Career categories
-
-- Product Management
-- Strategy & Operations
-- Consulting
-- Marketing & GTM
-- Program Management
-- Innovation & AI
-- Customer & Solutions
-- Research & Insights
-- Partnerships & BD
-- Marketplace & Growth
-
-## Data sources
-
-The source configuration is in `config/sources.json`.
-
-The project supports a mix of:
-
-- Greenhouse
-- Lever
-- Ashby
-- Workday
-- broad early-career feeds where configured
-
-Source-health information is recorded so one failing feed does not stop the entire refresh.
-
-## How the refresh works
-
-```text
-Greenhouse ─┐
-Lever ──────┤
-Ashby ──────┼──> scripts/fetch-jobs.mjs
-Workday ────┘             ↓
-                      relevance filter
-                            ↓
-                       fit scoring
-                            ↓
-                       data/jobs.json
-                            ↓
-                       GitHub Pages
-```
-
-The scheduled workflow lives at `.github/workflows/refresh-jobs.yml`.
-
-## Local browser state
-
-The v2 frontend uses these `localStorage` keys:
-
-```text
-savedJobs
-hiddenJobs
-jobApplicationStages
-```
-
-For backward compatibility, an existing `appliedJobs` list is migrated into the `Applied` application stage the first time v2 loads.
-
-## Deploying the v2 frontend
-
-Replace the existing root-level frontend files with the v2 versions:
-
-```text
-index.html
-styles.css
-app.js
-README.md
-```
-
-No changes are required to the ATS fetchers, workflow, source configuration, company universe, or generated `data/jobs.json` format for this frontend update.
-
-After committing the files to `main`, GitHub Pages should deploy the new frontend automatically according to the repository's existing Pages configuration.
-
-## Source policy
-
-Prefer official/public ATS feeds and company career pages. Do not aggressively scrape LinkedIn or other sites whose terms or anti-bot systems prohibit automated collection.
+After commit, manually run the refresh workflow once so `data/jobs.json` is regenerated with salary fields and the expanded sources.
