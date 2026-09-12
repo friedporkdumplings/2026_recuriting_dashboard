@@ -33,7 +33,10 @@ const TARGET = {
       'product manager','product management','product analyst','product strategy','product operations','product development',
       'product innovation','digital product','ai product','growth product','platform product','product experience',
       'product solutions','product project','product program','product coordinator','product specialist','product associate',
-      'product owner','apm program','associate pm','product rotational','product enablement','product adoption','product launch'
+      'product owner','apm program','associate pm','product rotational','product enablement','product adoption','product launch',
+      'product commercialization','product growth','product experience','product insights','product planning',
+      'product business','product implementation','product success','product solutions analyst','product operations analyst',
+      'associate product','product coordinator','product specialist'
     ],
     'Strategy & Operations': [
       'strategy & operations','strategy and operations','strategic operations','business operations','bizops','corporate strategy',
@@ -71,7 +74,12 @@ const TARGET = {
       'product marketing','go-to-market','go to market','gtm','commercialization','marketing strategy','growth marketing',
       'customer marketing','lifecycle marketing','partner marketing','solutions marketing','brand strategy','digital marketing',
       'integrated marketing','marketing analyst','commercial operations','revenue operations','sales strategy','sales operations',
-      'commercial strategy','commercial analyst','revenue strategy','gtm strategy','gtm operations','sales enablement','gtm enablement'
+      'commercial strategy','commercial analyst','revenue strategy','gtm strategy','gtm operations','sales enablement','gtm enablement',
+      'marketing operations','marketing associate','marketing coordinator','digital marketing associate','digital marketing analyst',
+      'content marketing','content strategy','content strategist','content operations','social media strategy','social media strategist',
+      'social media associate','social media coordinator','creator marketing','influencer marketing','community marketing',
+      'communications analyst','communications associate','digital communications','brand marketing','brand strategy analyst',
+      'lifecycle marketing','crm marketing','consumer marketing','audience development','audience strategy','marketing insights'
     ],
     'Customer & Solutions': [
       'customer success','client success','client solutions','solutions consultant','pre-sales consultant','presales consultant',
@@ -82,18 +90,22 @@ const TARGET = {
     'Research & Insights': [
       'user research','ux research','product research','customer insights','consumer insights','experience researcher',
       'experience strategy','voice of customer','market research','design researcher','design strategy','human-centered design',
-      'insights analyst','research analyst','audience insights','customer research'
+      'insights analyst','research analyst','audience insights','customer research','consumer research',
+      'market insights','consumer behavior','customer research analyst','research associate','user insights','product insights'
     ],
     'Partnerships & Platforms': [
       'business development','strategic partnerships','partnerships analyst','partnership development','ecosystem',
       'partner strategy','strategic alliances','commercial partnerships','platform partnerships','creator partnerships',
       'partnerships associate','platform strategy','platform operations','creator strategy','creator operations',
-      'community strategy','community operations','audience development'
+      'community strategy','community operations','audience development','creator partnerships associate',
+      'platform partnerships associate','partner operations','partner success','ecosystem operations','content partnerships'
     ],
     'Growth & Marketplace': [
       'marketplace operations','marketplace strategy','category strategy','category management','category manager',
       'e-commerce strategy','ecommerce strategy','e-commerce operations','retail strategy','consumer strategy','growth operations',
-      'growth analyst','growth strategy','platform growth','creator growth','content strategy','merchandising strategy'
+      'growth analyst','growth strategy','platform growth','creator growth','content strategy','merchandising strategy',
+      'marketplace analyst','category analyst','ecommerce analyst','e-commerce analyst','consumer growth','growth associate',
+      'growth operations analyst','retail analytics','consumer experience','digital commerce','commerce operations'
     ]
   },
   explicitEarlyCareer: [
@@ -108,7 +120,9 @@ const TARGET = {
     'product operations','digital transformation','go-to-market','gtm','customer experience','consumer insights','market research',
     'testing','quality assurance','program management','project management','process improvement','dashboard','launch','innovation',
     'emerging technology','adoption','enablement','change management','business operations','commercial operations','analytics',
-    'content strategy','creator','community','implementation','operational excellence'
+    'content strategy','creator','community','implementation','operational excellence','digital marketing',
+    'social media','communications','consumer behavior','creator partnerships','marketing operations','product enablement',
+    'product adoption','customer insights','audience development','digital commerce','commercial strategy'
   ],
   excludeTitleTerms: [
     'senior ','sr. ','staff ','principal ','director','vice president','vp ','head of ','chief ',
@@ -147,8 +161,8 @@ function classify(title, description='') {
   for (const [category, terms] of Object.entries(TARGET.categories)) {
     let score = 0;
     for (const term of terms) {
-      if (t.includes(term)) score += 6;
-      else if (body.includes(term)) score += 1;
+      if (t.includes(term)) score += 7;
+      else if (body.includes(term)) score += 0.5;
     }
     if (score > bestScore) { bestScore = score; best = category; }
   }
@@ -163,7 +177,7 @@ function explicitEarlyCareer(text='') {
 function juniorTitle(title='') {
   const t = title.toLowerCase();
   if (/senior|sr\.|staff|principal|director|vice president|\bvp\b|head of|chief/.test(t)) return false;
-  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bassistant\b|\badvisor\b|\bconsultant(?: i| 1)?\b|\bintern\b|\binternship\b|\bco-?op\b|\bgraduate\b|entry[- ]level|\bjunior\b|\btrainee\b|\bapm\b|\b2027\b|\blevel i\b|\blevel 1\b|\banalyst i\b|\banalyst 1\b|\bassociate i\b|\bproduct manager i\b|\bproduct manager 1\b|\bprogram manager i\b|\brotational\b/.test(t);
+  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bassistant\b|\badvisor\b|\bconsultant(?: i| 1)?\b|\bintern\b|\binternship\b|\bco-?op\b|\bgraduate\b|entry[- ]level|\bjunior\b|\btrainee\b|\bapm\b|\b2027\b|\blevel i\b|\blevel 1\b|\banalyst i\b|\banalyst 1\b|\bassociate i\b|\bproduct manager i\b|\bproduct manager 1\b|\bprogram manager i\b|\brotational\b|\brepresentative\b|\bfellow\b|\bapprentice\b/.test(t);
 }
 
 function requiredYears(text='') {
