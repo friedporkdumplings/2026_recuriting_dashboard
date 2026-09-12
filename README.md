@@ -92,3 +92,19 @@ After commit, manually run the refresh workflow once so `data/jobs.json` is rege
   - early-career fit ≥ 70
 - Selecting multiple quick-filter chips now uses **AND** logic. For example, selecting `Apply ASAP` + `Priority A` shows jobs satisfying both conditions.
 - Location chips were removed from the quick-filter row. New York, California, Remote, and other locations remain available through the multi-select **All locations** control.
+
+
+## v3.2 company universe expansion
+
+`config/company-universe.json` is now synchronized with the expanded ATS configuration and broadened into a curated employer universe.
+
+- **534 employers tracked**
+- **66 employers marked as direct-ATS automated**
+- Tier A: **94**
+- Tier B: **116**
+- Tier C: **125**
+- Unranked / Other: **199**
+
+`U` is intentionally not a rejection tier. It means the employer is useful enough to keep in the search universe, but the dashboard does not give it an A/B/C company-priority boost.
+
+The universe itself does not create jobs. `sources.json`, community feeds, and the fetch script create jobs; the universe supplies standardized company priority and industry metadata to direct and broad-feed results.
