@@ -81,8 +81,8 @@ const categories = [
 ];
 
 const quickFilters = [
-  '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Entry Level', 'Associate',
-  'Analyst', 'Internship', 'Remote', 'NYC', 'California'
+  '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Entry Level',
+  'Associate', 'Analyst', 'Internship'
 ];
 
 const locationLabels = {
@@ -236,16 +236,21 @@ function locationMatches(location) {
 
 function quickMatchesOne(job, item) {
   const hay = `${job.title} ${job.location} ${job.employmentType || ''} ${(job.tags || []).join(' ')}`.toLowerCase();
-  if (item === '🔥 Apply ASAP') return (job.matchScore || 0) >= 85 && ageInDays(job.postedAt) <= 3;
+  if (item === '🔥 Apply ASAP') {
+    const breakdown = job.scoreBreakdown || {};
+    return ageInDays(job.postedAt) <= 1
+      && (job.matchScore || 0) >= 85
+      && (breakdown.roleFit ?? 85) >= 85
+      && (breakdown.careerFit ?? 70) >= 70;
+  }
   if (item === 'Priority A') return job.companyTier === 'A';
-  if (item === 'NYC') return /new york|nyc|manhattan|brooklyn/.test(hay);
-  if (item === 'California') return /california|san francisco|los angeles|mountain view|palo alto|san jose|bay area|sunnyvale|burbank|santa monica|san diego|irvine|cupertino|menlo park/.test(hay);
   return hay.includes(item.toLowerCase());
 }
 
 function quickMatches(job) {
   if (state.quick.size === 0) return true;
-  return [...state.quick].some(item => quickMatchesOne(job, item));
+  // Multiple quick filters narrow the feed together instead of broadening it.
+  return [...state.quick].every(item => quickMatchesOne(job, item));
 }
 
 function visibleInCurrentView(job) {

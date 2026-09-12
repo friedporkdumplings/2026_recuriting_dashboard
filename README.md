@@ -80,3 +80,15 @@ Do not replace:
 - `config/company-universe.json`
 
 After commit, manually run the refresh workflow once so `data/jobs.json` is regenerated with salary fields and the expanded sources.
+
+
+## v3.1 UI/filter corrections
+
+- The compact Action Queue now reads **High Fit or Priority A Roles**.
+- `Apply ASAP` now requires:
+  - posting age ≤ 24 hours
+  - overall fit score ≥ 85
+  - role-fit score ≥ 85
+  - early-career fit ≥ 70
+- Selecting multiple quick-filter chips now uses **AND** logic. For example, selecting `Apply ASAP` + `Priority A` shows jobs satisfying both conditions.
+- Location chips were removed from the quick-filter row. New York, California, Remote, and other locations remain available through the multi-select **All locations** control.
