@@ -85,6 +85,31 @@ const quickFilters = [
   'Associate', 'Analyst', 'Internship'
 ];
 
+
+const CATEGORY_ALIASES = {
+  'Product Management': 'Product',
+  'Product': 'Product',
+  'Strategy & Operations': 'Strategy & Operations',
+  'Business & Analytics': 'Business & Analytics',
+  'Consulting': 'Consulting & Transformation',
+  'Consulting & Transformation': 'Consulting & Transformation',
+  'Program Management': 'Programs & Projects',
+  'Programs & Projects': 'Programs & Projects',
+  'Innovation & AI': 'Innovation & AI',
+  'Marketing & GTM': 'GTM & Commercial',
+  'GTM & Commercial': 'GTM & Commercial',
+  'Customer & Solutions': 'Customer & Solutions',
+  'Research & Insights': 'Research & Insights',
+  'Partnerships & BD': 'Partnerships & Platforms',
+  'Partnerships & Platforms': 'Partnerships & Platforms',
+  'Marketplace & Growth': 'Growth & Marketplace',
+  'Growth & Marketplace': 'Growth & Marketplace'
+};
+
+function canonicalCategory(category='') {
+  return CATEGORY_ALIASES[category] || category || 'Other';
+}
+
 const locationLabels = {
   usa: 'USA based',
   'new york': 'New York',
@@ -707,14 +732,15 @@ function populateIndustryOptions() {
 
 function renderCoverage() {
   const universeCount = state.universe?.count || 0;
-  const automated = state.universe?.automatedCount || state.payload.sourceCount || 0;
+  // Show the counts that actually generated the current jobs.json, not aspirational config counts.
+  const direct = state.payload.directSourceCount ?? state.payload.sourceCount ?? 0;
+  const community = state.payload.communityFeedCount ?? 0;
   const failures = state.payload.failedSources || 0;
   const parts = [];
-  const community = state.payload.communityFeedCount || 0;
 
-  if (automated) parts.push(`${automated} direct ATS companies`);
-  if (community) parts.push(`${community} broad early-career feeds`);
-  if (universeCount) parts.push(`${universeCount} priority companies tracked`);
+  if (direct) parts.push(`${direct} direct ATS sources used`);
+  if (community) parts.push(`${community} broad early-career feeds used`);
+  if (universeCount) parts.push(`${universeCount} companies tracked`);
   if (failures) parts.push(`${failures} source failures this run`);
 
   els.coverageStamp.textContent = parts.join(' · ');
@@ -842,7 +868,7 @@ async function loadData() {
 
     const payload = await jobRes.json();
     state.payload = payload;
-    state.jobs = payload.jobs || [];
+    state.jobs = (payload.jobs || []).map(job => ({ ...job, category: canonicalCategory(job.category) }));
 
     if (universeRes?.ok) state.universe = await universeRes.json();
 

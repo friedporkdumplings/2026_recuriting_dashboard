@@ -94,17 +94,15 @@ After commit, manually run the refresh workflow once so `data/jobs.json` is rege
 - Location chips were removed from the quick-filter row. New York, California, Remote, and other locations remain available through the multi-select **All locations** control.
 
 
-## v3.2 company universe expansion
+## v3.2 fixes
 
-`config/company-universe.json` is now synchronized with the expanded ATS configuration and broadened into a curated employer universe.
-
-- **534 employers tracked**
-- **66 employers marked as direct-ATS automated**
-- Tier A: **94**
-- Tier B: **116**
-- Tier C: **125**
-- Unranked / Other: **199**
-
-`U` is intentionally not a rejection tier. It means the employer is useful enough to keep in the search universe, but the dashboard does not give it an A/B/C company-priority boost.
-
-The universe itself does not create jobs. `sources.json`, community feeds, and the fetch script create jobs; the universe supplies standardized company priority and industry metadata to direct and broad-feed results.
+- Backward-compatible category aliases fix filters while an older `jobs.json` is still cached/generated.
+  - `Product Management` → `Product`
+  - `Marketing & GTM` → `GTM & Commercial`
+  - `Consulting` → `Consulting & Transformation`
+  - `Program Management` → `Programs & Projects`
+  - `Partnerships & BD` → `Partnerships & Platforms`
+  - `Marketplace & Growth` → `Growth & Marketplace`
+- The footer now reports the source counts that actually generated the current `jobs.json`, instead of the configured/aspirational count.
+- Expanded matching for product-adjacent, marketing, content, communications, creator, research, partnerships, growth, marketplace, and digital-commerce roles.
+- The refresh workflow now runs automatically when the scraper or source configuration changes, in addition to the six-hour schedule and manual run.
