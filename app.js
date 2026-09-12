@@ -1,3 +1,23 @@
+const STORAGE_KEYS = {
+  saved: 'savedJobs',
+  hidden: 'hiddenJobs',
+  legacyApplied: 'appliedJobs',
+  stages: 'jobApplicationStages'
+};
+
+const STAGES = [
+  'Not started',
+  'Saved',
+  'Applying',
+  'Applied',
+  'OA / Assessment',
+  'Interview',
+  'Final Round',
+  'Offer',
+  'Rejected',
+  'Withdrawn'
+];
+
 const state = {
   jobs: [],
   payload: {},
@@ -8,9 +28,10 @@ const state = {
   industries: new Set(),
   tiers: new Set(),
   view: 'all',
-  saved: new Set(JSON.parse(localStorage.getItem('savedJobs') || '[]')),
-  applied: new Set(JSON.parse(localStorage.getItem('appliedJobs') || '[]')),
-  hidden: new Set(JSON.parse(localStorage.getItem('hiddenJobs') || '[]')),
+  saved: new Set(readArray(STORAGE_KEYS.saved)),
+  hidden: new Set(readArray(STORAGE_KEYS.hidden)),
+  stages: readObject(STORAGE_KEYS.stages),
+  lastHiddenId: null,
 };
 
 const els = {
@@ -24,9 +45,11 @@ const els = {
   quickFilters: document.querySelector('#quickFilters'),
   resultCount: document.querySelector('#resultCount'),
   feedTitle: document.querySelector('#feedTitle'),
+  feedEyebrow: document.querySelector('#feedEyebrow'),
   refreshStamp: document.querySelector('#refreshStamp'),
   coverageStamp: document.querySelector('#coverageStamp'),
   empty: document.querySelector('#emptyState'),
+  emptyMessage: document.querySelector('#emptyMessage'),
   locationOptions: document.querySelector('#locationOptions'),
   locationSummary: document.querySelector('#locationSummary'),
   industryOptions: document.querySelector('#industryOptions'),
@@ -34,6 +57,10 @@ const els = {
   tierOptions: document.querySelector('#tierOptions'),
   tierSummary: document.querySelector('#tierSummary'),
   resetFilters: document.querySelector('#resetFilters'),
+  actionQueue: document.querySelector('#actionQueue'),
+  toast: document.querySelector('#toast'),
+  toastMessage: document.querySelector('#toastMessage'),
+  toastUndo: document.querySelector('#toastUndo'),
 };
 
 const categories = [
@@ -42,7 +69,10 @@ const categories = [
   'Partnerships & BD', 'Marketplace & Growth'
 ];
 
-const quickFilters = ['🔥 Apply ASAP', 'Priority A', 'New Grad', 'Entry Level', 'Associate', 'Analyst', 'Internship', 'Remote', 'NYC', 'California'];
+const quickFilters = [
+  '🔥 Apply ASAP', 'Priority A', 'New Grad', 'Entry Level', 'Associate',
+  'Analyst', 'Internship', 'Remote', 'NYC', 'California'
+];
 
 const locationLabels = {
   usa: 'USA based',
@@ -76,10 +106,49 @@ const US_CITY_HINTS = [
   'redmond','menlo park','cupertino','bentonville','st. louis','st louis','jersey city','hoboken','stamford','hartford'
 ];
 
+function readArray(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || '[]');
+    return Array.isArray(value) ? value : [];
+  } catch {
+    return [];
+  }
+}
+
+function readObject(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || '{}');
+    return value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+  } catch {
+    return {};
+  }
+}
+
+function migrateLegacyAppliedState() {
+  const legacyApplied = readArray(STORAGE_KEYS.legacyApplied);
+  let changed = false;
+
+  legacyApplied.forEach(id => {
+    if (!state.stages[id]) {
+      state.stages[id] = 'Applied';
+      changed = true;
+    }
+  });
+
+  state.saved.forEach(id => {
+    if (!state.stages[id]) {
+      state.stages[id] = 'Saved';
+      changed = true;
+    }
+  });
+
+  if (changed) saveState();
+}
+
 function saveState() {
-  localStorage.setItem('savedJobs', JSON.stringify([...state.saved]));
-  localStorage.setItem('appliedJobs', JSON.stringify([...state.applied]));
-  localStorage.setItem('hiddenJobs', JSON.stringify([...state.hidden]));
+  localStorage.setItem(STORAGE_KEYS.saved, JSON.stringify([...state.saved]));
+  localStorage.setItem(STORAGE_KEYS.hidden, JSON.stringify([...state.hidden]));
+  localStorage.setItem(STORAGE_KEYS.stages, JSON.stringify(state.stages));
 }
 
 function ageInDays(dateString) {
@@ -97,17 +166,43 @@ function ageLabel(dateString) {
   return `${Math.floor(days)}D AGO`;
 }
 
+function freshnessBucket(job) {
+  const hours = ageInDays(job.postedAt) * 24;
+  if (hours < 6) return '< 6 hours';
+  if (hours < 12) return '6–12 hours';
+  if (hours <= 24) return '12–24 hours';
+  return 'Older';
+}
+
+function getStage(id) {
+  return state.stages[id] || (state.saved.has(id) ? 'Saved' : 'Not started');
+}
+
+function setStage(id, stage) {
+  if (stage === 'Not started') {
+    delete state.stages[id];
+    state.saved.delete(id);
+  } else {
+    state.stages[id] = stage;
+    if (stage === 'Saved') state.saved.add(id);
+    if (stage !== 'Saved' && state.saved.has(id)) {
+      // Keep the star as an independent bookmark unless explicitly unsaved.
+    }
+  }
+  saveState();
+}
+
+function isActiveApplication(stage) {
+  return ['Applying','Applied','OA / Assessment','Interview','Final Round','Offer'].includes(stage);
+}
+
 function isUsaLocation(location) {
   const original = location || '';
   const loc = original.toLowerCase().replace(/\s+/g, ' ').trim();
   if (!loc) return false;
-
   if (/\bunited states\b|\busa\b|\bu\.s\.a\.?\b|\bunited states of america\b/.test(loc)) return true;
   if (/\bremote\b.*\b(us|u\.s\.|usa|united states)\b|\b(us|u\.s\.|usa)\b.*\bremote\b/.test(loc)) return true;
-
-  // Common U.S. state abbreviation formatting: "New York, NY", "Austin, TX", etc.
-  if (/,\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC)\b/i.test(original)) return true;
-
+  if (/,\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC)\b/i.test(original)) return true;
   if (US_STATE_NAMES.some(stateName => loc.includes(stateName))) return true;
   if (US_CITY_HINTS.some(city => loc.includes(city))) return true;
   return false;
@@ -142,21 +237,32 @@ function quickMatches(job) {
   return [...state.quick].some(item => quickMatchesOne(job, item));
 }
 
+function visibleInCurrentView(job) {
+  const stage = getStage(job.id);
+
+  if (state.view === 'hidden') return state.hidden.has(job.id);
+  if (state.hidden.has(job.id)) return false;
+
+  if (state.view === 'today' && ageInDays(job.postedAt) > 1) return false;
+  if (state.view === 'saved' && !state.saved.has(job.id) && stage !== 'Saved') return false;
+  if (state.view === 'pipeline' && !isActiveApplication(stage) && !['Rejected','Withdrawn'].includes(stage)) return false;
+
+  return true;
+}
+
 function filteredJobs() {
   const query = els.search.value.trim().toLowerCase();
   const freshness = els.freshness.value;
 
   let list = state.jobs.filter(job => {
-    if (state.hidden.has(job.id)) return false;
-    if (state.view === 'saved' && !state.saved.has(job.id)) return false;
-    if (state.view === 'applied' && !state.applied.has(job.id)) return false;
-
+    if (!visibleInCurrentView(job)) return false;
     if (state.categories.size && !state.categories.has(job.category)) return false;
     if (!quickMatches(job)) return false;
     if (!locationMatches(job.location)) return false;
     if (state.industries.size && !state.industries.has(job.industry || 'Other')) return false;
     if (state.tiers.size && !state.tiers.has(job.companyTier || 'C')) return false;
-    if (freshness !== 'all' && ageInDays(job.postedAt) > Number(freshness)) return false;
+
+    if (state.view !== 'today' && freshness !== 'all' && ageInDays(job.postedAt) > Number(freshness)) return false;
 
     if (query) {
       const hay = `${job.title} ${job.company} ${job.location} ${job.category} ${job.industry || ''} ${(job.tags || []).join(' ')}`.toLowerCase();
@@ -165,13 +271,14 @@ function filteredJobs() {
     return true;
   });
 
-  if (els.sort.value === 'newest') {
+  if (state.view === 'today' || els.sort.value === 'newest') {
     list.sort((a, b) => new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
   } else if (els.sort.value === 'recommended') {
     list.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0) || new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
   } else {
     list.sort((a, b) => a.company.localeCompare(b.company));
   }
+
   return list;
 }
 
@@ -183,7 +290,6 @@ function renderNav() {
   allBtn.innerHTML = `<span>All</span><span class="count">${state.jobs.length}</span>`;
   allBtn.onclick = () => {
     state.categories.clear();
-    state.view = 'all';
     render();
   };
   els.categoryNav.appendChild(allBtn);
@@ -195,7 +301,6 @@ function renderNav() {
     btn.innerHTML = `<span>${category}</span><span class="count">${count}</span>`;
     btn.onclick = () => {
       state.categories.has(category) ? state.categories.delete(category) : state.categories.add(category);
-      state.view = 'all';
       render();
     };
     els.categoryNav.appendChild(btn);
@@ -227,19 +332,100 @@ function renderQuickFilters() {
 }
 
 function renderStats() {
-  const day = state.jobs.filter(j => ageInDays(j.postedAt) <= 1).length;
-  const asap = state.jobs.filter(j => (j.matchScore || 0) >= 85 && ageInDays(j.postedAt) <= 3).length;
+  const day = state.jobs.filter(j => !state.hidden.has(j.id) && ageInDays(j.postedAt) <= 1).length;
+  const asap = state.jobs.filter(j => !state.hidden.has(j.id) && (j.matchScore || 0) >= 85 && ageInDays(j.postedAt) <= 3).length;
   const healthy = state.payload.successfulSources ?? 0;
   const totalSources = state.payload.sourceCount ?? 0;
+  const applied = Object.values(state.stages).filter(s => isActiveApplication(s)).length;
+
   const stats = [
     [state.jobs.length, 'Matching jobs'],
     [day, 'Posted ≤24h'],
     [asap, 'Apply ASAP'],
     [totalSources ? `${healthy}/${totalSources}` : '—', 'Sources live'],
     [state.saved.size, 'Saved'],
-    [state.applied.size, 'Applied']
+    [applied, 'Applications']
   ];
-  els.stats.innerHTML = stats.map(([n, label]) => `<div class="stat"><strong>${n}</strong><span>${label}</span></div>`).join('');
+
+  els.stats.innerHTML = stats
+    .map(([n, label]) => `<div class="stat"><strong>${n}</strong><span>${label}</span></div>`)
+    .join('');
+}
+
+function actionCounts() {
+  const newPriority = state.jobs.filter(job =>
+    !state.hidden.has(job.id) &&
+    ageInDays(job.postedAt) <= 1 &&
+    ((job.matchScore || 0) >= 85 || job.companyTier === 'A') &&
+    getStage(job.id) === 'Not started'
+  ).length;
+
+  const savedUnapplied = state.jobs.filter(job =>
+    !state.hidden.has(job.id) &&
+    (state.saved.has(job.id) || getStage(job.id) === 'Saved') &&
+    ['Not started','Saved'].includes(getStage(job.id))
+  ).length;
+
+  const applying = Object.values(state.stages).filter(stage => stage === 'Applying').length;
+  const interviews = Object.values(state.stages).filter(stage =>
+    ['OA / Assessment','Interview','Final Round'].includes(stage)
+  ).length;
+
+  return { newPriority, savedUnapplied, applying, interviews };
+}
+
+function renderActionQueue() {
+  const counts = actionCounts();
+
+  const items = [
+    {
+      count: counts.newPriority,
+      label: 'High-fit or Priority A roles posted in the past 24 hours',
+      cls: 'urgent',
+      action: () => {
+        state.view = 'today';
+        state.quick.clear();
+        render();
+      }
+    },
+    {
+      count: counts.savedUnapplied,
+      label: 'Saved roles that have not moved into an application yet',
+      cls: '',
+      action: () => {
+        state.view = 'saved';
+        render();
+      }
+    },
+    {
+      count: counts.applying,
+      label: 'Applications currently marked Applying',
+      cls: 'progress',
+      action: () => {
+        state.view = 'pipeline';
+        render();
+      }
+    },
+    {
+      count: counts.interviews,
+      label: 'Applications at assessment or interview stages',
+      cls: 'interview',
+      action: () => {
+        state.view = 'pipeline';
+        render();
+      }
+    }
+  ];
+
+  els.actionQueue.innerHTML = '';
+  items.forEach(item => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `action-item ${item.cls}`;
+    btn.innerHTML = `<strong>${item.count}</strong><span>${item.label}</span>`;
+    btn.onclick = item.action;
+    els.actionQueue.appendChild(btn);
+  });
 }
 
 function initials(company) {
@@ -260,79 +446,169 @@ function scoreTooltip(job) {
   return `Role ${b.roleFit} · Experience ${b.experienceFit} · Company ${b.companyFit} · Early-career ${b.careerFit} · Freshness ${b.freshness}`;
 }
 
+function stageClass(stage) {
+  return `stage-${stage.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+}
+
+function renderStageSelect(select, jobId) {
+  select.innerHTML = '';
+  const current = getStage(jobId);
+
+  STAGES.forEach(stage => {
+    const option = document.createElement('option');
+    option.value = stage;
+    option.textContent = stage;
+    option.selected = stage === current;
+    select.appendChild(option);
+  });
+
+  select.className = `stage-select ${stageClass(current)}`;
+  select.addEventListener('change', () => {
+    const next = select.value;
+    setStage(jobId, next);
+    select.className = `stage-select ${stageClass(next)}`;
+    render();
+  });
+}
+
+function addFreshnessGroup(label, count) {
+  const heading = document.createElement('div');
+  heading.className = 'freshness-group';
+  heading.innerHTML = `<strong>${label}</strong><span>${count} role${count === 1 ? '' : 's'}</span><div class="freshness-line"></div>`;
+  els.jobs.appendChild(heading);
+}
+
+function createJobNode(job) {
+  const node = els.template.content.cloneNode(true);
+  const card = node.querySelector('.job-card');
+
+  node.querySelector('.company-mark').textContent = initials(job.company);
+  node.querySelector('.company').textContent = job.company;
+  node.querySelector('.title').textContent = job.title;
+  node.querySelector('.meta').textContent = [job.location, job.employmentType].filter(Boolean).join(' · ');
+
+  const age = node.querySelector('.age');
+  age.textContent = ageLabel(job.postedAt);
+  if (ageInDays(job.postedAt) <= 1) age.classList.add('new');
+
+  node.querySelector('.source').textContent = job.source || 'CAREERS';
+
+  const tier = node.querySelector('.tier');
+  tier.textContent = `TIER ${job.companyTier || 'C'}`;
+  tier.classList.add(`tier-${(job.companyTier || 'C').toLowerCase()}`);
+
+  const match = node.querySelector('.match');
+  match.textContent = `${job.matchScore || 0}%`;
+  match.title = scoreTooltip(job);
+  node.querySelector('.priority-text').textContent = priorityLabel(job);
+
+  const tags = [job.category, job.industry, ...(job.tags || []).slice(0, 3)].filter(Boolean);
+  node.querySelector('.tags').innerHTML = tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+
+  const save = node.querySelector('.save');
+  const isSaved = state.saved.has(job.id);
+  save.textContent = isSaved ? '★ Saved' : '☆ Save';
+  save.classList.toggle('active', isSaved);
+  save.onclick = () => {
+    if (state.saved.has(job.id)) {
+      state.saved.delete(job.id);
+      if (state.stages[job.id] === 'Saved') delete state.stages[job.id];
+    } else {
+      state.saved.add(job.id);
+      if (!state.stages[job.id]) state.stages[job.id] = 'Saved';
+    }
+    saveState();
+    render();
+  };
+
+  const hide = node.querySelector('.hide-job');
+  if (state.view === 'hidden') {
+    hide.textContent = 'Restore';
+    hide.classList.add('restore');
+    hide.title = 'Restore job to feed';
+    hide.onclick = () => {
+      state.hidden.delete(job.id);
+      saveState();
+      showToast('Job restored.', null);
+      render();
+    };
+  } else {
+    hide.textContent = 'Hide';
+    hide.title = 'Hide job';
+    hide.onclick = () => {
+      state.hidden.add(job.id);
+      state.lastHiddenId = job.id;
+      saveState();
+      showToast('Job hidden.', () => {
+        state.hidden.delete(job.id);
+        state.lastHiddenId = null;
+        saveState();
+        render();
+      });
+      render();
+    };
+  }
+
+  const apply = node.querySelector('.apply-btn');
+  apply.href = job.url;
+
+  renderStageSelect(node.querySelector('.stage-select'), job.id);
+
+  card.dataset.id = job.id;
+  return node;
+}
+
+function escapeHtml(value = '') {
+  return String(value).replace(/[&<>"']/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[char]));
+}
+
 function renderJobs() {
   const jobs = filteredJobs();
   els.jobs.innerHTML = '';
   els.empty.classList.toggle('hidden', jobs.length !== 0);
   els.resultCount.textContent = `${jobs.length} role${jobs.length === 1 ? '' : 's'}`;
 
-  if (state.view === 'saved') {
+  if (state.view === 'today') {
+    els.feedEyebrow.textContent = 'NEW TODAY · APPLY EARLY';
+    els.feedTitle.textContent = 'Roles posted in the past 24 hours';
+    els.emptyMessage.textContent = 'No roles were posted in the past 24 hours with these filters. Try widening your role or location filters.';
+  } else if (state.view === 'saved') {
+    els.feedEyebrow.textContent = 'SAVED ROLES';
     els.feedTitle.textContent = 'Saved jobs';
-  } else if (state.view === 'applied') {
-    els.feedTitle.textContent = 'Applied jobs';
+    els.emptyMessage.textContent = 'No saved roles match these filters.';
+  } else if (state.view === 'pipeline') {
+    els.feedEyebrow.textContent = 'APPLICATION PIPELINE';
+    els.feedTitle.textContent = 'Applications';
+    els.emptyMessage.textContent = 'No applications match these filters yet. Change a job status to Applying or beyond to add it here.';
+  } else if (state.view === 'hidden') {
+    els.feedEyebrow.textContent = 'HIDDEN ROLES';
+    els.feedTitle.textContent = 'Hidden jobs';
+    els.emptyMessage.textContent = 'No hidden roles match these filters.';
   } else if (state.categories.size === 0) {
+    els.feedEyebrow.textContent = 'LIVE FEED · REFRESHES EVERY 6 HOURS';
     els.feedTitle.textContent = 'All matching jobs';
+    els.emptyMessage.textContent = 'Try widening freshness, industry, company tier, or location.';
   } else if (state.categories.size <= 2) {
+    els.feedEyebrow.textContent = 'LIVE FEED · REFRESHES EVERY 6 HOURS';
     els.feedTitle.textContent = [...state.categories].join(' + ');
   } else {
+    els.feedEyebrow.textContent = 'LIVE FEED · REFRESHES EVERY 6 HOURS';
     els.feedTitle.textContent = `${state.categories.size} categories selected`;
   }
 
-  jobs.forEach(job => {
-    const node = els.template.content.cloneNode(true);
-    const card = node.querySelector('.job-card');
-    node.querySelector('.company-mark').textContent = initials(job.company);
-    node.querySelector('.company').textContent = job.company;
-    node.querySelector('.title').textContent = job.title;
-    node.querySelector('.meta').textContent = [job.location, job.employmentType].filter(Boolean).join(' · ');
-
-    const age = node.querySelector('.age');
-    age.textContent = ageLabel(job.postedAt);
-    if (ageInDays(job.postedAt) <= 1) age.classList.add('new');
-
-    node.querySelector('.source').textContent = job.source || 'CAREERS';
-    const tier = node.querySelector('.tier');
-    tier.textContent = `TIER ${job.companyTier || 'C'}`;
-    tier.classList.add(`tier-${(job.companyTier || 'C').toLowerCase()}`);
-
-    const match = node.querySelector('.match');
-    match.textContent = `${job.matchScore || 0}%`;
-    match.title = scoreTooltip(job);
-    node.querySelector('.priority-text').textContent = priorityLabel(job);
-
-    const tags = [job.category, job.industry, ...(job.tags || []).slice(0, 3)].filter(Boolean);
-    node.querySelector('.tags').innerHTML = tags.map(t => `<span class="tag">${t}</span>`).join('');
-
-    const save = node.querySelector('.save');
-    save.textContent = state.saved.has(job.id) ? '★' : '☆';
-    save.classList.toggle('active', state.saved.has(job.id));
-    save.onclick = () => {
-      state.saved.has(job.id) ? state.saved.delete(job.id) : state.saved.add(job.id);
-      saveState();
-      render();
-    };
-
-    node.querySelector('.hide-job').onclick = () => {
-      state.hidden.add(job.id);
-      saveState();
-      render();
-    };
-
-    const apply = node.querySelector('.apply-btn');
-    apply.href = job.url;
-
-    const applied = node.querySelector('.mark-applied');
-    applied.textContent = state.applied.has(job.id) ? '✓ Applied' : 'Mark applied';
-    applied.classList.toggle('active', state.applied.has(job.id));
-    applied.onclick = () => {
-      state.applied.has(job.id) ? state.applied.delete(job.id) : state.applied.add(job.id);
-      saveState();
-      render();
-    };
-
-    card.dataset.id = job.id;
-    els.jobs.appendChild(node);
-  });
+  if (state.view === 'today') {
+    const buckets = ['< 6 hours', '6–12 hours', '12–24 hours'];
+    buckets.forEach(bucket => {
+      const bucketJobs = jobs.filter(job => freshnessBucket(job) === bucket);
+      if (!bucketJobs.length) return;
+      addFreshnessGroup(bucket, bucketJobs.length);
+      bucketJobs.forEach(job => els.jobs.appendChild(createJobNode(job)));
+    });
+  } else {
+    jobs.forEach(job => els.jobs.appendChild(createJobNode(job)));
+  }
 }
 
 function summaryText(selectedSet, labels, fallback) {
@@ -390,20 +666,37 @@ function renderCoverage() {
   const failures = state.payload.failedSources || 0;
   const parts = [];
   const community = state.payload.communityFeedCount || 0;
+
   if (automated) parts.push(`${automated} direct ATS companies`);
   if (community) parts.push(`${community} broad early-career feeds`);
   if (universeCount) parts.push(`${universeCount} priority companies tracked`);
   if (failures) parts.push(`${failures} source failures this run`);
+
   els.coverageStamp.textContent = parts.join(' · ');
+}
+
+function syncViewButtons() {
+  const map = {
+    today: '#showTodayBtn',
+    saved: '#showSavedBtn',
+    pipeline: '#showPipelineBtn',
+    hidden: '#showHiddenBtn'
+  };
+
+  Object.entries(map).forEach(([view, selector]) => {
+    document.querySelector(selector).classList.toggle('active', state.view === view);
+  });
 }
 
 function render() {
   renderNav();
   renderQuickFilters();
+  renderActionQueue();
   renderStats();
   renderJobs();
   renderCoverage();
   syncMultiSelectSummaries();
+  syncViewButtons();
 }
 
 function resetFilters() {
@@ -412,7 +705,6 @@ function resetFilters() {
   state.locations.clear();
   state.industries.clear();
   state.tiers.clear();
-  state.view = 'all';
   els.search.value = '';
   els.freshness.value = 'all';
   els.sort.value = 'newest';
@@ -424,12 +716,81 @@ function resetFilters() {
   render();
 }
 
+function setView(view) {
+  state.view = state.view === view ? 'all' : view;
+  if (state.view === 'today') {
+    els.freshness.value = 'all';
+    els.sort.value = 'newest';
+  }
+  render();
+}
+
+let toastTimer;
+function showToast(message, undoAction) {
+  clearTimeout(toastTimer);
+  els.toastMessage.textContent = message;
+  els.toastUndo.classList.toggle('hidden', !undoAction);
+  els.toastUndo.onclick = () => {
+    if (undoAction) undoAction();
+    els.toast.classList.remove('show');
+  };
+  els.toast.classList.add('show');
+
+  toastTimer = setTimeout(() => {
+    els.toast.classList.remove('show');
+  }, 4500);
+}
+
+function exportLocalData() {
+  const data = {
+    version: 2,
+    exportedAt: new Date().toISOString(),
+    savedJobs: [...state.saved],
+    hiddenJobs: [...state.hidden],
+    applicationStages: state.stages
+  };
+
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'job-recruiting-dashboard-local-data.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function importLocalData(file) {
+  const reader = new FileReader();
+
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      if (!data || typeof data !== 'object') throw new Error('Invalid file');
+
+      state.saved = new Set(Array.isArray(data.savedJobs) ? data.savedJobs : []);
+      state.hidden = new Set(Array.isArray(data.hiddenJobs) ? data.hiddenJobs : []);
+      state.stages = data.applicationStages && typeof data.applicationStages === 'object'
+        ? data.applicationStages
+        : {};
+
+      saveState();
+      render();
+      showToast('Local recruiting data imported.', null);
+    } catch (error) {
+      console.error(error);
+      showToast('Could not import that file.', null);
+    }
+  };
+
+  reader.readAsText(file);
+}
+
 async function loadData() {
   try {
     const [jobRes, universeRes] = await Promise.all([
       fetch(`data/jobs.json?ts=${Date.now()}`),
       fetch(`config/company-universe.json?ts=${Date.now()}`).catch(() => null)
     ]);
+
     if (!jobRes.ok) throw new Error('Could not load jobs.json');
 
     const payload = await jobRes.json();
@@ -445,6 +806,7 @@ async function loadData() {
     populateIndustryOptions();
     bindStaticMultiSelect(els.locationOptions, state.locations);
     bindStaticMultiSelect(els.tierOptions, state.tiers);
+    migrateLegacyAppliedState();
     render();
   } catch (err) {
     console.error(err);
@@ -457,27 +819,25 @@ els.freshness.addEventListener('change', render);
 els.sort.addEventListener('change', render);
 els.resetFilters.addEventListener('click', resetFilters);
 
-document.querySelector('#showSavedBtn').onclick = () => {
-  state.view = state.view === 'saved' ? 'all' : 'saved';
+document.querySelector('#showTodayBtn').onclick = () => setView('today');
+document.querySelector('#showSavedBtn').onclick = () => setView('saved');
+document.querySelector('#showPipelineBtn').onclick = () => setView('pipeline');
+document.querySelector('#showHiddenBtn').onclick = () => setView('hidden');
+
+document.querySelector('#clearViewBtn').onclick = () => {
+  state.view = 'all';
   render();
 };
 
-document.querySelector('#showAppliedBtn').onclick = () => {
-  state.view = state.view === 'applied' ? 'all' : 'applied';
-  render();
-};
+document.querySelector('#exportBtn').onclick = exportLocalData;
 
-document.querySelector('#exportBtn').onclick = () => {
-  const selected = state.jobs.filter(j => state.saved.has(j.id) || state.applied.has(j.id));
-  const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), jobs: selected }, null, 2)], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'recruiting-tracker-export.json';
-  a.click();
-  URL.revokeObjectURL(a.href);
-};
+document.querySelector('#importInput').addEventListener('change', event => {
+  const file = event.target.files?.[0];
+  if (!file) return;
+  importLocalData(file);
+  event.target.value = '';
+});
 
-// Close multi-select menus when clicking elsewhere so the toolbar stays tidy.
 document.addEventListener('click', event => {
   document.querySelectorAll('.multi-select[open]').forEach(details => {
     if (!details.contains(event.target)) details.removeAttribute('open');

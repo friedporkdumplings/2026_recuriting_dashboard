@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jae's Recruiting Radar</title>
-  <meta name="description" content="A recruiting dashboard for early-career product, strategy, consulting, marketing, innovation, and operations roles." />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <title>Job Recruiting Dashboard</title>
+  <meta name="description" content="An early-career job recruiting dashboard for product, strategy, operations, consulting, and related business roles." />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <div class="shell">
@@ -14,15 +14,22 @@
         <div class="brand-row">
           <div class="logo">JR</div>
           <div>
-            <h1>Recruiting Radar</h1>
-            <p>May 2027 · New Grad</p>
+            <h1>Job Recruiting Dashboard</h1>
+            <p>Early-Career Opportunities</p>
           </div>
         </div>
+
+        <div class="sidebar-section-label">Role categories</div>
         <nav class="nav" id="categoryNav"></nav>
       </div>
 
       <div class="sidebar-footer">
-        <button class="ghost full" id="exportBtn">Export saved jobs</button>
+        <div class="data-actions">
+          <button class="ghost full" id="exportBtn" type="button">Export local data</button>
+          <label class="ghost full import-label" for="importInput">Import local data</label>
+          <input id="importInput" type="file" accept="application/json" hidden />
+        </div>
+        <p class="privacy-note">Saved, hidden, and application-status data stays in this browser unless you export it.</p>
         <p id="refreshStamp">Waiting for data…</p>
         <p id="coverageStamp"></p>
       </div>
@@ -31,15 +38,28 @@
     <main>
       <header class="topbar">
         <div>
-          <p class="eyebrow">JAE'S 2027 RECRUITING RADAR</p>
+          <p class="eyebrow">JOB RECRUITING DASHBOARD</p>
           <h2>Find the newest roles before everyone else.</h2>
-          <p class="subhead">Product Management · Strategy & Ops · Consulting · GTM · Innovation · Programs</p>
+          <p class="subhead">Early-Career Roles Across Product, Strategy, Operations &amp; Business</p>
         </div>
         <div class="header-actions">
-          <button class="ghost" id="showSavedBtn">Saved</button>
-          <button class="primary" id="showAppliedBtn">Applied</button>
+          <button class="ghost view-btn" id="showTodayBtn" type="button">New Today</button>
+          <button class="ghost view-btn" id="showSavedBtn" type="button">Saved</button>
+          <button class="ghost view-btn" id="showPipelineBtn" type="button">Applications</button>
+          <button class="ghost view-btn" id="showHiddenBtn" type="button">Hidden</button>
         </div>
       </header>
+
+      <section class="action-queue card" aria-labelledby="actionQueueTitle">
+        <div class="action-queue-head">
+          <div>
+            <p class="eyebrow">ACTION QUEUE</p>
+            <h3 id="actionQueueTitle">What needs attention</h3>
+          </div>
+          <button class="text-btn" id="clearViewBtn" type="button">View all jobs</button>
+        </div>
+        <div class="action-grid" id="actionQueue"></div>
+      </section>
 
       <section class="stats" id="stats"></section>
 
@@ -51,6 +71,8 @@
 
         <select id="freshnessFilter" aria-label="Freshness">
           <option value="all">Any date</option>
+          <option value="0.25">Past 6 hours</option>
+          <option value="0.5">Past 12 hours</option>
           <option value="1">Past 24 hours</option>
           <option value="3">Past 3 days</option>
           <option value="7">Past 7 days</option>
@@ -103,16 +125,17 @@
 
       <section class="section-heading">
         <div>
-          <p class="eyebrow">LIVE FEED · REFRESHES EVERY 6 HOURS</p>
+          <p class="eyebrow" id="feedEyebrow">LIVE FEED · REFRESHES EVERY 6 HOURS</p>
           <h3 id="feedTitle">All matching jobs</h3>
         </div>
         <p id="resultCount"></p>
       </section>
 
       <section class="jobs" id="jobs"></section>
+
       <div class="empty hidden" id="emptyState">
         <h3>No matching roles with these filters.</h3>
-        <p>Try widening freshness, industry, company tier, or location.</p>
+        <p id="emptyMessage">Try widening freshness, industry, company tier, or location.</p>
       </div>
     </main>
   </div>
@@ -133,22 +156,33 @@
           <div class="tags"></div>
         </div>
       </div>
+
       <div class="job-side">
         <div class="match-wrap">
           <span class="match-label">FIT SCORE</span>
           <strong class="match"></strong>
           <span class="priority-text"></span>
         </div>
+
         <div class="job-actions">
-          <button class="icon-btn save" title="Save job">☆</button>
-          <button class="icon-btn hide-job" title="Hide job">×</button>
+          <button class="text-action save" type="button" title="Save job">☆ Save</button>
+          <button class="text-action hide-job" type="button" title="Hide job">Hide</button>
           <a class="apply-btn" target="_blank" rel="noopener noreferrer">View role ↗</a>
         </div>
-        <button class="mark-applied">Mark applied</button>
+
+        <label class="stage-control">
+          <span>Status</span>
+          <select class="stage-select" aria-label="Application status"></select>
+        </label>
       </div>
     </article>
   </template>
 
-  <script src="app.js?v=5" defer></script>
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span id="toastMessage"></span>
+    <button id="toastUndo" type="button">Undo</button>
+  </div>
+
+  <script src="app.js?v=6" defer></script>
 </body>
 </html>

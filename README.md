@@ -1,21 +1,59 @@
-# Recruiting Radar
+# Job Recruiting Dashboard
 
-A GitHub Pages recruiting dashboard for May 2027 new-grad recruiting. It refreshes public ATS job feeds every six hours with GitHub Actions, classifies relevant early-career roles, and ranks them against target career lanes and experience profile.
+A GitHub Pages dashboard for discovering and tracking early-career roles across product, strategy, operations, consulting, and related business functions.
 
-## What changed in this version
+The job feed refreshes public ATS sources every six hours with GitHub Actions, classifies relevant early-career roles, and ranks them with a heuristic fit score to make a large job feed easier to review.
 
-- Added **Workday** support alongside Greenhouse, Lever, and Ashby.
-- Expanded from 4 initial companies to **36 automated target companies across 37 ATS feeds**.
-- Added a **326-company recruiting universe** in `config/company-universe.json` for continued source expansion.
-- Added company priority tiers (**A / B / C**) and industry metadata.
-- Added filters for **industry** and **company priority**.
-- Added quick filters for **🔥 Apply ASAP** and **Priority A**.
-- Added source-health tracking so one broken company feed does not kill the entire refresh.
-- Added a weighted fit score customized to resume and career targets.
+## v2 workflow update
+
+This release focuses on turning the site from a job feed into a lightweight recruiting workflow:
+
+- Generic public branding with no individual name, initials, graduation date, contact information, or private recruiting notes.
+- **New Today** view grouped into:
+  - under 6 hours
+  - 6–12 hours
+  - 12–24 hours
+- Clear **Save**, **Hide**, and **View role** actions.
+- **Hide + Undo** and a dedicated **Hidden jobs** view with Restore.
+- Application pipeline:
+  - Saved
+  - Applying
+  - Applied
+  - OA / Assessment
+  - Interview
+  - Final Round
+  - Offer
+  - Rejected
+  - Withdrawn
+- Homepage **Action Queue** for:
+  - strong-fit / Priority A roles posted in the past 24 hours
+  - saved roles that have not moved into an application
+  - roles currently marked Applying
+  - roles at OA / Interview / Final Round
+- Browser-local **Export / Import** for saved, hidden, and application-stage state.
+- Existing multi-select role, location, industry, and company-tier filters remain available.
+
+## Privacy model
+
+The repository and GitHub Pages site can be public without exposing a visitor's personal recruiting state.
+
+Personal state is stored only in the browser with `localStorage`:
+
+- saved job IDs
+- hidden job IDs
+- application stages
+
+Nothing in the v2 frontend requires personal names, email addresses, LinkedIn profiles, networking contacts, resume files, coffee-chat notes, or private application notes to be committed to the repository.
+
+A different visitor opening the same GitHub Pages URL gets their own separate browser-local state.
+
+Use **Export local data** periodically if you want a backup. Use **Import local data** to restore that state in another browser.
 
 ## Fit score
 
-The score is a heuristic, not a hiring prediction. It is meant to sort a large feed so the best roles are reviewed first.
+The score is a heuristic sorting aid, not a hiring prediction.
+
+Current weighting:
 
 - Role fit: **35%**
 - Experience overlap: **25%**
@@ -23,7 +61,7 @@ The score is a heuristic, not a hiring prediction. It is meant to sort a large f
 - Early-career fit: **10%**
 - Posting freshness: **10%**
 
-The experience-overlap terms emphasize product strategy, user research, usability testing, prototyping, AI, stakeholder work, cross-functional delivery, digital transformation, GTM, customer experience, testing, dashboards, process improvement, and innovation.
+The experience-overlap component uses broad product, technology, research, operations, transformation, GTM, customer, testing, analytics, process-improvement, and innovation signals.
 
 ## Career categories
 
@@ -38,19 +76,19 @@ The experience-overlap terms emphasize product strategy, user research, usabilit
 - Partnerships & BD
 - Marketplace & Growth
 
-## Automated companies
+## Data sources
 
-The source configuration is in `config/sources.json`. It currently includes a mix of:
+The source configuration is in `config/sources.json`.
 
-- Tech / SaaS / AI
-- Consulting
-- Financial services / fintech
-- Media / entertainment
-- Consumer / retail
-- Healthcare / pharma
-- Information / data
+The project supports a mix of:
 
-Examples include Databricks, Figma, Notion, Ramp, Disney, Mastercard, BlackRock, Warner Bros. Discovery, Capital One, S&P Global, Thomson Reuters, Target, Nike, PepsiCo, Unilever, Johnson & Johnson, CVS Health, UnitedHealth/Optum, Medtronic, Comcast, West Monroe, Airtable, Datadog, Affirm, and Robinhood.
+- Greenhouse
+- Lever
+- Ashby
+- Workday
+- broad early-career feeds where configured
+
+Source-health information is recorded so one failing feed does not stop the entire refresh.
 
 ## How the refresh works
 
@@ -68,118 +106,34 @@ Workday ────┘             ↓
                        GitHub Pages
 ```
 
-The scheduled workflow lives at `.github/workflows/refresh-jobs.yml` and requests a run every six hours:
-
-```yaml
-cron: "17 */6 * * *"
-```
-
-GitHub scheduled workflows can start a little later than the exact cron minute.
-
-## First run after uploading this update
-
-1. Commit/push these files to `main`.
-2. Open the repository's **Actions** tab.
-3. Select **Refresh job feed**.
-4. Click **Run workflow**.
-5. When it finishes, open `data/jobs.json` and check `successfulSources`, `failedSources`, and `sourceHealth`.
-6. Refresh the GitHub Pages site.
-
-## Source health
-
-Workday career sites occasionally rate-limit or block automated requests. The updater retries requests, limits concurrency, and records failures instead of crashing the whole scan. A source that fails on one run can succeed on the next six-hour refresh.
-
-`data/jobs.json` includes:
-
-```json
-{
-  "sourceCount": 37,
-  "successfulSources": 35,
-  "failedSources": 2,
-  "sourceHealth": []
-}
-```
-
-The exact values change on each run.
-
-## Adding another Greenhouse company
-
-Edit `config/sources.json`:
-
-```json
-{
-  "company": "Example",
-  "board": "example",
-  "tier": "B",
-  "industry": "Tech / SaaS"
-}
-```
-
-## Adding another Ashby company
-
-```json
-{
-  "company": "Example",
-  "board": "example",
-  "tier": "B",
-  "industry": "Tech / AI"
-}
-```
-
-## Adding another Lever company
-
-```json
-{
-  "company": "Example",
-  "site": "example",
-  "tier": "B",
-  "industry": "Tech / SaaS"
-}
-```
-
-## Adding another Workday company
-
-A Workday URL generally looks like:
-
-```text
-https://COMPANY.wd5.myworkdayjobs.com/SITE
-```
-
-Configure it as:
-
-```json
-{
-  "company": "Example",
-  "host": "COMPANY.wd5.myworkdayjobs.com",
-  "tenant": "COMPANY",
-  "site": "SITE",
-  "tier": "B",
-  "industry": "Consumer / Retail"
-}
-```
-
-The script uses Workday's public Candidate Experience Service (CXS) JSON endpoints and searches targeted terms rather than attempting to scrape rendered pages.
-
-## 326-company universe
-
-`config/company-universe.json` is the broader employer list. It contains companies across tech, consulting, finance, media, consumer/retail/beauty, healthcare, travel, and information services.
-
-`automated: true` means a live ATS source is already configured. `automated: false` means the company is a recruiting target but still needs a reliable source adapter/configuration before its postings will automatically appear.
-
-This separation is intentional: it is better to have a smaller set of reliable automated sources than pretend an unsupported career site is being monitored when it is not.
+The scheduled workflow lives at `.github/workflows/refresh-jobs.yml`.
 
 ## Local browser state
 
-Saved, Applied, and Hidden job status is stored in browser `localStorage`. It persists on the same browser/device but does not yet sync between devices.
+The v2 frontend uses these `localStorage` keys:
 
-A later phase can add Supabase for:
+```text
+savedJobs
+hiddenJobs
+jobApplicationStages
+```
 
-- cross-device Saved / Applied / Hidden state
-- stages: Saved → Applied → OA → Interview → Final → Offer / Rejected
-- assessment/interview due dates
-- networking CRM and follow-ups
-- resume version used
-- notes and outcomes
+For backward compatibility, an existing `appliedJobs` list is migrated into the `Applied` application stage the first time v2 loads.
+
+## Deploying the v2 frontend
+
+Replace the existing root-level frontend files with the v2 versions:
+
+```text
+index.html
+styles.css
+app.js
+README.md
+```
+
+No changes are required to the ATS fetchers, workflow, source configuration, company universe, or generated `data/jobs.json` format for this frontend update.
+
+After committing the files to `main`, GitHub Pages should deploy the new frontend automatically according to the repository's existing Pages configuration.
 
 ## Source policy
 
