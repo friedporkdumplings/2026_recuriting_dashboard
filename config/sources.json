@@ -53,9 +53,100 @@
       "board": "westmonroe3",
       "tier": "A",
       "industry": "Consulting"
+    },
+    {
+      "company": "Cloudflare",
+      "board": "cloudflare",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Reddit",
+      "board": "reddit",
+      "tier": "U",
+      "industry": "Media / Community / Tech"
+    },
+    {
+      "company": "Chime",
+      "board": "chime",
+      "tier": "U",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Samsara",
+      "board": "samsara",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Instacart",
+      "board": "instacart",
+      "tier": "U",
+      "industry": "Marketplace / Consumer"
+    },
+    {
+      "company": "Duolingo",
+      "board": "duolingo",
+      "tier": "A",
+      "industry": "Tech / Consumer"
+    },
+    {
+      "company": "Twitch",
+      "board": "twitch",
+      "tier": "U",
+      "industry": "Media / Entertainment / Creator"
+    },
+    {
+      "company": "Discord",
+      "board": "discord",
+      "tier": "U",
+      "industry": "Tech / Consumer"
+    },
+    {
+      "company": "Airbnb",
+      "board": "airbnb",
+      "tier": "A",
+      "industry": "Travel / Marketplace"
+    },
+    {
+      "company": "Stripe",
+      "board": "stripe",
+      "tier": "A",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "GitLab",
+      "board": "gitlab",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Oura",
+      "board": "oura",
+      "tier": "U",
+      "industry": "Consumer / Health Tech"
     }
   ],
-  "lever": [],
+  "lever": [
+    {
+      "company": "Spotify",
+      "site": "spotify",
+      "tier": "A",
+      "industry": "Media / Entertainment / Creator"
+    },
+    {
+      "company": "Gopuff",
+      "site": "gopuff",
+      "tier": "U",
+      "industry": "Marketplace / Consumer"
+    },
+    {
+      "company": "Bumble",
+      "site": "bumbleinc",
+      "tier": "U",
+      "industry": "Tech / Consumer"
+    }
+  ],
   "ashby": [
     {
       "company": "Notion",
@@ -80,6 +171,96 @@
       "board": "ramp",
       "tier": "A",
       "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "OpenAI",
+      "board": "openai",
+      "tier": "A",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Anthropic",
+      "board": "anthropic",
+      "tier": "A",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Vercel",
+      "board": "vercel",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Snowflake",
+      "board": "snowflake",
+      "tier": "A",
+      "industry": "Tech / Data"
+    },
+    {
+      "company": "Cohere",
+      "board": "cohere",
+      "tier": "U",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Deel",
+      "board": "deel",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Airwallex",
+      "board": "airwallex",
+      "tier": "U",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Mercury",
+      "board": "mercury",
+      "tier": "U",
+      "industry": "Financial Services / Fintech"
+    },
+    {
+      "company": "Replit",
+      "board": "replit",
+      "tier": "U",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Linear",
+      "board": "linear",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "1Password",
+      "board": "1password",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Vanta",
+      "board": "vanta",
+      "tier": "U",
+      "industry": "Tech / SaaS"
+    },
+    {
+      "company": "Harvey",
+      "board": "harvey",
+      "tier": "U",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Decagon",
+      "board": "decagon",
+      "tier": "U",
+      "industry": "Tech / AI"
+    },
+    {
+      "company": "Crusoe",
+      "board": "crusoe",
+      "tier": "U",
+      "industry": "Tech / AI"
     }
   ],
   "workday": [
@@ -312,6 +493,42 @@
       "type": "jobright-markdown",
       "url": "https://raw.githubusercontent.com/jobright-ai/2026-Product-Management-Internship/master/README.md",
       "careerHint": "Internship"
+    },
+    {
+      "name": "Jobright — Business Analyst New Grad",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Business-Analyst-New-Grad/master/README.md",
+      "careerHint": "New Grad"
+    },
+    {
+      "name": "Jobright — Business Analyst Internships",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Business-Analyst-Internship/master/README.md",
+      "careerHint": "Internship"
+    },
+    {
+      "name": "Jobright — Consultant New Grad",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Consultant-New-Grad/master/README.md",
+      "careerHint": "New Grad"
+    },
+    {
+      "name": "Jobright — Consultant Internships",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Consultant-Internship/master/README.md",
+      "careerHint": "Internship"
+    },
+    {
+      "name": "Jobright — Marketing New Grad",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Marketing-New-Grad/master/README.md",
+      "careerHint": "New Grad"
+    },
+    {
+      "name": "Jobright — Data Analysis New Grad",
+      "type": "jobright-markdown",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Data-Analysis-New-Grad/master/README.md",
+      "careerHint": "New Grad"
     }
   ]
 }
