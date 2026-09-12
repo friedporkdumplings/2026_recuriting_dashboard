@@ -11,21 +11,9 @@ function normalizeCompanyName(value='') {
 const COMPANY_META = new Map(companyUniverse.companies.map(c => [normalizeCompanyName(c.company), c]));
 const COMPANY_ALIASES = new Map([
   ['salesforce com', 'salesforce'],
-  ['databricks', 'databricks'],
-  ['appian', 'appian'],
-  ['tiktok', 'tiktok'],
   ['byte dance', 'bytedance'],
-  ['american express', 'american express'],
   ['amex', 'american express'],
-  ['ibm', 'ibm'],
-  ['microsoft', 'microsoft'],
-  ['google', 'google'],
-  ['meta', 'meta'],
   ['facebook', 'meta'],
-  ['apple', 'apple'],
-  ['amazon', 'amazon'],
-  ['goldman sachs', 'goldman sachs'],
-  ['jpmorgan chase', 'jpmorgan chase'],
   ['jp morgan', 'jpmorgan chase'],
   ['fidelity', 'fidelity investments'],
   ['fidelity international', 'fidelity investments']
@@ -34,67 +22,119 @@ const COMPANY_ALIASES = new Map([
 function companyMeta(company='') {
   const normalized = normalizeCompanyName(company);
   const canonical = COMPANY_ALIASES.get(normalized) || normalized;
-  return COMPANY_META.get(canonical) || COMPANY_META.get(normalized) || { tier: 'C', industry: 'Other' };
+  return COMPANY_META.get(canonical) || COMPANY_META.get(normalized) || { tier: 'U', industry: 'Other' };
 }
 
 const TARGET = {
   categories: {
-    'Product Management': [
-      'associate product manager','assistant product manager','junior product manager','entry level product manager','entry-level product manager','graduate product manager','product manager graduate','product manager intern','product management intern','product management internship','product manager','product management','product analyst','product strategy','product operations','product development','product innovation','digital product','ai product','growth product','technical product manager','platform product manager','product experience','product solutions','product project','product program','product coordinator','product specialist','product associate','product owner','apm program','associate pm','product rotational'
+    'Product': [
+      'associate product manager','assistant product manager','junior product manager','entry level product manager',
+      'graduate product manager','product manager graduate','product manager intern','product management intern',
+      'product manager','product management','product analyst','product strategy','product operations','product development',
+      'product innovation','digital product','ai product','growth product','platform product','product experience',
+      'product solutions','product project','product program','product coordinator','product specialist','product associate',
+      'product owner','apm program','associate pm','product rotational','product enablement','product adoption','product launch'
     ],
     'Strategy & Operations': [
-      'strategy & operations','strategy and operations','strategic operations','business operations','corporate strategy','strategic initiatives','strategy analyst','business strategy','growth strategy','commercial strategy','digital strategy','technology strategy','business transformation','digital transformation','strategic projects','chief of staff','business planning','strategic planning','operations analyst','commercial excellence'
+      'strategy & operations','strategy and operations','strategic operations','business operations','bizops','corporate strategy',
+      'strategic initiatives','strategy analyst','business strategy','growth strategy','commercial strategy','digital strategy',
+      'technology strategy','strategic projects','chief of staff','business planning','strategic planning','operations analyst',
+      'commercial excellence','revenue strategy','revenue operations','sales operations','gtm operations','commercial operations'
     ],
-    'Consulting': [
-      'consulting analyst','technology consultant','business technology analyst','management consulting','strategy consulting','digital consulting','transformation consultant','product consultant','innovation consultant','technology strategy consultant','customer experience consultant','experience strategy consultant','associate consultant','business consultant'
+    'Business & Analytics': [
+      'business analyst','business systems analyst','business process analyst','digital business analyst','product business analyst',
+      'business insights analyst','decision analyst','commercial analyst','customer experience analyst','digital analyst',
+      'business analytics','business intelligence analyst','data analyst','analytics analyst','insights analyst',
+      'process improvement analyst','operational excellence analyst','process excellence analyst','continuous improvement analyst'
     ],
-    'Marketing & GTM': [
-      'product marketing','go-to-market','gtm','commercialization','marketing strategy','growth marketing','customer marketing','lifecycle marketing','partner marketing','solutions marketing','brand strategy','digital marketing','integrated marketing','marketing analyst'
+    'Consulting & Transformation': [
+      'consulting analyst','technology consultant','business technology analyst','management consulting','strategy consulting',
+      'digital consulting','transformation consultant','product consultant','innovation consultant','technology strategy consultant',
+      'customer experience consultant','experience strategy consultant','associate consultant','business consultant',
+      'implementation consultant','change management analyst','change and adoption','change & adoption','transformation analyst',
+      'transformation office','organizational transformation','technology transformation','digital transformation associate',
+      'process transformation'
     ],
-    'Program Management': [
-      'associate program manager','program manager','program management analyst','program analyst','project management analyst','associate project manager','project coordinator','technical program','business program manager','pmo analyst','project analyst','program coordinator'
+    'Programs & Projects': [
+      'associate program manager','program manager','program management analyst','program analyst','project management analyst',
+      'associate project manager','project coordinator','technical program','business program manager','pmo analyst','project analyst',
+      'program coordinator','strategic programs analyst','strategic projects analyst','special projects analyst',
+      'business program analyst','strategy program analyst','enterprise programs analyst','program strategy analyst'
     ],
     'Innovation & AI': [
-      'innovation analyst','innovation associate','innovation strategy','emerging technology','technology innovation','digital innovation','new ventures','venture building','venture studio','corporate innovation','ai strategy','ai transformation','generative ai analyst','ai adoption','ai enablement','innovation program'
+      'innovation analyst','innovation associate','innovation strategy','emerging technology','technology innovation','digital innovation',
+      'new ventures','venture building','venture studio','corporate innovation','ai strategy','ai transformation','generative ai analyst',
+      'ai adoption','ai enablement','innovation program','innovation operations','technology adoption','digital adoption',
+      'product excellence','venture associate','venture builder'
+    ],
+    'GTM & Commercial': [
+      'product marketing','go-to-market','go to market','gtm','commercialization','marketing strategy','growth marketing',
+      'customer marketing','lifecycle marketing','partner marketing','solutions marketing','brand strategy','digital marketing',
+      'integrated marketing','marketing analyst','commercial operations','revenue operations','sales strategy','sales operations',
+      'commercial strategy','commercial analyst','revenue strategy','gtm strategy','gtm operations','sales enablement','gtm enablement'
     ],
     'Customer & Solutions': [
-      'customer success','client success','client solutions','solutions consultant','pre-sales consultant','technology sales','digital sales','technical sales','customer experience','customer strategy','implementation consultant','implementation analyst','professional services analyst','client services analyst','solutions analyst'
+      'customer success','client success','client solutions','solutions consultant','pre-sales consultant','presales consultant',
+      'technology sales','digital sales','technical sales','customer experience','customer strategy','implementation consultant',
+      'implementation analyst','professional services analyst','client services analyst','solutions analyst','customer operations',
+      'client strategy','client solutions analyst','customer enablement','customer adoption'
     ],
     'Research & Insights': [
-      'user research','ux research','product research','customer insights','consumer insights','experience researcher','experience strategy','voice of customer','market research','design researcher','design strategy','human-centered design','insights analyst','research analyst'
+      'user research','ux research','product research','customer insights','consumer insights','experience researcher',
+      'experience strategy','voice of customer','market research','design researcher','design strategy','human-centered design',
+      'insights analyst','research analyst','audience insights','customer research'
     ],
-    'Partnerships & BD': [
-      'business development','strategic partnerships','partnerships analyst','partnership development','ecosystem','partner strategy','strategic alliances','commercial partnerships','platform partnerships','creator partnerships','partnerships associate'
+    'Partnerships & Platforms': [
+      'business development','strategic partnerships','partnerships analyst','partnership development','ecosystem',
+      'partner strategy','strategic alliances','commercial partnerships','platform partnerships','creator partnerships',
+      'partnerships associate','platform strategy','platform operations','creator strategy','creator operations',
+      'community strategy','community operations','audience development'
     ],
-    'Marketplace & Growth': [
-      'marketplace operations','marketplace strategy','category strategy','category management','category manager','e-commerce strategy','ecommerce strategy','e-commerce operations','retail strategy','consumer strategy','growth operations','platform operations','creator operations','creator strategy','content strategy','merchandising strategy'
+    'Growth & Marketplace': [
+      'marketplace operations','marketplace strategy','category strategy','category management','category manager',
+      'e-commerce strategy','ecommerce strategy','e-commerce operations','retail strategy','consumer strategy','growth operations',
+      'growth analyst','growth strategy','platform growth','creator growth','content strategy','merchandising strategy'
     ]
   },
   explicitEarlyCareer: [
-    'new grad','new graduate','new college grad','university graduate','entry level','entry-level','early career','campus','graduate program','graduate analyst','graduate product','rotational program','rotation program','leadership development program','development program','2027 analyst','2027 graduate','2027 start','class of 2027','university program','university talent','college graduate','recent graduate','trainee program','student program'
-  ],
-  preferredSkills: [
-    'product','strategy','operations','user research','customer','stakeholder','ai','artificial intelligence','prototype','prototyping','usability','innovation','go-to-market','gtm','cross-functional','program','digital transformation','insights','marketplace','testing','research','launch','customer experience','consumer','dashboard','process improvement'
+    'new grad','new graduate','new college grad','university graduate','entry level','entry-level','early career','campus',
+    'graduate program','graduate analyst','graduate product','rotational program','rotation program','leadership development program',
+    'development program','2027 analyst','2027 graduate','2027 start','class of 2027','university program','university talent',
+    'college graduate','recent graduate','trainee program','student program','management development','management associate',
+    'rotational analyst','rotation associate','university associate'
   ],
   experienceSignals: [
-    'user research','usability testing','prototype','prototyping','figma','stakeholder','cross-functional','ai','artificial intelligence','product strategy','product operations','digital transformation','go-to-market','gtm','customer experience','consumer insights','market research','testing','quality assurance','program management','project management','process improvement','dashboard','launch','innovation','emerging technology'
+    'user research','usability testing','stakeholder','cross-functional','ai','artificial intelligence','product strategy',
+    'product operations','digital transformation','go-to-market','gtm','customer experience','consumer insights','market research',
+    'testing','quality assurance','program management','project management','process improvement','dashboard','launch','innovation',
+    'emerging technology','adoption','enablement','change management','business operations','commercial operations','analytics',
+    'content strategy','creator','community','implementation','operational excellence'
   ],
   excludeTitleTerms: [
-    'senior ','sr. ','staff ','principal ','director','vice president','vp ','head of ','chief ','lead software','lead engineer','software engineer','data scientist','machine learning engineer','account executive','store associate','retail associate','warehouse associate','product demonstrator','product guide','merchandise product','pharmacist','nurse','physician','technician','mechanic'
+    'senior ','sr. ','staff ','principal ','director','vice president','vp ','head of ','chief ',
+    'lead software','lead engineer','software engineer','data scientist','machine learning engineer',
+    'account executive','store associate','retail associate','warehouse associate','product demonstrator','product guide',
+    'merchandise product','pharmacist','nurse','physician','technician','mechanic'
   ]
 };
 
-const WORKDAY_SEARCH_TERMS = ['product','strategy','analyst','consultant','marketing','program','operations','innovation','customer','business development'];
+const WORKDAY_SEARCH_TERMS = [
+  'product','strategy','analyst','consultant','marketing','program','operations','innovation','customer',
+  'business development','transformation','commercial','business','digital','enablement','implementation',
+  'insights','research','partnerships','growth','process','experience','planning','project','technology'
+];
 
 function cleanHtml(html='') {
   return String(html)
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
+    .replace(/&nbsp;|&#160;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -122,21 +162,31 @@ function explicitEarlyCareer(text='') {
 
 function juniorTitle(title='') {
   const t = title.toLowerCase();
-  if (/senior|sr\.|principal|director|vice president|\bvp\b|head of|chief/.test(t)) return false;
-  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bintern\b|\binternship\b|\bco-?op\b|\bgraduate\b|entry[- ]level|\bjunior\b|\btrainee\b|\bapm\b|\b2027\b/.test(t);
+  if (/senior|sr\.|staff|principal|director|vice president|\bvp\b|head of|chief/.test(t)) return false;
+  return /\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\bassistant\b|\badvisor\b|\bconsultant(?: i| 1)?\b|\bintern\b|\binternship\b|\bco-?op\b|\bgraduate\b|entry[- ]level|\bjunior\b|\btrainee\b|\bapm\b|\b2027\b|\blevel i\b|\blevel 1\b|\banalyst i\b|\banalyst 1\b|\bassociate i\b|\bproduct manager i\b|\bproduct manager 1\b|\bprogram manager i\b|\brotational\b/.test(t);
 }
 
 function requiredYears(text='') {
   const lower = text.toLowerCase();
   const patterns = [
     /(?:minimum|min\.?|at least|requires?|required|have)\s+(\d+)\+?\s+(?:years|yrs)/g,
-    /(\d+)\+\s+(?:years|yrs)\s+of\s+(?:relevant\s+)?experience/g
+    /(\d+)\+\s+(?:years|yrs)\s+of\s+(?:relevant\s+)?experience/g,
+    /(?:minimum of\s+)?(\d+)\s*(?:-|to)\s*(\d+)\s+(?:years|yrs)/g
   ];
   const nums = [];
   for (const re of patterns) {
     for (const match of lower.matchAll(re)) nums.push(Number(match[1]));
   }
   return nums.length ? Math.min(...nums) : null;
+}
+
+function experienceBand(job) {
+  const text = `${job.title || ''} ${job.description || ''}`.toLowerCase();
+  const years = requiredYears(text);
+  if (explicitEarlyCareer(text) || years === null || years <= 2) return 'Early Career';
+  if (years === 3) return 'Stretch';
+  if (years === 4) return 'Experienced';
+  return '5+ Years';
 }
 
 function isTarget(job) {
@@ -148,12 +198,12 @@ function isTarget(job) {
   if (!category) return false;
 
   const all = `${job.title || ''} ${job.description || ''} ${job.employmentType || ''}`.toLowerCase();
-  const early = explicitEarlyCareer(all) || juniorTitle(title);
   const years = requiredYears(all);
   if (years !== null && years >= 5 && !explicitEarlyCareer(all)) return false;
 
-  // Generic manager roles are usually too senior; allow PM roles only when the posting itself signals early career.
-  if (/\bmanager\b/.test(title) && !/product manager/.test(title) && !explicitEarlyCareer(all)) return false;
+  // Expand beyond literal Analyst/Associate titles while keeping obvious management roles out.
+  const early = explicitEarlyCareer(all) || juniorTitle(title) || years === null || years <= 4;
+  if (/\bmanager\b/.test(title) && !/product manager/.test(title) && !explicitEarlyCareer(all) && !/\bmanager i\b|\bmanager 1\b/.test(title)) return false;
   if (/product manager/.test(title) && /senior|lead|principal|group/.test(title)) return false;
 
   return early;
@@ -176,28 +226,29 @@ function scoreJob(job, category) {
   const title = String(job.title || '').toLowerCase();
 
   let roleFit = {
-    'Product Management': 95,
-    'Strategy & Operations': 94,
-    'Consulting': 92,
-    'Innovation & AI': 91,
-    'Program Management': 86,
-    'Marketing & GTM': 84,
-    'Research & Insights': 84,
-    'Customer & Solutions': 80,
-    'Marketplace & Growth': 82,
-    'Partnerships & BD': 78
+    'Product': 95,
+    'Strategy & Operations': 95,
+    'Business & Analytics': 91,
+    'Consulting & Transformation': 92,
+    'Innovation & AI': 92,
+    'Programs & Projects': 87,
+    'GTM & Commercial': 86,
+    'Research & Insights': 85,
+    'Customer & Solutions': 82,
+    'Growth & Marketplace': 84,
+    'Partnerships & Platforms': 82
   }[category] || 72;
-  if (/associate product manager|product analyst|product strategy|strategy & operations|strategy and operations|business operations|technology consulting|innovation analyst/.test(title)) roleFit += 4;
+
+  if (/associate product manager|product analyst|product strategy|strategy & operations|strategy and operations|business operations|business analyst|transformation analyst|innovation analyst|product enablement/.test(title)) roleFit += 4;
 
   const experienceHits = TARGET.experienceSignals.filter(k => text.includes(k)).length;
   const experienceFit = Math.min(98, 55 + experienceHits * 5);
 
-  const companyFit = job.companyTier === 'A' ? 95 : job.companyTier === 'B' ? 82 : 70;
+  const companyFit = job.companyTier === 'A' ? 95 : job.companyTier === 'B' ? 82 : job.companyTier === 'C' ? 70 : 74;
 
   let careerFit = 62;
   if (/2027|new grad|new graduate|university graduate|graduate program|early career|entry[- ]level|leadership development program|rotational/.test(text)) careerFit = 100;
-  else if (/\banalyst\b|\bassociate\b|\bcoordinator\b|\bspecialist\b|\btrainee\b/.test(title)) careerFit = 88;
-  else if (/intern|internship/.test(title)) careerFit = 80;
+  else if (juniorTitle(title)) careerFit = 88;
 
   const years = requiredYears(text);
   if (years !== null && years >= 3) careerFit -= Math.min(28, (years - 2) * 9);
@@ -220,17 +271,54 @@ function scoreJob(job, category) {
   };
 }
 
+function parseSalary(text='') {
+  const raw = String(text || '');
+  const normalized = raw.replace(/,/g, '');
+  const candidates = [];
+
+  // $80K - $110K / $80,000 to $110,000
+  const moneyRange = /\$\s*(\d{2,3}(?:\.\d+)?)\s*(k)?\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3}(?:\.\d+)?)\s*(k)?(?:\s*(?:per|\/)\s*(year|yr|hour|hr))?/gi;
+  for (const m of normalized.matchAll(moneyRange)) {
+    let min = Number(m[1]) * (m[2] ? 1000 : 1);
+    let max = Number(m[3]) * (m[4] ? 1000 : 1);
+    const period = (m[5] || '').toLowerCase();
+    if (!m[2] && min < 1000) min *= 1000;
+    if (!m[4] && max < 1000) max *= 1000;
+    if (/hour|hr/.test(period) || (min < 500 && max < 500)) { min *= 2080; max *= 2080; }
+    if (min >= 30000 && max >= min && max <= 1000000) candidates.push({ min, max, text: m[0] });
+  }
+
+  // "base salary ... $95000" single floor
+  const single = /(?:base salary|salary range|compensation|annual salary)[^$]{0,80}\$\s*(\d{2,3}(?:\.\d+)?)\s*(k)?/gi;
+  for (const m of normalized.matchAll(single)) {
+    let min = Number(m[1]) * (m[2] ? 1000 : 1);
+    if (!m[2] && min < 1000) min *= 1000;
+    if (min >= 30000 && min <= 1000000) candidates.push({ min, max: null, text: m[0] });
+  }
+
+  if (!candidates.length) return { salaryKnown: false, salaryMin: null, salaryMax: null, salaryCurrency: null, salaryPeriod: null, salaryText: null };
+  candidates.sort((a,b) => b.min - a.min);
+  const best = candidates[0];
+  return {
+    salaryKnown: true,
+    salaryMin: Math.round(best.min),
+    salaryMax: best.max ? Math.round(best.max) : null,
+    salaryCurrency: 'USD',
+    salaryPeriod: 'annual',
+    salaryText: best.text
+  };
+}
+
 function idFor(company, title, location, url) {
   return crypto.createHash('sha1').update(`${company}|${title}|${location}|${url}`).digest('hex').slice(0, 18);
 }
 
 async function fetchJson(url, options={}) {
   const headers = {
-    'user-agent': 'Mozilla/5.0 (compatible; JaeRecruitingRadar/2.0; +https://github.com/friedporkdumplings/2026_recuriting_dashboard)',
+    'user-agent': 'Mozilla/5.0 (compatible; JobRecruitingDashboard/3.0; +https://github.com/friedporkdumplings/2026_recruiting_dashboard)',
     'accept': 'application/json,text/plain,*/*',
     ...(options.headers || {})
   };
-
   let lastError;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -247,7 +335,7 @@ async function fetchJson(url, options={}) {
 
 async function fetchText(url, options={}) {
   const headers = {
-    'user-agent': 'Mozilla/5.0 (compatible; JaeRecruitingRadar/3.0; +https://github.com/friedporkdumplings/2026_recuriting_dashboard)',
+    'user-agent': 'Mozilla/5.0 (compatible; JobRecruitingDashboard/3.0; +https://github.com/friedporkdumplings/2026_recruiting_dashboard)',
     'accept': 'text/plain,text/markdown,*/*',
     ...(options.headers || {})
   };
@@ -287,7 +375,6 @@ function parseShortDate(value='') {
   const now = new Date();
   const withYear = new Date(`${s} ${now.getUTCFullYear()} UTC`);
   if (!Number.isNaN(withYear.getTime())) {
-    // Avoid accidentally dating a December row into the future when the feed spans year-end.
     if (withYear.getTime() > now.getTime() + 14 * 86400000) withYear.setUTCFullYear(now.getUTCFullYear() - 1);
     return withYear.toISOString();
   }
@@ -297,7 +384,7 @@ function parseShortDate(value='') {
 
 function communityMeta(company='') {
   const meta = companyMeta(company);
-  return { companyTier: meta.tier || 'C', industry: meta.industry || 'Other' };
+  return { companyTier: meta.tier || 'U', industry: meta.industry || 'Other' };
 }
 
 async function applyGuy(source) {
@@ -312,7 +399,7 @@ async function applyGuy(source) {
       url: j.listingUrl || j.url,
       source: 'ApplyGuy',
       employmentType: 'Internship',
-      description: `2027 product management internship feed. ${j.season || ''}`,
+      description: `2027 early-career opportunity. ${j.season || ''}`,
       ...communityMeta(j.company)
     }));
 }
@@ -338,7 +425,7 @@ async function pmHub(source) {
       url,
       source: 'PM Recruiting Hub',
       employmentType: stripMarkdown(startTermCell),
-      description: `${source.careerHint || 'Early Career'} community-curated product opportunity. Status: ${stripMarkdown(statusCell)}`,
+      description: `${source.careerHint || 'Early Career'} community-curated opportunity. Status: ${stripMarkdown(statusCell)}`,
       ...communityMeta(company)
     });
   }
@@ -352,7 +439,7 @@ async function jobrightMarkdown(source) {
   for (const line of md.split(/\r?\n/)) {
     if (!line.trim().startsWith('|')) continue;
     const cells = line.split('|').slice(1, -1).map(x => x.trim());
-    if (cells.length < 5 || /company/i.test(cells[0]) && /job title/i.test(cells[1]) || /^---/.test(cells[0])) continue;
+    if (cells.length < 5 || (/company/i.test(cells[0]) && /job title/i.test(cells[1])) || /^---/.test(cells[0])) continue;
     let company = stripMarkdown(cells[0]);
     if (company === '↳') company = lastCompany;
     else if (company) lastCompany = company;
@@ -365,9 +452,9 @@ async function jobrightMarkdown(source) {
       location: stripMarkdown(cells[2]) || 'Location not listed',
       postedAt: parseShortDate(cells[4]),
       url,
-      source: source.careerHint === 'New Grad' ? 'Jobright New Grad' : 'Jobright Internships',
+      source: source.name || 'Jobright',
       employmentType: source.careerHint || '',
-      description: `${source.careerHint || 'Early Career'} product management feed. Work model: ${stripMarkdown(cells[3])}`,
+      description: `${source.careerHint || 'Early Career'} community job feed. Work model: ${stripMarkdown(cells[3])}`,
       ...communityMeta(company)
     });
   }
@@ -377,7 +464,7 @@ async function jobrightMarkdown(source) {
 function addSourceMeta(job, source) {
   return {
     ...job,
-    companyTier: source.tier || 'C',
+    companyTier: source.tier || 'U',
     industry: source.industry || 'Other'
   };
 }
@@ -420,7 +507,7 @@ async function ashby(source) {
     url: j.jobUrl || j.applyUrl,
     source: 'Ashby',
     employmentType: j.employmentType || '',
-    description: cleanHtml(j.descriptionPlain || j.descriptionHtml || '')
+    description: cleanHtml(`${j.descriptionPlain || j.descriptionHtml || ''} ${j.compensation || ''}`)
   }, source));
 }
 
@@ -544,21 +631,30 @@ const batches = await mapLimit(sourceTasks, 5, async task => {
 });
 
 const raw = batches.flat();
+
 const jobs = raw.filter(isTarget).map(j => {
   const category = classify(j.title, j.description);
   const tags = [];
   const text = `${j.title || ''} ${j.description || ''}`.toLowerCase();
+
   if (/2027|new grad|new graduate|university graduate|graduate program|class of 2027/.test(text)) tags.push('New Grad');
   if (/entry level|entry-level|early career|trainee/.test(text)) tags.push('Entry Level');
   if (/intern|internship/.test(text)) tags.push('Internship');
   if (/remote/.test(`${j.location || ''} ${j.description || ''}`.toLowerCase())) tags.push('Remote');
   if (j.companyTier === 'A') tags.push('Priority A');
+  if (j.companyTier === 'U') tags.push('Other Company');
+
+  const band = experienceBand(j);
+  if (band === 'Stretch') tags.push('3 YOE Stretch');
+  if (band === 'Experienced') tags.push('4 YOE Stretch');
 
   const scored = scoreJob(j, category);
+  const salary = parseSalary(`${j.description || ''}`);
+
   return {
     id: idFor(j.company, j.title, j.location, j.url),
     company: j.company,
-    companyTier: j.companyTier || 'C',
+    companyTier: j.companyTier || 'U',
     industry: j.industry || 'Other',
     title: j.title,
     location: j.location,
@@ -567,23 +663,31 @@ const jobs = raw.filter(isTarget).map(j => {
     url: j.url,
     source: j.source,
     category,
+    experienceBand: band,
     tags,
     matchScore: scored.overall,
-    scoreBreakdown: scored.breakdown
+    scoreBreakdown: scored.breakdown,
+    ...salary
   };
 });
 
-const SOURCE_PRIORITY = { Workday: 6, Greenhouse: 6, Lever: 6, Ashby: 6, 'PM Recruiting Hub': 5, ApplyGuy: 4, 'Jobright New Grad': 3, 'Jobright Internships': 3 };
+const SOURCE_PRIORITY = {
+  Workday: 6, Greenhouse: 6, Lever: 6, Ashby: 6,
+  'PM Recruiting Hub': 5, ApplyGuy: 4
+};
+
 function dedupeKey(job) {
   const n = x => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
   return `${n(job.company)}|${n(job.title)}|${n(job.location)}`;
 }
+
 const dedupeMap = new Map();
 for (const job of jobs) {
   const key = dedupeKey(job);
   const existing = dedupeMap.get(key);
-  if (!existing || (SOURCE_PRIORITY[job.source] || 0) > (SOURCE_PRIORITY[existing.source] || 0)) dedupeMap.set(key, job);
+  if (!existing || (SOURCE_PRIORITY[job.source] || 3) > (SOURCE_PRIORITY[existing.source] || 3)) dedupeMap.set(key, job);
 }
+
 const deduped = [...dedupeMap.values()]
   .sort((a,b) => new Date(b.postedAt || 0) - new Date(a.postedAt || 0));
 
@@ -602,10 +706,13 @@ await fs.writeFile(
     communityFeedCount: (config.community || []).length,
     successfulSources,
     failedSources,
+    salaryKnownCount: deduped.filter(j => j.salaryKnown).length,
     sourceHealth: sourceHealth.sort((a,b) => a.company.localeCompare(b.company)),
     jobs: deduped
   }, null, 2)
 );
 
 console.log(`Saved ${deduped.length} matching jobs from ${raw.length} fetched postings across ${successfulSources}/${sourceTasks.length} successful sources.`);
+console.log(`Direct ATS sources: ${(config.greenhouse || []).length + (config.lever || []).length + (config.ashby || []).length + (config.workday || []).length}; community feeds: ${(config.community || []).length}.`);
+console.log(`Salary parsed for ${deduped.filter(j => j.salaryKnown).length} matching jobs.`);
 if (failedSources) console.log(`${failedSources} source(s) failed; see sourceHealth in data/jobs.json.`);
